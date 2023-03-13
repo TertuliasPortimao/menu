@@ -1,42 +1,10 @@
 <html lang="en">
 
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
-    
-    
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <div w3-include-html="restaurantname.html"></div> 
-    <!-- <title>Tertúlias Portimaõ</title> -->
+    <title>Tertúlias Portimaõ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css" />
 </head>
@@ -80,8 +48,7 @@ function includeHTML() {
         <div class="about-wrapper container">
             <div class="about-text">
                 <p class="small">About Us</p>
-                <h2>Tasty blenddddddddddd of Portuguese and Vietnamese quality food and atmosphere</h2>
-                <div w3-include-html="./tastyblend.html"></div> 
+                <h2>Tasty blend of Portuguese and Vietnamese quality food and atmosphere</h2>
                 <p>
                     Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão.
                     Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese,
@@ -337,12 +304,7 @@ function includeHTML() {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
 
-            
-<script>
-includeHTML();
-</script>            
-             
-            
+ 
 </body>
 
 </html>
