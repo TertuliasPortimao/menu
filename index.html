@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<?php
-$my_data = parse_ini_file("my.ini", true);
-
-$lang = "EN";
-?>
-
 <body>
     <nav class="navbar">
         <div class="navbar-container container">
@@ -25,17 +19,14 @@ $lang = "EN";
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#home"><?php echo $my_data["menu"]["home"][$lang]; ?></a></li>
-                <li><a href="#about"><?php echo $my_data["menu"]["about"][$lang]; ?></a></li>
-                <li><a href="#starter-menu"><?php echo $my_data["menu"]["starter-menu"][$lang]; ?></a></li>
-                <li><a href="#main-menu"><?php echo $my_data["menu"]["main-menu"][$lang]; ?></a></li>
-                <li><a href="#desert-menu"><?php echo $my_data["menu"]["desert-menu"][$lang]; ?></a></li>
-                <li><a href="#drinks"><?php echo $my_data["menu"]["drinks"][$lang]; ?></a></li>
-                <!-- 
-                <li><a href="#contact">Contact</a></li> 
-                -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#starter-menu">Starter</a></li>
+                <li><a href="#main-menu">Main</a></li>
+                <li><a href="#desert-menu">Desert</a></li>
+                <li><a href="#drinks">Drinks</a></li>
             </ul>
-            <h1 class="logo">SGYYYYYYYYY</h1>
+            <h1 class="logo">TC</h1>
         </div>
     </nav>
     <section class="showcase-area" id="showcase">
@@ -89,31 +80,23 @@ $lang = "EN";
 
         <div class="food-menu-container container">
 
-            <?php
 
-            foreach ($my_data["starterdish"] as $value) {
-                echo '<div class="food-menu-item">';
-                if ($value["image"]) {
-                    echo '  <div class="food-img">';
-                    echo '      <img src="' . $value["image"] . '" alt="" />';
-                    echo '  </div>';
-                }
-                echo '  <div class="food-description">';
-                echo '      <h2 class="food-titile">' . $value["title"] . '</h2>';
-                echo '      <p>';
-                echo            $value["description"];
-                echo '      </p>';
-                echo '      <p class="food-price">Price: € ' . $value["price"] . '</p>';
-                echo '<BR>';
-                echo '  </div>';
-                echo '</div>';
-            }
-            ?>
-
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="./unknown.png" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        quae.
+                    </p>
+                    <p class="food-price">Price: € 2,50</p>
+                    <BR>
+                </div>
+            </div>
         </div>
     </section>
-
-
 
     <section id="main-menu">
         <h2><BR></h2>
@@ -126,27 +109,6 @@ $lang = "EN";
         </center>
 
         <div class="food-menu-container container">
-
-            <?php
-
-            foreach ($my_data["maindish"] as $value) {
-                echo '<div class="food-menu-item">';
-                if ($value["image"]) {
-                    echo '  <div class="food-img">';
-                    echo '      <img src="' . $value["image"] . '" alt="" />';
-                    echo '  </div>';
-                }
-                echo '  <div class="food-description">';
-                echo '      <h2 class="food-titile">' . $value["title"] . '</h2>';
-                echo '      <p>';
-                echo            $value["description"];
-                echo '      </p>';
-                echo '      <p class="food-price">Price: € ' . $value["price"] . '</p>';
-                echo '  </div>';
-                echo '</div>';
-            }
-            ?>
-
             <div class="food-menu-item">
                 <div class="food-img">
                     <img src="bunchahanoi.jpeg" alt="error" />
@@ -159,6 +121,21 @@ $lang = "EN";
                     <p class="food-price">Price: € 11,00</p>
                 </div>
             </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="./unknown.png" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Test 2</h2>
+                    <p>
+                        L222orem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        quae.
+                    </p>
+                    <p class="food-price">Price: € 2,50</p>
+                </div>
+            </div>
+
             <div class="food-menu-item">
                 <div class="food-img">
                     <img src="./unknown.png" alt="error" />
@@ -189,25 +166,19 @@ $lang = "EN";
 
         <div class="food-menu-container container">
 
-            <?php
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="./unknown.png" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Test 2</h2>
+                    <p>
+                        Desert 1.
+                    </p>
+                    <p class="food-price">Price: € 2,59</p>
+                </div>
+            </div>
 
-            foreach ($my_data["desertdish"] as $value) {
-                echo '<div class="food-menu-item">';
-                if ($value["image"]) {
-                    echo '  <div class="food-img">';
-                    echo '      <img src="' . $value["image"] . '" alt="" />';
-                    echo '  </div>';
-                }
-                echo '  <div class="food-description">';
-                echo '      <h2 class="food-titile">' . $value["title"] . '</h2>';
-                echo '      <p>';
-                echo            $value["description"];
-                echo '      </p>';
-                echo '      <p class="food-price">Price: € ' . $value["price"] . '</p>';
-                echo '  </div>';
-                echo '</div>';
-            }
-            ?>
 
         </div>
     </section>
@@ -225,26 +196,18 @@ $lang = "EN";
         </center>
 
         <div class="food-menu-container container">
-
-            <?php
-
-            foreach ($my_data["drinks"] as $value) {
-                echo '<div class="food-menu-item">';
-                if ($value["image"]) {
-                    echo '  <div class="food-img">';
-                    echo '      <img src="' . $value["image"] . '" alt="" />';
-                    echo '  </div>';
-                }
-                echo '  <div class="food-description">';
-                echo '      <h2 class="food-titile">' . $value["title"] . '</h2>';
-                echo '      <p>';
-                echo            $value["description"];
-                echo '      </p>';
-                echo '      <p class="food-price">Price: € ' . $value["price"] . '</p>';
-                echo '  </div>';
-                echo '</div>';
-            }
-            ?>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="bunchahanoi.jpeg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Bún chả Hà Nội</h2>
+                    <p>
+                        Drink 1.
+                    </p>
+                    <p class="food-price">Price: € 11,09</p>
+                </div>
+            </div>
 
         </div>
     </section>
