@@ -1,5 +1,11 @@
 {
-    "starters": [
+    "intro": [
+      {
+        "description": "engelse beschrijving regel 1."
+      }{
+        "description": "engelse beschrijving regel 2."
+      }
+    ],"starters": [
       {
         "name": "Caesar Salad",
         "description": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing",
