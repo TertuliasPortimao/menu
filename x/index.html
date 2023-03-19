@@ -40,6 +40,8 @@
                 <h2>Tasty blend of Portuguese and Vietnamese quality food and atmosphere</h2>
                 <BR>
                 <p>
+                <ul class="about-list"></ul>
+
                     Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão.
                     Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese,
                     including specialties that are sure to please your palate.
@@ -320,10 +322,15 @@
               // Clear the menu lists
               $('#starter-menu .menu-list').empty();
               $('#main-menu .menu-list').empty();
+              $('#about .about-list').empty();
     
               // Populate the menu lists with the data from the JSON file
               
              
+              $.each(data.starters, function(index, item) {
+                $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.description + '</div></div></li>');
+              });
+    
               $.each(data.starters, function(index, item) {
                 $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
