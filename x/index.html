@@ -329,7 +329,8 @@
     
           // Load the menu from a JSON file for the specified language
           function loadMenu(lang) {
-            $.getJSON('menu-' + lang + '.json', function(data) {
+       //     $.getJSON('menu-' + lang + '.json', function(data) {
+            $.getJSON('menu-en.json', function(data) {
               // Clear the menu lists
               $('#starters .menu-list').empty();
               $('#main_dishes .menu-list').empty();
