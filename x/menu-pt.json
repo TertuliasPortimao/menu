@@ -1,5 +1,11 @@
 {
-    "starters": [
+    "intro": [
+      {
+        "description": "portugese beschrijving regel 1."
+      }{
+        "description": "portugese beschrijving regel 2."
+      }
+    ],"starters": [
       {
         "name": "Salada Caesar",
         "description": "Alface romana, croutons, queijo Parmesão, molho Caesar",
