@@ -12,26 +12,8 @@
 
 </head>
     
-    
 <body>
-<header>
-    <h1>Restaurant Menu</h1>
-    <div class="language-selector">
-      <span>Language:</span>
-      <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en">
-      <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt">
-    </div>
-  </header>
-  <main>
-    <section id="starters">
-      <h2>Starters</h2>
-      <ul class="menu-list"></ul>
-    </section>
-    <section id="main-dishes">
-      <h2>Main Dishes</h2>
-      <ul class="menu-list"></ul>
-    </section>
-  </main>
+    
     <section class="showcase-area" id="showcase">
         <div class="showcase-container">
             <h1 class="main-title" id="">Tertúlias</h1>
@@ -81,6 +63,10 @@
                     
     <section id="starter-menu">
         
+        <!-- ************************************** -->
+        <ul class="menu-list"></ul>
+        <!-- ************************************** -->
+
         <center>
             <a href="#main-menu" class="btn btn-primary">Main course</a>
             <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
@@ -122,6 +108,10 @@
                             
     <section id="main-menu">
         
+        <!-- ************************************** -->
+        <ul class="menu-list"></ul>
+        <!-- ************************************** -->
+
         <center>
             <a href="#starter-menu" class="btn btn-primary">Starters</a>
             <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
@@ -336,16 +326,16 @@
        //     $.getJSON('menu-' + lang + '.json', function(data) {
             $.getJSON('menu-en.json', function(data) {
               // Clear the menu lists
-              $('#starters .menu-list').empty();
-              $('#main_dishes .menu-list').empty();
+              $('#starter-menu .menu-list').empty();
+              $('#main-menu .menu-list').empty();
     
               // Populate the menu lists with the data from the JSON file
               $.each(data.starters, function(index, item) {
-                $('#starters .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
+                $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
     
               $.each(data.main_dishes, function(index, item) {
-                $('#main_dishes .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
+                $('#main-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
             });
           }
