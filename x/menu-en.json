@@ -1,0 +1,37 @@
+{
+    "starters": [
+      {
+        "name": "Caesar Salad",
+        "description": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing",
+        "price": "8.99"
+      },
+      {
+        "name": "Garlic Bread",
+        "description": "Toasted bread topped with garlic and olive oil",
+        "price": "5.99"
+      },
+      {
+        "name": "Caprese Salad",
+        "description": "Fresh mozzarella, tomatoes, basil, balsamic glaze",
+        "price": "9.99"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name": "Margherita Pizza",
+        "description": "Tomato sauce, mozzarella cheese, basil",
+        "price": "12.99"
+      },
+      {
+        "name": "Spaghetti Carbonara",
+        "description": "Pasta with bacon, egg yolks, and Parmesan cheese",
+        "price": "15.99"
+      },
+      {
+        "name": "Chicken Parmesan",
+        "description": "Breaded chicken breast, tomato sauce, mozzarella cheese, served with spaghetti",
+        "price": "18.99"
+      }
+    ]
+  }
+  
