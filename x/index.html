@@ -13,15 +13,7 @@
 </head>
 
     
-<header>
-    <h1>Restaurant Menu</h1>
-    <div class="language-selector">
-      <span>Language:</span>
-      <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-      <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
-    </div>
-  </header>    
-    
+
     
 <body>
     
@@ -34,16 +26,11 @@
         </div>
         <center>
             <a href="#starter-menu" class="btn btn-primary">Menu</a>
-            <a href="../po/index.html"><img src="../portuguese.png" alt="Portuguese" style="width:20px;height:20px;" valign="middle"></a>
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-      <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
-    
+            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
 
     </section>
-    
-    
-   
     
 
     <section id="about">
@@ -53,6 +40,8 @@
                 <h2>Tasty blend of Portuguese and Vietnamese quality food and atmosphere</h2>
                 <BR>
                 <p>
+                    <ul class="intro-list"></ul>
+
                     Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão.
                     Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese,
                     including specialties that are sure to please your palate.
@@ -333,8 +322,14 @@
               // Clear the menu lists
               $('#starter-menu .menu-list').empty();
               $('#main-menu .menu-list').empty();
+              $('#about .intro-list').empty();
     
               // Populate the menu lists with the data from the JSON file
+              
+              $.each(data.intro, function(index, item) {
+                $('#about .intro-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
+              });
+    
               $.each(data.starters, function(index, item) {
                 $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
@@ -342,6 +337,7 @@
               $.each(data.main_dishes, function(index, item) {
                 $('#main-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
+                
             });
           }
         });
