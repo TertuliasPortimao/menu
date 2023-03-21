@@ -313,47 +313,33 @@
           function loadMenu(lang) {
           //  $.getJSON('menu-' + lang + '.json', function(data) {
             $.getJSON('menu' + '.json', function(data) {
-              // Clear the menu lists
-              $('#starter-menu .menu-list').empty();
-              $('#main-menu .menu-list').empty();
-              $('#about .about-list').empty();
-    
-              // Populate the menu lists with the data from the JSON file
               
              
-             
-                
+              // Clear the menu lists             
+              $('#about .about-list').empty();
+              // Populate the menu lists with the data from the JSON file
               $.each(data.about, function(index, item) {
+                    var nn = "item.description_header_" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
+                    var nn = "item.description_" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
+              });   
                   
-                  var nn = "item.description_header_" + lang;                  
-                  if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
-                  var nn = "item.description_" + lang;                  
-                  if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); }
-                  
-                  
+                
+              $('#starter-menu .menu-list').empty();
+              $.each(data.starters, function(index, item) {
+                    var iin = "item.name_" + lang;
+                    if(typeof eval(iin) !== 'undefined') { var v1 = eval(iin) + "*";} else {var v1 = "*niks*";}
+                    $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + v1 + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
                 
-             
-                  
-                  
-              // $.each(data.starters, function(index, item) {
-              //   $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
-              // });
-    
-              $.each(data.starters, function(index, item) {
-                  var iin = "item.name_" + lang;
-                  if(typeof eval(iin) !== 'undefined') { var v1 = eval(iin) + "*";} else {var v1 = "*niks*";}
-                  
-                  
-                $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + v1 + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
-              });
-    
-                  
-                  
+                
+              $('#main-menu .menu-list').empty();
               $.each(data.main_dishes, function(index, item) {
-                $('#main-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
-
+                    $('#main-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
               });
+                
+                
                 
             });
           }
