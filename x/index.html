@@ -37,21 +37,13 @@
         <div class="about-wrapper container">
             <div class="about-text">
                 <p class="small">About Us</p>
-                <h2>Tasty blend of Portuguese and Vietnamese quality food and atmosphere</h2>
+                
+                <p <h2>class="about-list-header">/h2></p>
+
                 <BR>
+                    
                 <p class="about-list"></p>
                     
-                <p>
-
-                    Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão.
-                    Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese,
-                    including specialties that are sure to please your palate.
-                    Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea,
-                    fruit tea and coffee, as well as delicious Portuguese dishes. Our specialty dish of local
-                    is the famous Francesinha.
-                    Come experience our warm and friendly atmosphere enjoy a delicious
-                    meal at Tertúlias.
-                </p>
             </div>
         </div>
     </section>
@@ -329,17 +321,18 @@
               // Populate the menu lists with the data from the JSON file
               
              
+             
+                
               $.each(data.about, function(index, item) {
-              //    var nn = "item.description";
-                  var nn = "item.description_" + lang;
+                  var nn = "item.description_" + lang;                  
+                  if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); }
                   
-                  if(typeof eval(nn) !== 'undefined'){    
-                 
-             // $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.description + '</div></div></li>');
-                $('#about .about-list').append(eval(nn));
-             }
+                  var nn = "item.description_header" + lang;                  
+                  if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
+                  
               });
-    
+                
+             
                   
                   
               // $.each(data.starters, function(index, item) {
