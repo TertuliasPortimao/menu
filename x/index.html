@@ -329,9 +329,29 @@
                 
               $('#starter-menu .menu-list').empty();
               $.each(data.starters, function(index, item) {
+                    
+              
+              
+                    var $v1 = "";
                     var iin = "item.name_" + lang;
-                    if(typeof eval(iin) !== 'undefined') { var v1 = eval(iin) + "*";} else {var v1 = "*niks*";}
+                    var iinxl = "item.name";
+                    if (typeof eval(iin) !== 'undefined') 
+                        {var v1 = eval(iin); // pak de taalspecifieke
+                        } 
+                    else 
+                        {if (typeof eval(iinxl) !== 'undefined') 
+                            {var v1 = eval(iinxl); // Pak de algemene 
+                            } 
+                        }
+                  
+                   
                     $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + v1 + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
+             
+              
+             
+              
+              
+              
               });
                 
                 
