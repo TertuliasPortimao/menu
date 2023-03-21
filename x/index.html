@@ -325,7 +325,7 @@
                 
               $.each(data.about, function(index, item) {
                   
-                  var nn = "item.description_header" + lang;                  
+                  var nn = "item.description_header_" + lang;                  
                   if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
                   var nn = "item.description_" + lang;                  
                   if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); }
