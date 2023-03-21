@@ -1,6 +1,9 @@
 {
     "about": [
       {
+        "description.pt": "nieuwe engelse beschrijving in pt regel 1."
+      },
+      {
         "description": "portugese beschrijving regel 1."
       },
       {
