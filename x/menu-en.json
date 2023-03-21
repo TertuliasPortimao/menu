@@ -1,9 +1,12 @@
 {
     "about": [
       {
+        "description.en": "nieuwe engelse beschrijving in en regel 1."
+      },
+      {
         "description": "engelse beschrijving regel 1."
       },
-        {
+      {
         "description": "engelse beschrijving regel 2."
       }
     ],"starters": [
