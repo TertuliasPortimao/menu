@@ -14,26 +14,25 @@
         ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
         
     ],"starters": [
-      {
-        "name_en": "Caesar eng Salad",
-        "name_pt": "Caesar port Salad",
-        "description_en": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing",
-        "description_pt": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing",
-        "price": "8.99",
-        "image": "8.99"
-      },
-      {
-        "name_en": "Garlic eng Bread",
-        "name_pt": "Garlic port Bread",
-        "description": "Toasted bread topped with garlic and olive oil",
-        "price": "5.99"
-      },
-      {
-        "name_en": "Caprese eng Salad",
-        "name_pt": "Caprese port Salad",
-        "description": "Fresh mozzarella, tomatoes, basil, balsamic glaze",
-        "price": "9.99"
-      }
+      
+        {
+        "name": "Phống tôm",
+        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
+        "description_pt": "***",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name": "Dim sum",
+        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
+        "description_pt": "***",
+        "price": "€ 4,50",
+        "image_location": "./",
+        "image": "dimsum.png"
+        }
+            
     ],
     "main_dishes": [
       {
@@ -54,3 +53,6 @@
     ]
   }
   
+
+
+
