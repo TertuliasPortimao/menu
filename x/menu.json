@@ -54,80 +54,38 @@
         }
         ,
         
+        {
+        "name": "Tôm chiên xù",
+        "description_en": "Vietnamese-style deep-fried shrimp. The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "tomchienxu.JPG"
+        }
+        ,
         
-        
-        
         {
-        "name": "alg: Naam algemeen & naam en, geen pt ",
-        "name_en": "en: Naam algemeen & naam en, geen pt ",
-        "description": "Algemeen2. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name": "alg: Naam algemeen & naam pt, geen en ",
-        "name_pt": "pt: Naam algemeen & naam pt, geen en ",
-        "description": "Algemeen3. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name": "alg: Naam algemeen & naam pt & naam en ",
-        "name_en": "en: Naam algemeen & naam pt & naam en ",
-        "name_pt": "pt: Naam algemeen & naam pt & naam en",
-        "description": "Algemeen4. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name": "alg: Alleen naam algemeen ",
-        "description": "Algemeen5. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name_pt": "pt: Alleen naam pt ",
-        "description": "Algemeen6. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name_en": "en: Alleen naam en ",
-        "description": "Algemeen7. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name_en": "en: Alleen naam en & naam pt ",
-        "name_pt": "pt: Alleen naam en & naam pt ",
-        "description": "Algemeen8. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
-        }
-        ,
-        {
-        "name": "Dim sum",
-        "name_pt": "Dim sum pt",
-        "name_pt": "Dim sum en",
-        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
-        "description_pt": "***",
+        "name": "Nem cuốn",
+        "description_en": "Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
+        "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
         "price": "€ 4,50",
         "image_location": "./",
-        "image": "dimsum.png"
+        "image": "nemcuon.JPG"
         }
+        ,
+        
+        {
+        "name": "Nem cuốn chay Ⓥ",
+        "description_en": "Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+        "description_pt": "Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "nemcuonchay.png"
+        }
+        
+        
+        
+        
             
     ],
     "main_dishes": [
