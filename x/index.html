@@ -328,9 +328,9 @@
               
              
               $.each(data.about, function(index, item) {
-                  var nn = "description";
+                  var nn = "item.description";
              // $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.description + '</div></div></li>');
-                $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.eval(nn) + '</div></div></li>');
+                $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + eval(nn) + '</div></div></li>');
               });
     
               $.each(data.starters, function(index, item) {
