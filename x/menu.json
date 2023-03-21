@@ -16,9 +16,69 @@
     ],"starters": [
       
         {
-        "name": "Phống tôm",
-        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
-        "description_pt": "***",
+        "name": "Wel naam algemeen, geen en geen pt",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name": "alg: Naam algemeen & naam en, geen pt ",
+        "name_en": "en: Naam algemeen & naam en, geen pt ",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name": "alg: Naam algemeen & naam pt, geen en ",
+        "name_pt": "pt: Naam algemeen & naam pt, geen en ",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name": "alg: Naam algemeen & naam pt & naam en ",
+        "name_en": "en: NNaam algemeen & naam pt & naam en ",
+        "name_pt": "pt: NNaam algemeen & naam pt & naam en",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name": "alg: Alleen naam algemeen ",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name_pt": "pt: Alleen naam pt ",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name_en": "en: Alleen naam en ",
+        "description": "Algemeen. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        {
+        "name_en": "en: Alleen naam en & naam pt ",
+        "name_pt": "pt: Alleen naam en & naam pt ",
+        "description": "Algemeen. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -26,6 +86,8 @@
         ,
         {
         "name": "Dim sum",
+        "name_pt": "Dim sum pt",
+        "name_pt": "Dim sum en",
         "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
         "description_pt": "***",
         "price": "€ 4,50",
