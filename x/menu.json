@@ -16,7 +16,7 @@
     ],"starters": [
       
         {
-        "name": "Wel naam algemeen, geen en geen pt",
+        "name": "alg: Wel naam algemeen, geen en geen pt",
         "description": "Algemeen. ",
         "price": "€ 2,00",
         "image_location": "./",
@@ -43,8 +43,8 @@
         ,
         {
         "name": "alg: Naam algemeen & naam pt & naam en ",
-        "name_en": "en: NNaam algemeen & naam pt & naam en ",
-        "name_pt": "pt: NNaam algemeen & naam pt & naam en",
+        "name_en": "en: Naam algemeen & naam pt & naam en ",
+        "name_pt": "pt: Naam algemeen & naam pt & naam en",
         "description": "Algemeen. ",
         "price": "€ 2,00",
         "image_location": "./",
