@@ -328,7 +328,9 @@
               
              
               $.each(data.about, function(index, item) {
-                $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.description + '</div></div></li>');
+                  var nn = "description";
+             // $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.description + '</div></div></li>');
+                $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.eval(nn) + '</div></div></li>');
               });
     
               $.each(data.starters, function(index, item) {
@@ -337,6 +339,7 @@
     
               $.each(data.main_dishes, function(index, item) {
                 $('#main-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + item.name + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
+
               });
                 
             });
