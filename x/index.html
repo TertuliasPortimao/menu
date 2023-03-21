@@ -347,7 +347,8 @@
               // });
     
               $.each(data.starters, function(index, item) {
-                  if(typeof eval(item.name + "_" + lang) !== 'undefined') { var v1 = eval(item.name + "_" + lang) + "*";} else {var v1 = "*niks*";}
+                  var iin = "item.name + "_" + lang;
+                  if(typeof eval(iin) !== 'undefined') { var v1 = eval(iin) + "*";} else {var v1 = "*niks*";}
                   
                   
                 $('#starter-menu .menu-list').append('<li class="menu-item"><div class="menu-item-details"><div class="menu-item-name">' + v1 + '</div><div class="menu-item-description">' + item.description + '</div></div><div class="menu-item-price">' + item.price + '</div></li>');
