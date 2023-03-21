@@ -26,7 +26,7 @@
         {
         "name": "alg: Naam algemeen & naam en, geen pt ",
         "name_en": "en: Naam algemeen & naam en, geen pt ",
-        "description": "Algemeen. ",
+        "description": "Algemeen2. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -35,7 +35,7 @@
         {
         "name": "alg: Naam algemeen & naam pt, geen en ",
         "name_pt": "pt: Naam algemeen & naam pt, geen en ",
-        "description": "Algemeen. ",
+        "description": "Algemeen3. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -45,7 +45,7 @@
         "name": "alg: Naam algemeen & naam pt & naam en ",
         "name_en": "en: Naam algemeen & naam pt & naam en ",
         "name_pt": "pt: Naam algemeen & naam pt & naam en",
-        "description": "Algemeen. ",
+        "description": "Algemeen4. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -53,7 +53,7 @@
         ,
         {
         "name": "alg: Alleen naam algemeen ",
-        "description": "Algemeen. ",
+        "description": "Algemeen5. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -61,7 +61,7 @@
         ,
         {
         "name_pt": "pt: Alleen naam pt ",
-        "description": "Algemeen. ",
+        "description": "Algemeen6. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -69,7 +69,7 @@
         ,
         {
         "name_en": "en: Alleen naam en ",
-        "description": "Algemeen. ",
+        "description": "Algemeen7. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -78,7 +78,7 @@
         {
         "name_en": "en: Alleen naam en & naam pt ",
         "name_pt": "pt: Alleen naam en & naam pt ",
-        "description": "Algemeen. ",
+        "description": "Algemeen8. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
