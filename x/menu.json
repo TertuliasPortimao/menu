@@ -18,7 +18,7 @@
         {
         "name": "Phống tôm",
         "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
-        "description_po": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
+        "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -28,7 +28,7 @@
         {
         "name": "Dim sum",
         "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
-        "description_po": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
+        "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
         "price": "€ 4,50",
         "image_location": "./",
         "image": "dimsum.png"
@@ -37,7 +37,7 @@
         {
         "name": "Gỏi cuốn tôm",
         "description_en": "Fresh vermicelli, boiled chicken, peeled boiled shrimps and raw vegetables. ",
-        "description_po": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+        "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
         "price": "€ 3,50",
         "image_location": "./",
         "image": "goicuontom.png"
@@ -47,7 +47,7 @@
         {
         "name": "Gỏi cuốn chay Ⓥ",
         "description_en": "Vietnamese salad rolls with salad, sprouts, herbs, and corlander. ",
-        "description_po": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+        "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
         "price": "€ 3,00",
         "image_location": "./",
         "image": "goicuonchay.png"
