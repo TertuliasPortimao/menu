@@ -21,17 +21,20 @@
       }
     ],"starters": [
       {
-        "name": "Caesar Salad",
+        "name_en": "Caesar eng Salad",
+        "name_pt": "Caesar port Salad",
         "description": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing",
         "price": "8.99"
       },
       {
-        "name": "Garlic Bread",
+        "name_en": "Garlic eng Bread",
+        "name_pt": "Garlic port Bread",
         "description": "Toasted bread topped with garlic and olive oil",
         "price": "5.99"
       },
       {
-        "name": "Caprese Salad",
+        "name_en": "Caprese eng Salad",
+        "name_pt": "Caprese port Salad",
         "description": "Fresh mozzarella, tomatoes, basil, balsamic glaze",
         "price": "9.99"
       }
