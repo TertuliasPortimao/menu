@@ -328,8 +328,8 @@
               
              
               $.each(data.about, function(index, item) {
-                  var nn = "item.description";
-              //    var nn = "item.description_" + lang;
+              //    var nn = "item.description";
+                  var nn = "item.description_" + lang;
              // $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + item.description + '</div></div></li>');
                 $('#about .about-list').append('<li class="about-item"><div class="about-item-details"><div class="about-item-description">' + eval(nn) + '</div></div></li>');
               });
