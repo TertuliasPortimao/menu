@@ -66,7 +66,7 @@
         
         {
         "name": "Nem cuốn",
-        "description_en": "Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
+        "description_en": "Vietnamese spring rolls with <BR> pork, shrimps and mixed vegetables. ",
         "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
         "price": "€ 4,50",
         "image_location": "./",
