@@ -327,7 +327,9 @@
                   
                 
               $('#starter-menu .menu-list').empty();
-              $.each(data.starters, function(index, item) {
+              var dsi = data.starters;
+             // $.each(data.starters, function(index, item) {
+              $.each(dsi, function(index, item) {
               
                     var n = "";
                     var inn = "item.name_" + lang;
