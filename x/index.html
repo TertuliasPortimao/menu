@@ -102,21 +102,6 @@
         <div class="food-menu-container container">
             
             <ul class="menu-list"></ul>
-
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="../phobo.PNG" alt="error" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Phở bò</h2>
-                    <p>
-                        Beef rice noodle special soup.
-                    </p>
-                    <p class="food-price">€ 10,30</p>
-                </div>
-            </div>
-            
-           
         
         </div>
            
@@ -144,17 +129,7 @@
 
         <div class="food-menu-container container">
 
-            <div class="food-menu-item">
-                <div class="food-description">
-                    <h2 class="food-titile">BANH MŸ THIT NUÖNG</h2>
-                    <p>
-                        Baguette, Break grilled pork, carrot, cucumber and special sauce.
-                    </p>
-                    <p class="food-price">€ 4,50</p>
-                </div>
-            </div>
-            
-           
+            <ul class="menu-list"></ul>
             
         </div>
             
@@ -181,10 +156,15 @@
         
         <h2 class="food-menu-heading">Drinks</h2>
             
+
+        <section id="bubble-milk-tea">
+
         <h3 class="food-menu-heading">Bubble Milk Tea</h3>
 
         <div class="food-menu-container container">
             
+            <ul class="menu-list"></ul>
+
             <div class="food-menu-item">
                 
                 <div class="food-img">
@@ -225,11 +205,17 @@
                
             </div>
         </div>
-            
+
+        </section>
+
+        <section id="bubble-fruit-tea">
+
         <h3 class="food-menu-heading">Bubble Fruit tea</h3>
 
         <div class="food-menu-container container">
             
+            <ul class="menu-list"></ul>
+
             <div class="food-menu-item">
                 <div class="food-img">
                     <img src="../bubbletea.PNG" alt="error" />
@@ -255,10 +241,16 @@
             </div>
          
          </div>
-            
+
+        </section>
+
+        <section id="regular-drinks">
+
          <h3 class="food-menu-heading">Regular drinks</h3>
          
          <div class="food-menu-container container">
+
+            <ul class="menu-list"></ul>
 
             <div class="food-menu-item">
                 <div class="food-description">
@@ -280,7 +272,8 @@
              
         </div>
             
-            
+    </section>
+
             
             
     </section>
@@ -350,7 +343,7 @@
                             } 
                         }
                   
-                   var i = "";
+                    var i = "";
                     var ini = "item.image_" + v3;
                     var inil = "item.image";
                     if (typeof eval(ini) !== 'undefined') 
@@ -415,7 +408,10 @@
               
               make_element('#starter-menu .menu-list', data.starters, lang) ;
               make_element('#main-menu .menu-list', data.main_dishes, lang) ;
-
+              make_element('#snacks-menu .menu-list', data.snacks_menu, lang) ;
+              make_element('#bubble-milk-tea .menu-list', data.bubble_milk_tea, lang) ;
+              make_element('#bubble-fruit-tea .menu-list', data.bubble_fruit_tea, lang) ;
+              make_element('#regular-drinks .menu-list', data.regular_drinks, lang) ;
              
             });
           }
@@ -433,3 +429,4 @@
 </body>
 
 </html>
+
