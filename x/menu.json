@@ -129,7 +129,9 @@
           "name": "COM SUÖN CHUA NGOT",
           "description_en": "Rice, pork ris, and a special sauce. ",
           "description_pt": "Arroz, costelas de porco e um molho especial. ",
-          "price": "€ 10,50"
+          "price": "€ 10,50",
+          "image_location": "./",
+          "image": "comsuonchuangot.png"
       }
       ,
       {
@@ -189,7 +191,9 @@
       {
           "name_pt": "DOURADA",
           "name_en": "SEABREAM",
-          "price": "€ 10,30"
+          "price": "€ 10,30",
+          "image_location": "./",
+          "image": "dourada.png"
       }
       ,
       {
