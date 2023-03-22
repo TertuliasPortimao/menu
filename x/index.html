@@ -301,8 +301,15 @@
             loadMenu(lang);
           });
     
+          function function_two() {
+            alert("The function called 'function_two' has been called.");
+            }
+
           // Load the menu from a JSON file for the specified language
           function loadMenu(lang) {
+            
+            function_two(); 
+
           //  $.getJSON('menu-' + lang + '.json', function(data) {
             $.getJSON('menu' + '.json', function(data) {
               
@@ -402,6 +409,7 @@
              
             });
           }
+          
         });
       </script>
 
