@@ -90,6 +90,156 @@
     ],
     "main_dishes": [
       {
+        "name": "Phở bò",
+        "description_en": "Beef rice noodle special soup. ",
+        "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
+        "price": "€ 10,30",
+        "image_location": "./",
+        "image": "phobo.PNG"
+      }
+        ,
+      {
+          "name": "Phở gà",
+          "description_en": "Chicken rice noodle special soup. ",
+          "description_pt": "Sopa especial com massa de arroz e frango. ",
+          "price": "€ 10,30",
+          "image_location": "./",
+          "image": "phoga.PNG"
+      }
+      ,
+      {
+          "name": "Phở chay Ⓥ",
+          "description_en": "Noodles, mushrooms, tofu, vegetables. ",
+          "description_pt": "Special noodles fritos com macarrão e vegetais e cogumelos. ",
+          "price": "€ 11,00",
+          "image_location": "./",
+          "image": "phochay.PNG"
+      }
+      ,
+      {
+          "name": "Bún chả Hà Nội",
+          "description_en": "Bun cha is served with grilled fatty pork over a dish of white rice noodles and herbs with a side of dipping sauce. ",
+          "description_pt": "Bun cha é servido com carne de porco gordurosa grelhada obre um prato de macarrão de arroz branco e ervas com um acompanhamento de molho. ",
+          "price": "€ 11,00",
+          "image_location": "./",
+          "image": "bunchahanoi.PNG"
+      }
+          ,
+      {
+          "name": "COM SUÖN CHUA NGOT",
+          "description_en": "Rice, pork ris, and a special sauce. ",
+          "description_pt": "Arroz, costelas de porco e um molho especial. ",
+          "price": "€ 10,50"
+      }
+      ,
+      {
+          "name": "COM GÀ CHUA NGOT<",
+          "description_en": "Rice, chicken, and a special sauce. ",
+          "description_pt": "Arroz, frango e um molho especial. ",
+          "price": "€ 10,50"
+      }
+          ,
+      {
+          "name": "XOI CHIEN CHAY Ⓥ",
+          "description_en": "Sticky rice with herbs. ",
+          "description_pt": "Refeição vegetariana. ",
+          "price": "€ 5,00"
+      }
+      ,
+      {
+          "name": "XÔI CHIÊN RUÔC",
+          "description_en": "Sticky rice with herbs, pork. ",
+          "description_pt": "Arroz grudento com ervilha verde, porco. ",
+          "price": "€ 7,00"
+      }
+      ,
+      {
+          "name": "BÒ SÔT VANG",
+          "description_en": "Stewed Beef with red wine and herbs in claypot. ",
+          "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name": "BÚN NEM CUÔN",
+          "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
+          "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+          "price": "€ 7,00"
+      }
+      ,
+      {
+          "name": "BÚN NEM CUÔN CHAY Ⓥ",
+          "description_en": "Noodles, Salad, Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+          "description_pt": "Macarrão, Salada, Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+          "price": "€ 7,00"
+      }
+      ,
+      {
+          "name_pt": "SARDINHA",
+          "name_en": "SARDINES",
+          "price": "€ 9,20"
+      }
+      ,
+      {
+          "name_pt": "ROBALO",
+          "name_en": "SEABASS",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name_pt": "DOURADA",
+          "name_en": "SEABREAM",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name_pt": "SALMAO",
+          "name_en": "SALMON",
+          "price": "€ 12,50",
+          "image_location": "./",
+          "image": "salmao.jpg"
+      }
+      ,
+      {
+          "name_pt": "SALADA DE ATUM",
+          "name_en": "TUNA SALAD",
+          "price": "€ 7,50",
+          "image_location": "./",
+          "image": "saladatum.jpg"
+      }
+      ,
+      {
+          "name_pt": "LULAS FRITAS",
+          "name_en": "FRIED SQUID FISH",
+          "price": "€ 10,80"
+      }
+      ,
+      {
+          "name": "FRANCESINHA",
+          "price": "€ 10,80",
+          "image_location": "./",
+          "image": "franshinha.jpg"
+      }
+      ,
+      {
+          "name_pt": "BIFE DE FRANGO",
+          "name_en": "CHICKEN STEAK",
+          "price": "€ 8,60"
+      }
+      ,
+      {
+          "name_pt": "PLUMAS DE PORCO PRETO",
+          "name_en": "BLACK PIG PLUMAS",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name_pt": "SECRETOS DE PORCO PRETO",
+          "name_en": "BLACK PIG SECRETOS",
+          "price": "€ 10,30"
+      }
+          ,
+      {
         "name": "Margherita Pizza",
         "description": "Tomato sauce, mozzarella cheese, basil",
         "price": "12.99"
