@@ -307,14 +307,15 @@
 
           // v1 = '#starter-menu .menu-list'
           // v2 = data.starters;
-          function make_element(v1, v2) {
+          // v3 = lang;
+          function make_element(v1, v2, v3) {
             $(v1).empty();
               var dsi = v2;
              // $.each(data.starters, function(index, item) {
               $.each(dsi, function(index, item) {
               
                     var n = "";
-                    var inn = "item.name_" + lang;
+                    var inn = "item.name_" + v3;
                     var innl = "item.name";
                     if (typeof eval(inn) !== 'undefined') 
                         {var n = eval(inn); // pak de taalspecifieke
@@ -325,7 +326,7 @@
                             } 
                         }
                   var d = "";
-                    var ind = "item.description_" + lang;
+                    var ind = "item.description_" + v3;
                     var indl = "item.description";
                     if (typeof eval(ind) !== 'undefined') 
                         {var d = eval(ind); // pak de taalspecifieke
@@ -336,7 +337,7 @@
                             } 
                         }
                   var p = "";
-                    var inp = "item.price" + lang;
+                    var inp = "item.price" + v3;
                     var inpl = "item.price";
                     if (typeof eval(inp) !== 'undefined') 
                         {var p = eval(inp); // pak de taalspecifieke
@@ -348,7 +349,7 @@
                         }
                   
                    var i = "";
-                    var ini = "item.image" + lang;
+                    var ini = "item.image" + v3;
                     var inil = "item.image";
                     if (typeof eval(ini) !== 'undefined') 
                         {var i = eval(ini); // pak de taalspecifieke
@@ -360,7 +361,7 @@
                         }
                   
                   var l = "";
-                    var inl = "item.image_location" + lang;
+                    var inl = "item.image_location" + v3;
                     var inll = "item.image_location";
                     if (typeof eval(inl) !== 'undefined') 
                         {var l = eval(inl); // pak de taalspecifieke
@@ -415,7 +416,7 @@
               });   
                   
               
-              make_element('#starter-menu .menu-list', data.starters) ;
+              make_element('#starter-menu .menu-list', data.starters, lang) ;
                 
               $('#starter-menu .menu-list').empty();
               var dsi = data.starters;
