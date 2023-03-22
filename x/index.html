@@ -301,14 +301,14 @@
             loadMenu(lang);
           });
     
-          function function_two() {
-            alert("The function called 'function_two' has been called.");
+          function function_two(i1) {
+            alert("The function called 'function_two' has been called." + i1);
             }
 
           // Load the menu from a JSON file for the specified language
           function loadMenu(lang) {
-            
-            function_two(); 
+
+            function_two(lang); 
 
           //  $.getJSON('menu-' + lang + '.json', function(data) {
             $.getJSON('menu' + '.json', function(data) {
