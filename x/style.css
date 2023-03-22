@@ -111,8 +111,8 @@ body {
       rgba(240, 240, 240, 0.144),
       rgba(255, 255, 255, 0.336)
     ),
-    url("./banner.jpg");
-  background-size: cover;food-pricew           
+    url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -144,13 +144,9 @@ body {
 }
 
 #about h2 {
-    font-size: 2.3rem;
+  font-size: 2.3rem;
 }
 
-#about h3 {
-    font-size: 2.1rem;
-}
-    
 #about p {
   font-size: 1.2rem;
   color: #555;
