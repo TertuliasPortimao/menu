@@ -258,22 +258,26 @@
     ,"snacks_menu": [
       
         {
-        "name": "Phống tôm",
-        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
-        "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
-        "price": "€ 2,00",
-        "image_location": "./",
-        "image": "phongtom.JPG"
+        "name": "BANH MŸ THIT NUÖNG",
+        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+        "price": "€ 4,50"
         }
         ,
         
         {
-        "name": "Dim sum",
-        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
-        "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
-        "price": "€ 4,50",
-        "image_location": "./",
-        "image": "dimsum.png"
+        "name": "MŸ XÃO RAU Ⓥ",
+        "description_en": "Fried special noodles with vegetables and mushrooms. ",
+        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+        "price": "€ 3,90"
+        }
+        ,
+        
+        {
+        "name": "MŸ XÃO TÔM",
+        "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
+        "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
+        "price": "€ 7,50"
         }
     ]
     ,"bubble_milk_tea": [
