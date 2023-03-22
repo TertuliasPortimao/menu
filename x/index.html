@@ -325,7 +325,8 @@
                             {var n = eval(innl); // Pak de algemene 
                             } 
                         }
-                  var d = "";
+
+                    var d = "";
                     var ind = "item.description_" + v3;
                     var indl = "item.description";
                     if (typeof eval(ind) !== 'undefined') 
@@ -336,8 +337,9 @@
                             {var d = eval(indl); // Pak de algemene 
                             } 
                         }
-                  var p = "";
-                    var inp = "item.price" + v3;
+
+                    var p = "";
+                    var inp = "item.price_" + v3;
                     var inpl = "item.price";
                     if (typeof eval(inp) !== 'undefined') 
                         {var p = eval(inp); // pak de taalspecifieke
@@ -349,7 +351,7 @@
                         }
                   
                    var i = "";
-                    var ini = "item.image" + v3;
+                    var ini = "item.image_" + v3;
                     var inil = "item.image";
                     if (typeof eval(ini) !== 'undefined') 
                         {var i = eval(ini); // pak de taalspecifieke
@@ -360,8 +362,8 @@
                             } 
                         }
                   
-                  var l = "";
-                    var inl = "item.image_location" + v3;
+                    var l = "";
+                    var inl = "item.image_location_" + v3;
                     var inll = "item.image_location";
                     if (typeof eval(inl) !== 'undefined') 
                         {var l = eval(inl); // pak de taalspecifieke
@@ -371,22 +373,17 @@
                             {var l = eval(inll); // Pak de algemene 
                             } 
                         }
-                             
-              
-                    $(v1).append(   
-                      '<div class="food-menu-item">' 
-                    + '  <div class="food-img"> '
-                    + '    <img src="' + l + i + '" alt="' + n + '" /> '
-                    + '  </div> '
-                    + '  <div class="food-description"> '
-                    + '    <h2 class="food-titile">' + n + '</h2> '
-                    + '      <p> '+ d + '</p> '
-                    + '      <p class="food-price">' + p + '</p> '
-                    + '    <BR> '
-                    + '  </div> '
-                    + '</div> '
-                    
-                    );
+
+                    $(v1).append('<div class="food-menu-item">' );
+                    if (i!="")  {$(v1).append('  <div class="food-img"> '
+                                            + '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                            + '  </div> ' )}
+                    $(v1).append('  <div class="food-description"> ');
+                    if (n!="")  {$(v1).append(  '    <h2 class="food-titile">' + n + '</h2> ');}
+                    if (d!="")  {$(v1).append(  '      <p> '+ d + '</p> ');}
+                    if (p!="")  {$(v1).append(  '      <p class="food-price">' + p + '</p> ');}
+                    $(v1).append('  </div> ' );
+                    $(v1).append('</div> ' );
               
               });
                 
