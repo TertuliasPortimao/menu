@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tertúlias Portimaõ</title>
+    <!-- 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" />
-    
+    -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -334,6 +335,32 @@
               make_element('#bubble-fruit-tea .menu-list', data.bubble_fruit_tea, lang) ;
               make_element('#regular-drinks .menu-list', data.regular_drinks, lang) ;
              
+                
+                
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="stylesheet" href="./style.css" />
+    
+                    
+                
+
+                 
+                // Create a link element for your CSS file
+                let cssLink = document.createElement("link");
+                cssLink.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
+                cssLink.rel = "stylesheet";
+                cssLink.integrity = "sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==";
+                cssLink.crossorigin = "anonymous";
+                cssLink.referrerpolicy="no-referrer";
+                // Append the link element to the head of the document
+                document.head.appendChild(cssLink);    
+                    
+                 // Create a link element for your CSS file
+                let cssLink2 = document.createElement("link");
+                cssLink2.href = "/style.css";
+                cssLink2.rel = "stylesheet";   
+                // Append the link element to the head of the document
+                document.head.appendChild(cssLink2);   
+                
             });
           }
           
@@ -345,6 +372,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
+        
 
  
 </body>
