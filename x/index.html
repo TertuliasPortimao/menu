@@ -290,6 +290,26 @@
                         }
 
                   
+                  
+                    var p1 = '<div class="food-menu-item" align=center>' ;
+                    var p2 = ''; 
+                    if (i!="")
+                        { var p2 = '  <div class="food-img" align=center> '
+                                 + '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                 + '  </div> ' );}
+                  
+                    var p3 = '  <div class="food-description" align=center> ');
+                    var p4 = '';
+                    var p5 = '';
+                    var p6 = '';
+                    if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
+                    if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
+                    if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
+                    var p7 = '  </div> ' ;
+                    var p8 = '</div> ' ;
+                    $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
+
+                  /*
                     $(v1).append('<div class="food-menu-item" align=center>' );
                     if (i!="")  {$(v1).append('  <div class="food-img" align=center> '
                                             + '    <img  src="' + l + i + '" alt="' + n + '" /> '
@@ -302,6 +322,7 @@
                   
 
                     $(v1).append('</div> ' );
+                    */
               
               });
                 
