@@ -239,31 +239,100 @@
           "name_en": "BLACK PIG SECRETOS",
           "price": "€ 10,30"
       }
-          ,
+      ,
       {
-        "name": "Margherita Pizza",
-        "description": "Tomato sauce, mozzarella cheese, basil",
-        "price": "12.99"
-      },
-      {
-        "name": "Spaghetti Carbonara",
-        "description": "Pasta with bacon, egg yolks, and Parmesan cheese",
-        "price": "15.99"
-      },
-      {
-        "name": "Chicken Parmesan",
-        "description": "Breaded chicken breast, tomato sauce, mozzarella cheese, served with spaghetti",
-        "price": "18.99"
+          "name_pt": "LAHARTINHOS PORCO PRETO",
+          "name_en": "BLACK PIG LAGARTINHO",
+          "price": "€ 11,30"
       }
+      ,
+      {
+          "name_pt": "MAMINHA (VACA)",
+          "name_en": "MAMINHA STEAK",
+          "price": "€ 10,80"
+      }
+        ,
+      {
+          "name_pt": "BIFE DE VACA",
+          "name_en": "GRILLED BEEF",
+          "price": "€ 10,80"
+      } ,
+      {
+          "name_pt": "PICANHA",
+          "name_en": "FILET STEAK",
+          "price": "€ 12,50"
+      },
+      {
+          "name_pt": "BITOQUE DE VACA",
+          "name_en": "BEEF STEAK",
+          "price": "€ 8,90"
+      },
+      {
+          "name_pt": "BITOQUE DE FRANGO",
+          "name_en": "CHICKEN STEAK",
+          "price": "€ 8,60"
+      },
+      {
+          "name_pt": "HAMBURGUER NO PRATO",
+          "name_en": "BURGER ON PLATE",
+          "price": "€ 7,20"
+      },
+      {
+          "name_pt": "OMELETE SIMPLES",
+          "name_en": "PLAIN OMELETTE",
+          "price": "€ 7,20"
+      },
+      {
+          "name_pt": "OMELETE MISTA",
+          "name_en": "HAM AND CHEESE OMELETTE",
+          "price": "€ 7,60"
+      },
+      {
+          "name_pt": "SALADA FRANGO",
+          "name_en": "CHICKEN SALAD",
+          "price": "€ 7,50"
+      }
+          
     ]
     ,"snacks_menu": [
       
-        {
-        "name": "BANH MŸ THIT NUÖNG",
-        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
-        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
-        "price": "€ 4,50"
-        }
+      {
+          "name_en": "BIFANA EM CARCAÇA",
+          "name_pt": "PORK SANDWCH - ROLL",
+          "price": "€ 2,60"
+      },
+      {
+          "name_en": "BIFANA EM PĀO",
+          "name_pt": "PORK SANDWCH - SLICED BREAD",
+          "price": "€ 3,70"
+         
+      },
+      {
+          "name_en": "SANDES PRESUNTO",
+          "name_pt": "SMOKED HAM SANDWICH - ROLL",
+          "price": "€ 2,90"   
+      },
+      {
+          "name_en": "SANDES PRESUNTO PĀO",
+          "name_pt": "SMOKED HAM SANDWICH - SLICED",
+          "price": "€ 3,80"     
+      },
+      {
+          "name_en": "HAMBURGUER SIMPLES",
+          "name_pt": "PLAIN BURGER",
+          "description_en": ".",
+          "description_pt": ".",
+          "price": "€ 5,40"     
+      },
+      {
+          "name_en": "HAMBURGUER ESPECIAL",
+          "name_pt": "SPECIAL BURGER",
+          "description_en": ".",
+          "description_pt": ".",
+          "price": "€ 6,40"     
+      }
+        ,
+        
         ,
         
         {
