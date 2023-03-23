@@ -294,15 +294,40 @@
       }
           
     ]
-    ,"snacks_menu": [
-      
+    ,"snacks_menu": [ 
+        {
+        "name": "BANH MŸ THIT NUÖNG",
+        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+        "price": "€ 4,50"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO RAU Ⓥ",
+        "description_en": "Fried special noodles with vegetables and mushrooms. ",
+        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+        "price": "€ 3,90"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO TÔM",
+        "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
+        "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
+        "price": "€ 7,50"
+        },  
+        {
+        "name": "MŸ XÃO GÀ",
+        "description_en": "Special fried noodles with vegetables, mushrooms and chicken. ",
+        "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
+        "price": "€ 5,50"
+        },
       {
           "name_en": "BIFANA EM CARCAÇA",
           "name_pt": "PORK SANDWCH - ROLL",
           "price": "€ 2,60"
       },
       {
-          "name_en": "BIFANA EM PĀO",
+          "name_en": "BIFANA EM PÃO",
           "name_pt": "PORK SANDWCH - SLICED BREAD",
           "price": "€ 3,70"
          
@@ -313,42 +338,79 @@
           "price": "€ 2,90"   
       },
       {
-          "name_en": "SANDES PRESUNTO PĀO",
+          "name_en": "SANDES PRESUNTO PÃO",
           "name_pt": "SMOKED HAM SANDWICH - SLICED",
           "price": "€ 3,80"     
       },
       {
           "name_en": "HAMBURGUER SIMPLES",
           "name_pt": "PLAIN BURGER",
-          "description_en": ".",
-          "description_pt": ".",
+          "description_en": "Bread, Hamburger, lettuce, Tomato. ",
+          "description_pt": "Pão, Hamburguer, alface, Tomate. ",
           "price": "€ 5,40"     
       },
       {
           "name_en": "HAMBURGUER ESPECIAL",
           "name_pt": "SPECIAL BURGER",
-          "description_en": ".",
-          "description_pt": ".",
+          "description_en": "Bread, hamburger, lettuce, Tomato, Bacon, Special sauce. ",
+          "description_pt": "Pão, Hamburguer, Alface, Tomate, Bacon, Molho Especial. ",
           "price": "€ 6,40"     
+      },
+      {
+          "name_en": "EGG SANDWICH",
+          "name_pt": "SANDES DE OVO",
+          "description_en": "1 Egg Lettuce Tomato. ",
+          "description_pt": "1 Ovo Alface Tomate. ",
+          "price": "€ 3,50"     
+      },
+      {
+          "name_en": "EGG SANDWICH - Sliced Bread",
+          "name_pt": "SANDES DE OVO EM PÃO",
+          "price": "€ 4,50"     
+      },
+      {
+          "name_en": "HAM AND CHEESE TOAST - XL",
+          "name_pt": "TOSTA MISTA - XL",
+          "price": "€ 4,50"     
+      },
+      {
+          "name_en": "TOAST OF THE HOUSE - XL",
+          "name_pt": "TOSTA DA CASA - XL",
+          "image_location": "./",
+          "image": "tostacasa.jpg",
+          "description_en": "Cheese, Bacon, Tomato, Onion, Oregano. ",
+          "description_pt": "Queijo, Bacon, Tomate, Cebola, Oregãos. ",
+          "price": "€ 5,50",     
       }
         ,
-        
-        ,
-        
-        {
-        "name": "MŸ XÃO RAU Ⓥ",
-        "description_en": "Fried special noodles with vegetables and mushrooms. ",
-        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
-        "price": "€ 3,90"
-        }
-        ,
-        
-        {
-        "name": "MŸ XÃO TÔM",
-        "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
-        "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
-        "price": "€ 7,50"
-        }
+      {
+          "name_en": "TUNA TOAST - XL",
+          "name_pt": "TOSTA DE ATUM - XL",
+          "description_en": "Tomato, Tuna, Pasta. ",
+          "description_pt": "Tomate, Pasta de Atum. ",
+          "price": "€ 5,50"     
+      },
+      {
+          "name_en": "TUNA BAGUETTE - XL",
+          "name_pt": "BAGUETE DE ATUM - XL",
+          "description_en": "Lettuce, Tomato, Tuna Pasta. ",
+          "description_pt": "Alface, Tomate, Pasta de Atum. ",
+          "price": "€ 3,90"     
+      },
+      {
+          "name_en": "CHICKEN TOAST - XL",
+          "name_pt": "TOSTA DE FRANGO - XL",
+          "description_en": "Tomato, Chicken, Cocktail Sauce. ",
+          "description_pt": "Tomate, Frango, Molho Cocktail. ",
+          "price": "€ 5,20"     
+      },
+      {
+          "name_en": "CHICKEN BAGUETTE - XL",
+          "name_pt": "BAGUETE DE FRANGO - XL",
+          "description_en": "Lettuce, Tomato, Chicken, Cocktail Sauce. ",
+          "description_pt": "Alface, Tomate, Frango, Molho Cocktail. ",
+          "price": "€ 3,90"     
+      }
     ]
     ,"bubble_milk_tea": [
       
