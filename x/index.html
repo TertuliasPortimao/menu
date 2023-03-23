@@ -290,8 +290,8 @@
                         }
 
                   
-                    $(v1).append('<div class="food-menu-item" align="center">' );
-                    // $(v1).append('<div class="food-menu-item">' );
+                    $(v1).append('<div class="food-menu-item">' );
+                    $(v1).append(' <div align=center>' );
                     if (i!="")  {$(v1).append('  <div class="food-img"> '
                                             + '    <img  src="' + l + i + '" alt="' + n + '" /> '
                                             + '  </div> ' )}
@@ -300,6 +300,9 @@
                     if (d!="")  {$(v1).append(  '      <p> '+ d + '</p> ');}
                     if (p!="")  {$(v1).append(  '      <p class="food-price">' + p + '</p> ');}
                     $(v1).append('  </div> ' );
+                  
+                    $(v1).append(' </div> ' );
+
                     $(v1).append('</div> ' );
               
               });
