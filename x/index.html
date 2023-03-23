@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./style.css" />
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
     
@@ -30,7 +29,6 @@
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
-
     </section>
     
 
@@ -48,16 +46,13 @@
             </div>
         </div>
     </section>
-
-        
+   
            
     <!-- ================ -->
     <!-- === Starters === -->
     <!-- ================ -->
                     
     <section id="starter-menu">
-        
-       
 
         <center>
             <a href="#main-menu" class="btn btn-primary">Main course</a>
@@ -71,12 +66,11 @@
         <h2><BR></h2>
             
         <h2 class="food-menu-heading">Starters</h2>
-
+            
         <div class="food-menu-container container">
-
             <ul class="menu-list"></ul>
-
         </div>
+            
     </section>
 
                            
@@ -85,8 +79,7 @@
     <!-- ============ -->
                             
     <section id="main-menu">
-        
-       
+  
         <center>
             <a href="#starter-menu" class="btn btn-primary">Starters</a>
             <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
@@ -100,10 +93,8 @@
             
         <h2 class="food-menu-heading">Main Menu</h2>
 
-        <div class="food-menu-container container">
-            
-            <ul class="menu-list"></ul>
-        
+        <div class="food-menu-container container">          
+            <ul class="menu-list"></ul>     
         </div>
            
     </section>
@@ -129,9 +120,7 @@
         <h2 class="food-menu-heading">Snacks</h2>
 
         <div class="food-menu-container container">
-
-            <ul class="menu-list"></ul>
-            
+            <ul class="menu-list"></ul>        
         </div>
             
     </section>
@@ -157,75 +146,13 @@
         <h2 class="food-menu-heading">Snacks</h2>
 
         <div class="food-menu-container container">
-
             <ul class="menu-list"></ul>
-            
         </div>
             
     </section>
-        
+       
 
-<!--       
-    <!-- ============== -->
-    <!-- === Drinks === -->
-    <!-- ============== -->
-            
-    <section id="drinks">
-               
-        <center>
-            <a href="#starter-menu" class="btn btn-primary">Starters</a>
-            <a href="#main-menu" class="btn btn-primary">Main course</a>
-            <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
 
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
-        </center>
-        
-        <h2><BR></h2>
-        
-        <h2 class="food-menu-heading">Drinks</h2>
-            
-
-        <section id="bubble-milk-tea">
-
-        <h3 class="food-menu-heading">Bubble Milk Tea</h3>
-
-        <div class="food-menu-container container">
-            
-            <ul class="menu-list"></ul>
-   
-        </div>
-
-            
-        </section>
-
-        <section id="bubble-fruit-tea">
-
-        <h3 class="food-menu-heading">Bubble Fruit tea</h3>
-
-        <div class="food-menu-container container">
-            
-            <ul class="menu-list"></ul>
-            
-        </div>
-
-            
-        </section>
-
-        <section id="regular-drinks">
-
-         <h3 class="food-menu-heading">Regular drinks</h3>
-         
-         <div class="food-menu-container container">
-
-            <ul class="menu-list"></ul>
-             
-        </div>
-            
-    </section>
--->
-            
-            
     </section>
 
     <footer id="footer">
@@ -316,8 +243,6 @@
                             {var l = eval(inll); // Pak de algemene 
                             } 
                         }
-
-                  
                   
                     var p1 = '<div class="food-menu-item" align=center>' ;
                     var p2 = ''; 
@@ -337,28 +262,9 @@
                     var p7 = '  </div> ' ;
                     var p8 = '</div> ' ;
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
-
-                  /*
-                    $(v1).append('<div class="food-menu-item" align=center>' );
-                    if (i!="")  {$(v1).append('  <div class="food-img" align=center> '
-                                            + '    <img  src="' + l + i + '" alt="' + n + '" /> '
-                                            + '  </div> ' )}
-                    $(v1).append('  <div class="food-description" align=center> ');
-                    if (n!="")  {$(v1).append(  '    <h2 class="food-titile">' + n + '</h2> ');}
-                    if (d!="")  {$(v1).append(  '      <p> '+ d + '</p> ');}
-                    if (p!="")  {$(v1).append(  '      <p class="food-price">' + p + '</p> ');}
-                    $(v1).append('  </div> ' );
-                  
-
-                    $(v1).append('</div> ' );
-                    */
               
               });
                 
-                
-
-
-
 
             }
 
@@ -387,13 +293,6 @@
               make_element('#bubble-milk-tea .menu-list', data.bubble_milk_tea, lang) ;
               make_element('#bubble-fruit-tea .menu-list', data.bubble_fruit_tea, lang) ;
               make_element('#regular-drinks .menu-list', data.regular_drinks, lang) ;
-             
-                
-                
-         
-                
-                    
-                  
                 
             });
           }
@@ -401,12 +300,9 @@
         });
       </script>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
-        
-
- 
+       
 </body>
 
 </html>
