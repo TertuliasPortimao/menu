@@ -184,11 +184,11 @@
           });
     
     
-          function getjsonitem(itemname, language) 
+          function getjsonitem(iblock, itemname, language) 
             { 
                 var itemcontent = "";
-                var in_l = "item." + itemname + "_" + language;
-                var in_nl = "item." + itemname;
+                var in_l = "iblock." + itemname + "_" + language;
+                var in_nl = "iblock." + itemname;
                 if (typeof eval(in_l) !== 'undefined') 
                         {var itemcontent = eval(in_l); } // pak de taalspecifieke  
                 else 
@@ -209,11 +209,11 @@
              // $.each(data.starters, function(index, item) {
               $.each(dsi, function(index, item) {
               
-                    var n = getjsonitem("name", v3);
-                    var d = getjsonitem("description", v3);
-                    var p = getjsonitem("price", v3);
-                    var i = getjsonitem("image", v3);
-                    var l = getjsonitem("image_location", v3);
+                    var n = getjsonitem(item, "name", v3);
+                    var d = getjsonitem(item,"description", v3);
+                    var p = getjsonitem(item,"price", v3);
+                    var i = getjsonitem(item,"image", v3);
+                    var l = getjsonitem(item,"image_location", v3);
                   
                   
                   
