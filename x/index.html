@@ -288,10 +288,14 @@
               
              
               // Clear the menu lists             
+              $('#about .small').empty();
               $('#about .about-list-header').empty();
               $('#about .about-list').empty();
+                
               // Populate the menu lists with the data from the JSON file
               $.each(data.about, function(index, item) {
+                    var nn = "item.about_" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
                     var nn = "item.description_header_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
                     var nn = "item.description_" + lang;                  
