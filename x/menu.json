@@ -418,13 +418,15 @@
     ,"bubble_milk_tea": [
       
         {
-        "name": "Original Milk tea",
-        "description_en": "Tea with original Milk. ",
-        "description_pt": "Cha com leite original. ",
-        "price_pt": "€ 3,55 (mer) / € 3,75 (large)",
-        "price_en": "€ 3,55 (medium) / € 3,75 (large)",
-        "image_location": "./",
-        "image": "bubble.png"
+        
+            
+        "name_pt": "DOURADA",
+        "name_en": "SEABREAM",
+        "price": "€ 10,30",
+          "image_location": "./",
+          "image": "dourada.png"    
+            
+            
         }
         ,{
         "name": "Matcha Milk",
@@ -433,9 +435,11 @@
         "price_pt": "€ 3,75 (mer) / € 3,85 (large)",
         "price_en": "€ 3,75 (medium) / € 3,85 (large)"
         }
+    
+   
         
-    ]
-    ,"bubble_fruit_tea": [
+    ],
+    "bubble_fruit_tea": [
       
         {
         "name": "xxxxxxxxx",
