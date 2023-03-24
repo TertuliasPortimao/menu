@@ -183,78 +183,39 @@
             loadMenu(lang);
           });
     
-
-
+    
+            getjsonitem(itemname, language) 
+            { 
+                var itemcontent = "";
+                var in_l = "item." . itemname . "_" + language;
+                var in_nl = "item." . itemname;
+                if (typeof eval(in_l) !== 'undefined') 
+                        {var itemcontent = eval(in_l); } // pak de taalspecifieke  
+                else 
+                        {if (typeof eval(in_nl) !== 'undefined') 
+                            {var itemcontent = eval(in_nl); } // Pak de algemene 
+                        }
+                return x;
+            }
 
 
           // v1 = '#starter-menu .menu-list'
           // v2 = data.starters;
           // v3 = lang;
+            
           function make_element(v1, v2, v3) {
             $(v1).empty();
               var dsi = v2;
              // $.each(data.starters, function(index, item) {
               $.each(dsi, function(index, item) {
               
-                    var n = "";
-                    var inn = "item.name_" + v3;
-                    var innl = "item.name";
-                    if (typeof eval(inn) !== 'undefined') 
-                        {var n = eval(inn); // pak de taalspecifieke
-                        } 
-                    else 
-                        {if (typeof eval(innl) !== 'undefined') 
-                            {var n = eval(innl); // Pak de algemene 
-                            } 
-                        }
-
-                    var d = "";
-                    var ind = "item.description_" + v3;
-                    var indl = "item.description";
-                    if (typeof eval(ind) !== 'undefined') 
-                        {var d = eval(ind); // pak de taalspecifieke
-                        } 
-                    else 
-                        {if (typeof eval(indl) !== 'undefined') 
-                            {var d = eval(indl); // Pak de algemene 
-                            } 
-                        }
-
-                    var p = "";
-                    var inp = "item.price_" + v3;
-                    var inpl = "item.price";
-                    if (typeof eval(inp) !== 'undefined') 
-                        {var p = eval(inp); // pak de taalspecifieke
-                        } 
-                    else 
-                        {if (typeof eval(inpl) !== 'undefined') 
-                            {var p = eval(inpl); // Pak de algemene 
-                            } 
-                        }
+                    var n = getjsonitem("name", v3);
+                    var d = getjsonitem("description", v3);
+                    var p = getjsonitem("price", v3);
+                    var i = getjsonitem("image", v3);
+                    var l = getjsonitem("image_location", v3);
                   
-                    var i = "";
-                    var ini = "item.image_" + v3;
-                    var inil = "item.image";
-                    if (typeof eval(ini) !== 'undefined') 
-                        {var i = eval(ini); // pak de taalspecifieke
-                        } 
-                    else 
-                        {if (typeof eval(inil) !== 'undefined') 
-                            {var i = eval(inil); // Pak de algemene 
-                            } 
-                        }
                   
-                    var l = "";
-                    var inl = "item.image_location_" + v3;
-                    var inll = "item.image_location";
-                    if (typeof eval(inl) !== 'undefined') 
-                        {var l = eval(inl); // pak de taalspecifieke
-                        } 
-                    else 
-                        {if (typeof eval(inll) !== 'undefined') 
-                            {var l = eval(inll); // Pak de algemene 
-                            } 
-                        }
                   
                     var p1 = '<div class="food-menu-item" align=center>' ;
                     var p2 = ''; 
