@@ -415,28 +415,27 @@
     ,"bubble_milk_tea": [
       
         {
-        "name": "Phống tôm",
-        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
-        "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
-        "price": "€ 2,00",
+        "name": "Original Milk tea",
+        "description_en": "Tea with original Milk. ",
+        "description_pt": "Cha com leite original. ",
+        "price_pt": "€ 3,55 (mer) / € 3,75 (large)",
+        "price_en": "€ 3,55 (medium) / € 3,75 (large)",
         "image_location": "./",
-        "image": "phongtom.JPG"
+        "image": "bubbletea.PNG"
         }
-        ,
+        ,{
+        "name": "Matcha Milk",
+        "description_en": "Tea with original Milk. ",
+        "description_pt": "Leite Macha Com pérola de tapioca. ",
+        "price_pt": "€ 3,75 (mer) / € 3,85 (large)",
+        "price_en": "€ 3,75 (medium) / € 3,85 (large)"
+        }
         
-        {
-        "name": "Dim sum",
-        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
-        "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
-        "price": "€ 4,50",
-        "image_location": "./",
-        "image": "dimsum.png"
-        }
     ]
     ,"bubble_fruit_tea": [
       
         {
-        "name": "Phống tôm",
+        "name": "xxxxxxxxx",
         "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
         "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
         "price": "€ 2,00",
@@ -446,7 +445,7 @@
         ,
         
         {
-        "name": "Dim sum",
+        "name": "yyyyyyyyy",
         "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
         "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
         "price": "€ 4,50",
@@ -457,7 +456,7 @@
     ,"regular_drinks": [
       
         {
-        "name": "Phống tôm",
+        "name": "reg1",
         "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
         "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
         "price": "€ 2,00",
@@ -467,7 +466,7 @@
         ,
         
         {
-        "name": "Dim sum",
+        "name": "reg2",
         "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
         "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
         "price": "€ 4,50",
