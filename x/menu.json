@@ -322,36 +322,36 @@
         "price": "€ 5,50"
         },
       {
-          "name_en": "BIFANA EM CARCAÇA",
-          "name_pt": "PORK SANDWCH - ROLL",
+          "name_pt": "BIFANA EM CARCAÇA",
+          "name_en": "PORK SANDWCH - ROLL",
           "price": "€ 2,60"
       },
       {
-          "name_en": "BIFANA EM PÃO",
-          "name_pt": "PORK SANDWCH - SLICED BREAD",
+          "name_pt": "BIFANA EM PÃO",
+          "name_en": "PORK SANDWCH - SLICED BREAD",
           "price": "€ 3,70"
          
       },
       {
-          "name_en": "SANDES PRESUNTO",
-          "name_pt": "SMOKED HAM SANDWICH - ROLL",
+          "name_pt": "SANDES PRESUNTO",
+          "name_en": "SMOKED HAM SANDWICH - ROLL",
           "price": "€ 2,90"   
       },
       {
-          "name_en": "SANDES PRESUNTO PÃO",
-          "name_pt": "SMOKED HAM SANDWICH - SLICED",
+          "name_pt": "SANDES PRESUNTO PÃO",
+          "name_en": "SMOKED HAM SANDWICH - SLICED",
           "price": "€ 3,80"     
       },
       {
-          "name_en": "HAMBURGUER SIMPLES",
-          "name_pt": "PLAIN BURGER",
+          "name_pt": "HAMBURGUER SIMPLES",
+          "name_en": "PLAIN BURGER",
           "description_en": "Bread, Hamburger, lettuce, Tomato. ",
           "description_pt": "Pão, Hamburguer, alface, Tomate. ",
           "price": "€ 5,40"     
       },
       {
-          "name_en": "HAMBURGUER ESPECIAL",
-          "name_pt": "SPECIAL BURGER",
+          "name_pt": "HAMBURGUER ESPECIAL",
+          "name_en": "SPECIAL BURGER",
           "description_en": "Bread, hamburger, lettuce, Tomato, Bacon, Special sauce. ",
           "description_pt": "Pão, Hamburguer, Alface, Tomate, Bacon, Molho Especial. ",
           "price": "€ 6,40"     
