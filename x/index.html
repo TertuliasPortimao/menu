@@ -187,8 +187,8 @@
             getjsonitem(itemname, language) 
             { 
                 var itemcontent = "";
-                var in_l = "item." . itemname . "_" + language;
-                var in_nl = "item." . itemname;
+                var in_l = "item." + itemname + "_" + language;
+                var in_nl = "item." + itemname;
                 if (typeof eval(in_l) !== 'undefined') 
                         {var itemcontent = eval(in_l); } // pak de taalspecifieke  
                 else 
