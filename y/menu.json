@@ -432,32 +432,31 @@
             {
             "name": "Natural juices",
             "price": "€ 2,40"
-        },
-        {
-            "name": "een",
-            "price": "€ 4,50"
-            }
-            ,{
-                "name": "twee",
-                "price": "€ 4,50"
-                }
-                ,{
-                    "name": "drie",
-                    "price": "€ 4,50"
-                    }
-                    ,  {
-                "name": "BANH MŸ THIT NUÖNG",
-                "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
-                "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
-                "price": "€ 4,50"
-                }
-                ,  
-        {
-        "name": "MŸ XÃO RAU Ⓥ",
-        "description_en": "Fried special noodles with vegetables and mushrooms. ",
-        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
-        "price": "€ 3,90"
         }
+        ,  
+    {
+    "name": "Tintos",
+    "description": "Instinto forte (Alentejo) ",
+    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+    },  
+    {
+    "description": "Pancel (Alentejo) ",
+    "price": "                 € 8,50 (75cl)"
+    },  
+    {
+    "description": "Vale dos pecados(Alentejo / reserva) ",
+    "price": "                 € 8,50 (75cl)"
+    },  
+    {
+    "description": "Paxa(Algarve) ",
+    "price": "                 € 11,50 (75cl)"
+    }
+    ,  
+    {
+    "name": "Brancos",
+    "description": "Instinto forte (Alentejo) ",
+    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+    }
     ]
 
     ,"regulardrinks": [ 
