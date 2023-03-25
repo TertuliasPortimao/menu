@@ -26,11 +26,12 @@
             <p>Coffee</p>
             <p>Local & VietNam food</p>
         </div>
-        
+
         <center>
             <a href="#starter-menu" class="btn btn-primary">Menu</a>
-            <img class="flag" src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English"  data-lang="en" width="20" height="auto">
-
+             
+            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
+            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
         
     </section>
@@ -241,16 +242,6 @@
 
              $.getJSON('menu' + '.json', function(data) {
 
-             $('#showcase .flag').empty();
-             
-             if (lang == 'en') {     
-                $('#showcase .flag').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
-                } else {
-                $('#showcase .flag').append('<img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">');
-                }
-                
-               
-             
               // Clear the menu lists             
               $('#about .small').empty();
               $('#about .about-list-header').empty();
