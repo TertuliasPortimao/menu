@@ -433,12 +433,7 @@
             "name": "Natural juices",
             "price": "€ 2,40"
         }
-        ,  
-    {
-    "name": "Tintos",
-    "description": "Instinto forte (Alentejo) ",
-    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
-    }
+        
     ]
 
     ,"regulardrinks": [ 
