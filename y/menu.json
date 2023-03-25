@@ -423,6 +423,16 @@
 
     ,"regular_drinks": [ 
         {
+            "name": "Sangria",
+            "price": "€ 8,90"
+            
+            }
+            ,  
+            {
+            "name": "Natural juices",
+            "price": "€ 2,40"
+        },
+        {
             "name": "een",
             "price": "€ 4,50"
             }
