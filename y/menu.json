@@ -420,10 +420,10 @@
     ]
     ,"drank": [ 
         {
-        "name": "BANH MŸ THIT NUÖNG",
-        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
-        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
-        "price": "€ 4,50"
+        "name": "Sangria",
+        "image_location": "./",
+        "image": "sangria.jpg",
+        "price": "€ 8,90"
         }
     ]
    
