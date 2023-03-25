@@ -427,12 +427,7 @@
             "price": "€ 8,90",
             "image_location": "./",
             "image": "sangria.png"
-            }
-            ,  
-            {
-            "name": "Natural juices",
-            "price": "€ 2,40"
-        }
+            }       
     ]
 
     ,"regulardrinks": [ 
