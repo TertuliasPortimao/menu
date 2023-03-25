@@ -420,22 +420,60 @@
     ]
     ,"regular_drinks": [ 
         {
-        "name": "Reg 1",
-        "description_en": "English description r1. ",
-        "description_pt": "Portuguese description r2. ",
-        "price": "€ 4,91",
+        "name": "Sangria",
+        "price": "€ 8,90",
         "image_location": "./",
-        "image": "bubble.png"
+        "image": "sangria.png"
         }
         ,  
         {
-        "name": "Reg 2",
-        "description_en": "English description r3. ",
-        "description_pt": "Portuguese description r4. ",
-        "price": "€ 4,92",
-        "image_location": "./",
-        "image": "bubble.png"
-        }
+        "name": "Natural juices",
+        "price": "€ 2,40"
+    },  
+    {
+    "name": "Tintos",
+    "description": "Instinto forte (Alentejo) ",
+    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+    },  
+    {
+    "description": "Pancel (Alentejo) ",
+    "price": "                 € 8,50 (75cl)"
+    },  
+    {
+    "description": "Vale dos pecados(Alentejo / reserva) ",
+    "price": "                 € 8,50 (75cl)"
+    },  
+    {
+    "description": "Paxa(Algarve) ",
+    "price": "                 € 11,50 (75cl)"
+    }
+    ,  
+    {
+    "name": "Brancos",
+    "description": "Instinto forte (Alentejo) ",
+    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+    },  
+    {
+    "description": "Paxa(Algarve) ",
+    "price": "                 € 11,50 (75cl)"
+    },  
+    {
+    "name": "Verdes",
+    "description": "Pego da rainha (Ribatejo) ",
+    "price": "€ 3,25 (37,5cl) / € 5,20 (75cl)"
+    },  
+    {
+    "description": "A B Alvarinho (Amarante) ",
+    "price": "                  € 8,50 (75cl)"
+    },  
+    {
+    "description": "Terras do sado(Setubal / rose) ",
+    "price": "                  € 6,50 (75cl)"
+    },  
+    {
+    "description": "Plexus (Tejo / frisante) ",
+    "price": "                  € 7,60 (75cl)"
+    }
     ],"bubble_milk_tea": [ 
         {
             "name": "Reg 1b",
