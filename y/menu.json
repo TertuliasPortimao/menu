@@ -1,0 +1,447 @@
+{
+    "about": [
+         {"about_en": "About us"}
+        ,{"about_pt": "Sobre nos"}
+        
+        ,{"description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "}
+        ,{"description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "}
+        
+        ,{"description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. <BR>"}
+        ,{"description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. <BR>"}
+        ,{"description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. <BR>"}
+        ,{"description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "}
+        
+        ,{"description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "}
+        ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
+        ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
+        ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
+        
+    ]
+    
+    
+    ,"starters": [
+      
+        {
+        "name": "Phống tôm",
+        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
+        "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
+        "price": "€ 2,00",
+        "image_location": "./",
+        "image": "phongtom.JPG"
+        }
+        ,
+        
+        {
+        "name": "Dim sum",
+        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
+        "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
+        "price": "€ 4,50",
+        "image_location": "./",
+        "image": "dimsum.png"
+        }
+        ,
+        {
+        "name": "Gỏi cuốn tôm",
+        "description_en": "Fresh vermicelli, boiled chicken, peeled boiled shrimps and raw vegetables. ",
+        "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+        "price": "€ 3,50",
+        "image_location": "./",
+        "image": "goicuontom.png"
+        }
+        ,
+        
+        {
+        "name": "Gỏi cuốn chay Ⓥ",
+        "description_en": "Vietnamese salad rolls with salad, sprouts, herbs, and corlander. ",
+        "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+        "price": "€ 3,00",
+        "image_location": "./",
+        "image": "goicuonchay.png"
+        }
+        ,
+        
+        {
+        "name": "Tôm chiên xù",
+        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "tomchienxu.JPG"
+        }
+        ,
+        
+        {
+        "name": "Nem cuốn",
+        "description_en": "Vietnamese spring rolls <BR> with pork, shrimps <BR> and mixed vegetables. ",
+        "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+        "price": "€ 4,50",
+        "image_location": "./",
+        "image": "nemcuon.JPG"
+        }
+        ,
+        
+        {
+        "name": "Nem cuốn chay Ⓥ",
+        "description_en": "Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+        "description_pt": "Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "nemcuonchay.png"
+        }
+        
+            
+    ],
+    "main_dishes": [
+      {
+        "name": "Phở bò",
+        "description_en": "Beef rice noodle special soup. ",
+        "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
+        "price": "€ 10,30",
+        "image_location": "./",
+        "image": "phobo.PNG"
+      }
+        ,
+      {
+          "name": "Phở gà",
+          "description_en": "Chicken rice noodle special soup. ",
+          "description_pt": "Sopa especial com massa de arroz e frango. ",
+          "price": "€ 10,30",
+          "image_location": "./",
+          "image": "phoga.PNG"
+      }
+      ,
+      {
+          "name": "Phở chay Ⓥ",
+          "description_en": "Noodles, mushrooms, tofu, vegetables. ",
+          "description_pt": "Special noodles fritos com macarrão e vegetais e cogumelos. ",
+          "price": "€ 11,00",
+          "image_location": "./",
+          "image": "phochay.PNG"
+      }
+      ,
+      {
+          "name": "Bún chả Hà Nội",
+          "description_en": "Bun cha is served with grilled fatty pork over a dish of white rice noodles and herbs with a side of dipping sauce. ",
+          "description_pt": "Bun cha é servido com carne de porco gordurosa grelhada obre um prato de macarrão de arroz branco e ervas com um acompanhamento de molho. ",
+          "price": "€ 11,00",
+          "image_location": "./",
+          "image": "bunchahanoi.PNG"
+      }
+          ,
+      {
+          "name": "COM SUÖN CHUA NGOT",
+          "description_en": "Rice, pork ris, and a special sauce. ",
+          "description_pt": "Arroz, costelas de porco e um molho especial. ",
+          "price": "€ 10,50",
+          "image_location": "./",
+          "image": "comsuonchuangot.png"
+      }
+      ,
+      {
+          "name": "COM GÀ CHUA NGOT",
+          "description_en": "Rice, chicken, and a special sauce. ",
+          "description_pt": "Arroz, frango e um molho especial. ",
+          "price": "€ 10,50"
+      }
+          ,
+      {
+          "name": "XOI CHIEN CHAY Ⓥ",
+          "description_en": "Sticky rice with herbs. ",
+          "description_pt": "Refeição vegetariana. ",
+          "price": "€ 5,00"
+      }
+      ,
+      {
+          "name": "XÔI CHIÊN RUÔC",
+          "description_en": "Sticky rice with herbs, pork. ",
+          "description_pt": "Arroz grudento com ervilha verde, porco. ",
+          "price": "€ 7,00"
+      }
+      ,
+      {
+          "name": "BÒ SÔT VANG",
+          "description_en": "Stewed Beef with red wine and herbs in claypot. ",
+          "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name": "BÚN NEM CUÔN",
+          "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
+          "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+          "price": "€ 7,00"
+      }
+      ,
+      {
+          "name": "BÚN NEM CUÔN CHAY Ⓥ",
+          "description_en": "Noodles, Salad, Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+          "description_pt": "Macarrão, Salada, Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+          "price": "€ 7,00"
+      }
+      ,
+      {
+          "name_pt": "SARDINHA",
+          "name_en": "SARDINES",
+          "price": "€ 9,20"
+      }
+      ,
+      {
+          "name_pt": "ROBALO",
+          "name_en": "SEABASS",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name_pt": "DOURADA",
+          "name_en": "SEABREAM",
+          "price": "€ 10,30",
+          "image_location": "./",
+          "image": "dourada.png"
+      }
+      ,
+      {
+          "name_pt": "SALMAO",
+          "name_en": "SALMON",
+          "price": "€ 12,50",
+          "image_location": "./",
+          "image": "salmao.jpg"
+      }
+      ,
+      {
+          "name_pt": "SALADA DE ATUM",
+          "name_en": "TUNA SALAD",
+          "price": "€ 7,50",
+          "image_location": "./",
+          "image": "saladatum.jpg"
+      }
+      ,
+      {
+          "name_pt": "LULAS FRITAS",
+          "name_en": "FRIED SQUID FISH",
+          "price": "€ 10,80"
+      }
+      ,
+      {
+          "name": "FRANCESINHA",
+          "price": "€ 10,80",
+          "image_location": "./",
+          "image": "franshinha.jpg"
+      }
+      ,
+      {
+          "name_pt": "BIFE DE FRANGO",
+          "name_en": "CHICKEN STEAK",
+          "price": "€ 8,60"
+      }
+      ,
+      {
+          "name_pt": "PLUMAS DE PORCO PRETO",
+          "name_en": "BLACK PIG PLUMAS",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name_pt": "SECRETOS DE PORCO PRETO",
+          "name_en": "BLACK PIG SECRETOS",
+          "price": "€ 10,30"
+      }
+      ,
+      {
+          "name_pt": "LAHARTINHOS PORCO PRETO",
+          "name_en": "BLACK PIG LAGARTINHO",
+          "price": "€ 11,30"
+      }
+      ,
+      {
+          "name_pt": "MAMINHA (VACA)",
+          "name_en": "MAMINHA STEAK",
+          "price": "€ 10,80"
+      }
+        ,
+      {
+          "name_pt": "BIFE DE VACA",
+          "name_en": "GRILLED BEEF",
+          "price": "€ 10,80"
+      } ,
+      {
+          "name_pt": "PICANHA",
+          "name_en": "FILET STEAK",
+          "price": "€ 12,50"
+      },
+      {
+          "name_pt": "BITOQUE DE VACA",
+          "name_en": "BEEF STEAK",
+          "price": "€ 8,90"
+      },
+      {
+          "name_pt": "BITOQUE DE FRANGO",
+          "name_en": "CHICKEN STEAK",
+          "price": "€ 8,60"
+      },
+      {
+          "name_pt": "HAMBURGUER NO PRATO",
+          "name_en": "BURGER ON PLATE",
+          "price": "€ 7,20"
+      },
+      {
+          "name_pt": "OMELETE SIMPLES",
+          "name_en": "PLAIN OMELETTE",
+          "price": "€ 7,20"
+      },
+      {
+          "name_pt": "OMELETE MISTA",
+          "name_en": "HAM AND CHEESE OMELETTE",
+          "price": "€ 7,60"
+      },
+      {
+          "name_pt": "SALADA FRANGO",
+          "name_en": "CHICKEN SALAD",
+          "price": "€ 7,50"
+      }
+          
+    ]
+    ,"snacks_menu": [ 
+        {
+        "name": "BANH MŸ THIT NUÖNG",
+        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+        "price": "€ 4,50"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO RAU Ⓥ",
+        "description_en": "Fried special noodles with vegetables and mushrooms. ",
+        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+        "price": "€ 3,90"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO TÔM",
+        "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
+        "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
+        "price": "€ 7,50"
+        },  
+        {
+        "name": "MŸ XÃO GÀ",
+        "description_en": "Special fried noodles with vegetables, mushrooms and chicken. ",
+        "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
+        "price": "€ 5,50"
+        },
+      {
+          "name_pt": "BIFANA EM CARCAÇA",
+          "name_en": "PORK SANDWCH - ROLL",
+          "price": "€ 2,60"
+      },
+      {
+          "name_pt": "BIFANA EM PÃO",
+          "name_en": "PORK SANDWCH - SLICED BREAD",
+          "price": "€ 3,70"
+         
+      },
+      {
+          "name_pt": "SANDES PRESUNTO",
+          "name_en": "SMOKED HAM SANDWICH - ROLL",
+          "price": "€ 2,90"   
+      },
+      {
+          "name_pt": "SANDES PRESUNTO PÃO",
+          "name_en": "SMOKED HAM SANDWICH - SLICED",
+          "price": "€ 3,80"     
+      },
+      {
+          "name_pt": "HAMBURGUER SIMPLES",
+          "name_en": "PLAIN BURGER",
+          "description_en": "Bread, Hamburger, lettuce, Tomato. ",
+          "description_pt": "Pão, Hamburguer, alface, Tomate. ",
+          "price": "€ 5,40"     
+      },
+      {
+          "name_pt": "HAMBURGUER ESPECIAL",
+          "name_en": "SPECIAL BURGER",
+          "description_en": "Bread, hamburger, lettuce, Tomato, Bacon, Special sauce. ",
+          "description_pt": "Pão, Hamburguer, Alface, Tomate, Bacon, Molho Especial. ",
+          "price": "€ 6,40"     
+      },
+      {
+          "name_en": "EGG SANDWICH",
+          "name_pt": "SANDES DE OVO",
+          "description_en": "1 Egg Lettuce Tomato. ",
+          "description_pt": "1 Ovo Alface Tomate. ",
+          "price": "€ 3,50"     
+      },
+      {
+          "name_en": "EGG SANDWICH - Sliced Bread",
+          "name_pt": "SANDES DE OVO EM PÃO",
+          "price": "€ 4,50"     
+      },
+      {
+          "name_en": "HAM AND CHEESE TOAST - XL",
+          "name_pt": "TOSTA MISTA - XL",
+          "price": "€ 4,50"     
+      },
+      {
+          "name_en": "TOAST OF THE HOUSE - XL",
+          "name_pt": "TOSTA DA CASA - XL",
+          "image_location": "./",
+          "image": "tostacasa.jpg",
+          "description_en": "Cheese, Bacon, Tomato, Onion, Oregano. ",
+          "description_pt": "Queijo, Bacon, Tomate, Cebola, Oregãos. ",
+          "price": "€ 5,50"     
+      }
+        ,
+      {
+          "name_en": "TUNA TOAST - XL",
+          "name_pt": "TOSTA DE ATUM - XL",
+          "description_en": "Tomato, Tuna, Pasta. ",
+          "description_pt": "Tomate, Pasta de Atum. ",
+          "price": "€ 5,50"     
+      },
+      {
+          "name_en": "TUNA BAGUETTE - XL",
+          "name_pt": "BAGUETE DE ATUM - XL",
+          "description_en": "Lettuce, Tomato, Tuna Pasta. ",
+          "description_pt": "Alface, Tomate, Pasta de Atum. ",
+          "price": "€ 3,90"     
+      },
+      {
+          "name_en": "CHICKEN TOAST - XL",
+          "name_pt": "TOSTA DE FRANGO - XL",
+          "description_en": "Tomato, Chicken, Cocktail Sauce. ",
+          "description_pt": "Tomate, Frango, Molho Cocktail. ",
+          "price": "€ 5,20"     
+      },
+      {
+          "name_en": "CHICKEN BAGUETTE - XL",
+          "name_pt": "BAGUETE DE FRANGO - XL",
+          "description_en": "Lettuce, Tomato, Chicken, Cocktail Sauce. ",
+          "description_pt": "Alface, Tomate, Frango, Molho Cocktail. ",
+          "price": "€ 3,90"     
+      }
+    ]
+    ,"drinks": [ 
+        {
+        "name": "Bub 1",
+        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "bubble.png"
+        }
+        ,  {
+        "name": "Bub 1",
+        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "bubbletea.PNG"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO RAU Ⓥ",
+        "description_en": "Fried special noodles with vegetables and mushrooms. ",
+        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+        "price": "€ 3,90"
+        }
+    ]
+  }
+  
