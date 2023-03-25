@@ -244,6 +244,7 @@
 
              $.getJSON('menu' + '.json', function(data) {
 
+             $('#showcase .languages').empty();
              $('#showcase .clickable-image').empty();
              if (lang == 'en') {     
                 $('#showcase .languages').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
