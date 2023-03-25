@@ -421,7 +421,7 @@
 
 
 
-    ,"regulardrinks": [ 
+    ,"regular_drinks": [ 
         {
         "name": "BANH MŸ THIT NUÖNG",
         "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
@@ -437,7 +437,7 @@
         }
     ]
 
-    ,"regular_drinks": [ 
+    ,"regulardrinks": [ 
         {
         "name": "Sangria",
         "price": "€ 8,90"
