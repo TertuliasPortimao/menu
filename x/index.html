@@ -57,8 +57,9 @@
     <section id="starter-menu">
 
         <center>
-            <a href="#main-menu" class="btn btn-primary">Main course</a>
+            <a href="#main-menu"   class="btn btn-primary">Main course</a>
             <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
+            <a href="#drinks"      class="btn btn-primary">Drinks</a>
              
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
@@ -85,8 +86,9 @@
   
         <center>
             <a href="#starter-menu" class="btn btn-primary">Starters</a>
-            <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
- 
+            <a href="#snacks-menu"  class="btn btn-primary">Snacks</a>
+            <a href="#drinks"       class="btn btn-primary">Drinks</a>
+
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
@@ -110,7 +112,8 @@
         
         <center>
             <a href="#starter-menu" class="btn btn-primary">Starters</a>
-            <a href="#main-menu" class="btn btn-primary">Main course</a>
+            <a href="#main-menu"    class="btn btn-primary">Main course</a>
+            <a href="#drinks"       class="btn btn-primary">Drinks</a>
 
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
@@ -127,7 +130,33 @@
     </section>
         
  
+               
+    <!-- ============== -->
+    <!-- === Drinks === -->
+    <!-- ============== -->
+            
+    <section id="drinks">
         
+        <center>
+            <a href="#starter-menu" class="btn btn-primary">Starters</a>
+            <a href="#main-menu"    class="btn btn-primary">Main course</a>
+            <a href="#snacks-menu"  class="btn btn-primary">Snacks</a>
+
+            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
+            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+        </center>
+        
+        <h2><BR></h2>
+
+        <h2 class="food-menu-heading">Snacks</h2>
+
+        <div class="food-menu-container container">
+            <ul class="menu-list"></ul>        
+        </div>
+            
+    </section>
+        
+    
 
         
         
@@ -231,6 +260,7 @@
               make_element('#starter-menu     .menu-list', data.starters,           lang) ;
               make_element('#main-menu        .menu-list', data.main_dishes,        lang) ;
               make_element('#snacks-menu      .menu-list', data.snacks_menu,        lang) ;              
+              make_element('#drinks           .menu-list', data.drinks,             lang) ;              
                 
             });
           }
