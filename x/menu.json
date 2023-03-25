@@ -418,6 +418,20 @@
           "price": "€ 3,90"     
       }
     ]
-    
+    ,"snacks_menu": [ 
+        {
+        "name": "BANH MŸ THIT NUÖNG",
+        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+        "price": "€ 4,50"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO RAU Ⓥ",
+        "description_en": "Fried special noodles with vegetables and mushrooms. ",
+        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+        "price": "€ 3,90"
+        }
+    ]
   }
   
