@@ -422,8 +422,8 @@
         {
         "name": "Sangria",
         "price": "€ 8,90",
-        "image_location": "./",
-        "image": "sangria.png"
+   //     "image_location": "./",
+   //     "image": "sangria.png"
         }
         ,  
         {
