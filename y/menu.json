@@ -418,30 +418,60 @@
           "price": "€ 3,90"     
       }
     ]
-    ,"drinks": [ 
+    ,"regular_drinks": [ 
         {
-        "name": "Bub 1",
-        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
-        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
-        "price": "€ 4,95",
+        "name": "Reg 1",
+        "description_en": "English description r1. ",
+        "description_pt": "Portuguese description r2. ",
+        "price": "€ 4,91",
         "image_location": "./",
         "image": "bubble.png"
         }
-        ,  {
-        "name": "Bub 1",
-        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
-        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
-        "price": "€ 4,95",
-        "image_location": "./",
-        "image": "bubbletea.PNG"
-        }
         ,  
         {
-        "name": "MŸ XÃO RAU Ⓥ",
-        "description_en": "Fried special noodles with vegetables and mushrooms. ",
-        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
-        "price": "€ 3,90"
+        "name": "Reg 2",
+        "description_en": "English description r3. ",
+        "description_pt": "Portuguese description r4. ",
+        "price": "€ 4,92",
+        "image_location": "./",
+        "image": "bubble.png"
         }
+    ],"bubble_milk_tea": [ 
+        {
+            "name": "Reg 1b",
+            "description_en": "English description r1x. ",
+            "description_pt": "Portuguese description r2x. ",
+            "price": "€ 4,93",
+            "image_location": "./",
+            "image": "bubble.png"
+            }
+            ,  
+            {
+            "name": "Reg 2b",
+            "description_en": "English description r3x. ",
+            "description_pt": "Portuguese description r4x. ",
+            "price": "€ 4,94",
+            "image_location": "./",
+            "image": "bubble.png"
+            }
+    ],"bubble_fruit_tea": [ 
+        {
+            "name": "Reg 1c",
+            "description_en": "English description r5. ",
+            "description_pt": "Portuguese description r6. ",
+            "price": "€ 4,95",
+            "image_location": "./",
+            "image": "bubble.png"
+            }
+            ,  
+            {
+            "name": "Reg 2",
+            "description_en": "English description r7. ",
+            "description_pt": "Portuguese description r8. ",
+            "price": "€ 4,96",
+            "image_location": "./",
+            "image": "bubble.png"
+            }
     ]
   }
   
