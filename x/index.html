@@ -32,7 +32,7 @@
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
             <p class="languages"></p>
-            <img id="clickable-image" class="flag" >
+            <img class="flag">
 
         </center>
         
@@ -245,16 +245,16 @@
              $.getJSON('menu' + '.json', function(data) {
 
              $('#showcase .languages').empty();
-             $('#showcase .clickable-image').empty();
+             $('#showcase .flag').empty();
              if (lang == 'en') {     
                 $('#showcase .languages').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
                 } else {
                 $('#showcase .languages').append('<img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">');
                 }
              if (lang == 'en') {     
-                $('#showcase .clickable-image').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
+                $('#showcase .flag').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
                 } else {
-                $('#showcase .clickable-image').append('<img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">');
+                $('#showcase .flag').append('<img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">');
                 }
                 
                
