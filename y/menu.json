@@ -423,12 +423,24 @@
 
     ,"regular_drinks": [ 
         {
-        "name": "BANH MŸ THIT NUÖNG",
-        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
-        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
-        "price": "€ 4,50"
-        }
-        ,  
+            "name": "een",
+            "price": "€ 4,50"
+            }
+            ,{
+                "name": "twee",
+                "price": "€ 4,50"
+                }
+                ,{
+                    "name": "drie",
+                    "price": "€ 4,50"
+                    }
+                    ,  {
+                "name": "BANH MŸ THIT NUÖNG",
+                "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+                "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+                "price": "€ 4,50"
+                }
+                ,  
         {
         "name": "MŸ XÃO RAU Ⓥ",
         "description_en": "Fried special noodles with vegetables and mushrooms. ",
