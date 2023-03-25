@@ -420,12 +420,20 @@
     ]
     ,"drinks": [ 
         {
-        "name": "Tôm chiên xù",
+        "name": "Bub 1",
         "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
         "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
         "price": "€ 4,95",
         "image_location": "./",
-        "image": "tomchienxu.JPG"
+        "image": "bubble.png"
+        }
+        ,  {
+        "name": "Bub 1",
+        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+        "price": "€ 4,95",
+        "image_location": "./",
+        "image": "bubbletea.PNG"
         }
         ,  
         {
