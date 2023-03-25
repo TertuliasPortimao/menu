@@ -418,6 +418,25 @@
           "price": "€ 3,90"     
       }
     ]
+
+
+
+    ,"regulardrinks": [ 
+        {
+        "name": "BANH MŸ THIT NUÖNG",
+        "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+        "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+        "price": "€ 4,50"
+        }
+        ,  
+        {
+        "name": "MŸ XÃO RAU Ⓥ",
+        "description_en": "Fried special noodles with vegetables and mushrooms. ",
+        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+        "price": "€ 3,90"
+        }
+    ]
+
     ,"regular_drinks": [ 
         {
         "name": "Sangria",
@@ -473,7 +492,9 @@
     "description": "Plexus (Tejo / frisante) ",
     "price": "                  € 7,60 (75cl)"
     }
-    ],"bubble_milk_tea": [ 
+    ]
+    ,
+    "bubble_milk_tea": [ 
         {
             "name": "Reg 1b",
             "description_en": "English description r1x. ",
