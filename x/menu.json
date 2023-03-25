@@ -16,7 +16,36 @@
         ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
         ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
         
-    ],"starters": [
+    ]
+    
+    ,"beverages": [
+      
+        {
+        
+            
+        "name_pt": "DOURADA",
+        "name_en": "SEABREAM",
+        "price": "€ 10,30",
+          "image_location": "./",
+          "image": "dourada.png"    
+            
+            
+        }
+        ,{
+        "name": "Matcha Milk",
+        "description_en": "Tea with original Milk. ",
+        "description_pt": "Leite Macha Com pérola de tapioca. ",
+        "price_pt": "€ 3,75 (mer) / € 3,85 (large)",
+        "price_en": "€ 3,75 (medium) / € 3,85 (large)"
+        }
+    
+   
+        
+    ]
+    
+    
+    
+    ,"starters": [
       
         {
         "name": "Phống tôm",
@@ -415,30 +444,7 @@
           "price": "€ 3,90"     
       }
     ]
-    ,"beverages": [
-      
-        {
-        
-            
-        "name_pt": "DOURADA",
-        "name_en": "SEABREAM",
-        "price": "€ 10,30",
-          "image_location": "./",
-          "image": "dourada.png"    
-            
-            
-        }
-        ,{
-        "name": "Matcha Milk",
-        "description_en": "Tea with original Milk. ",
-        "description_pt": "Leite Macha Com pérola de tapioca. ",
-        "price_pt": "€ 3,75 (mer) / € 3,85 (large)",
-        "price_en": "€ 3,75 (medium) / € 3,85 (large)"
-        }
-    
-   
-        
-    ],
+    ,
     "bubble_fruit_tea": [
       
         {
