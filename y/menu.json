@@ -428,8 +428,6 @@
     ,"regular_drinks": [ 
         {
         "name": "Sangria",
-        "image_location": "./",
-        "image": "sangria.png",
         "price": "€ 8,90"
         }
         ,  
