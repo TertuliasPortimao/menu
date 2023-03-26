@@ -33,8 +33,8 @@
         
         {
         "name": "Dim sum",
-        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
-        "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
+        "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
+        "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
         "price": "€ 4,50",
         "image_location": "./",
         "image": "dimsum.png"
@@ -418,27 +418,22 @@
           "price": "€ 3,90"     
       }
     ]
-    ,"drank": [ 
+    
+   
+
+    ,"regular_drinks": [ 
         {
         "name": "Sangria",
         "image_location": "./",
         "image": "sangria.png",
         "price": "€ 8,90"
         }
-    ]
-   
-
-    ,"regulardrinks": [ 
-        {
-        "name": "Sangria",
-        "price": "€ 8,90"
-        
-        }
         ,  
         {
         "name": "Natural juices",
         "price": "€ 2,40"
-    },  
+    }
+],"wine": [   
     {
     "name": "Tintos",
     "description": "Instinto forte (Alentejo) ",

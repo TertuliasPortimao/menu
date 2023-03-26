@@ -148,14 +148,40 @@
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
         
-        <h2><BR></h2>
+        <section id="drinks-menu">
+            <h2><BR></h2>
+    
+            <h2 class="food-menu-heading">Regular drinks</h2>
+    
+            <div class="food-menu-container container">
+                <ul class="menu-list"></ul>        
+            </div>
+            </section>
 
-        <h2 class="food-menu-heading">Drinks</h2>
-
-        <div class="food-menu-container container">
-            <ul class="menu-list"></ul>        
-        </div>
+            <section id="wine">
+                <h2><BR></h2>
+                <h2 class="food-menu-heading">Wine</h2>
+                <div class="food-menu-container container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>
             
+            <section id="bubble-milk-tea">
+                <h2><BR></h2>
+                <h2 class="food-menu-heading">Bubble Milk Tea</h2>
+                <div class="food-menu-container container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>
+            
+            <section id="bubble-fruit-tea">
+                <h2><BR></h2>
+                <h2 class="food-menu-heading">Bubble Fruit Tea</h2>
+                <div class="food-menu-container container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>  
+                                         
     </section>
         
 
@@ -255,14 +281,13 @@
                     if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
               });   
                    
-            
-              make_element('#starter-menu     .menu-list', data.starters,           lang) ;
-              make_element('#main-menu        .menu-list', data.main_dishes,        lang) ;
-              make_element('#snacks-menu      .menu-list', data.snacks,        lang) ;              
-              make_element('#drinks-menu      .menu-list', data.drank,   lang) ;              
-          //    make_element('#drinks-menu      .menu-list', data.regular_drinks,     lang) ;              
-          //    make_element('#bubble-milk-tea  .menu-list', data.bubble_milk_tea,    lang) ;              
-          //    make_element('#bubble-fruit-tea .menu-list', data.bubble_fruit_tea,   lang) ;              
+              make_element('#starter-menu       .menu-list', data.starters,         lang) ;
+              make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
+              make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
+              make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
+              make_element('#wine               .menu-list', data.wine,             lang) ;              
+              make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
+              make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
                 
             });
           }
