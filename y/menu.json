@@ -19,13 +19,17 @@
     ]
     ,
     "buttons": [
-        {"mainmenutag_en": "Main"}
-       ,{"mainmenutag_pt": "Hoofd"}
+        {"starterstag_en": "STARTERS"}
+       ,{"starterstag_pt": "INICIANTE"} 
+       ,{"mainmenutag_en": "MAIN COURSE"}
+       ,{"mainmenutag_pt": "PRINCIPAL"} 
+       ,{"snackstag_en": "SNACKS"}
+       ,{"snackstag_pt": "SNACKS"}
+       ,{"drinkstag_en": "DRINKS"}
+       ,{"drinkstag_pt": "BEBIDAS"}
    ]
    
-   
 
-    
     ,"starters": [
       
         {
