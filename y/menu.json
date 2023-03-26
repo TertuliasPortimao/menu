@@ -255,6 +255,8 @@
       {
           "name_pt": "MAMINHA (VACA)",
           "name_en": "MAMINHA STEAK",
+          "image_location": "./",
+          "image": "maminha.jpg",
           "price": "€ 10,80"
       }
         ,
@@ -281,6 +283,8 @@
       {
           "name_pt": "HAMBURGUER NO PRATO",
           "name_en": "BURGER ON PLATE",
+          "image_location": "./",
+          "image": "hamburger.jpg",
           "price": "€ 7,20"
       },
       {
