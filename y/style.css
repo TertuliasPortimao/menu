@@ -306,6 +306,15 @@ body {
   margin-bottom: 3rem;
 }
 
+.food-menu-item img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .food-description {
   margin: auto 1.5rem;
 }
