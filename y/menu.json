@@ -489,80 +489,109 @@
             "name": "Original Milk tea",
             "description_en": "Tea with original Milk",
             "description_pt": "Cha com leite original",
-            "price": "€ 3,55 (mer) / € 3,75 (large)",
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)",
             "image_location": "./",
             "image": "bubble.png"
-            }
-            ,  
+            },
             {
             "name": "Matcha Milk",
             "description_en": "Matcha Milk with tapioca Pearls",
             "description_pt": "Leite Macha Com pérola de tapioca",
-            "price": "€ 3,75 (mer) / € 3,85 (large)"
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
             },  
             {
             "name": "Taro Milk",
             "description_en": "Taro Milk with tapioca Pearls",
             "description_pt": "Leite Taro com pérola de tapioca",
-            "price": "€ 3,55 (mer) / € 3,75 (large)"
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
             },  
             {
             "name": "Coconut Milk",
             "description_en": "Coconut Milk with tapioca Pearls",
             "description_pt": "Leite Coco com pérola de tapioca",
-            "price": "€ 3,55 (mer) / € 3,75 (large)"
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
             },  
             {
             "name": "Original milk",
             "description_en": "Original milk with tapioca Pearls",
             "description_pt": "Leite Original com pérola de tapioca",
-            "price": "€ 3,55 (mer) / € 3,75 (large)"
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
             }
     ],"bubble_fruit_tea": [ 
         {
-            "name": "Mango",
-            "description": "Mango Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Mango",
+            "name_pt": "Manga",
+            "description_en": "Mango Fruit tea",
+            "description_pt": "Chá de manga",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
-            "name": "Strawberry",
-            "description": "Strawberry Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Strawberry",
+            "name_pt": "Morango",
+            "description_en": "Strawberry Fruit tea",
+            "description_pt": "Chá de morango",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"            },  
+            {
+            "name_en": "Lychee",
+            "name_pt": "Lichia",
+            "description_en": "Lychee Fruit tea",
+            "description_pt": "Chá de lichia",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
-            "name": "Lychee",
-            "description": "Lychee Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
-            },  
-            {
-            "name": "Passion Fruit",
-            "description": "Passion Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Passion Fruit",
+            "name_pt": "Maracujá",
+            "description_en": "Passion Fruit tea",
+            "description_pt": "Chá de aracujá",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
             "name": "Kiwi",
-            "description": "Kiwi Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "description_en": "Kiwi Fruit tea",
+            "description_pt": "Chá de kiwi",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
-            "name": "Peach",
-            "description": "Peach Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Peach",
+            "name_pt": "Pêssego",
+            "description_en": "Peach Fruit tea",
+            "description_pt": "Chá de pêssego",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
-            "name": "Blueberry",
-            "description": "Blueberry Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Blueberry",
+            "name_pt": "Mirtilo",
+            "description_en": "Blueberry Fruit tea",
+            "description_pt": "Chá de mirtilo",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
-            "name": "Honeydew",
-            "description": "Honeydew Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Honeydew",
+            "name_pt": "Melado",
+            "description_en": "Honeydew Fruit tea",
+            "description_pt": "Chá de melado",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             },  
             {
-            "name": "Green Apple",
-            "description": "Green Apple Fruit tea",
-            "price": "€ 3,25 (medium) / € 3,50 (large)"
+            "name_en": "Green Apple",
+            "name_pt": "Maçã verde",
+            "description_en": "Green Apple Fruit tea",
+            "description_pt": "Chá de frutas maçã verde",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
             }
     ]
   }
