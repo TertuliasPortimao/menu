@@ -23,8 +23,8 @@
       
         {
         "name": "Phống tôm",
-        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
-        "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
+        "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
+        "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
