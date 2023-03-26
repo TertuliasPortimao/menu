@@ -60,7 +60,7 @@
     <section id="starter-menu">
 
         <center>
-            <a href="#main-menu"   class="btn btn-primary">Main course</a>
+            <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course</a>
             <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
             <a href="#drinks-menu" class="btn btn-primary">Drinks</a>
              
@@ -271,6 +271,13 @@
               $('#about .about-list-header').empty();
               $('#about .about-list').empty();
                 
+
+
+              $.each(data.buttons, function(index, item) {
+                    var nn = "item.mainmenutag_" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); } 
+              });   
+
               // Populate the menu lists with the data from the JSON file
               $.each(data.about, function(index, item) {
                     var nn = "item.about_" + lang;                  
