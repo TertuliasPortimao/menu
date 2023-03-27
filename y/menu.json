@@ -1,12 +1,12 @@
 {
     "identification": [
         {"restaurantname": "Tertúlias"}
-        ,{"restauranttype_en": "Bubble tea"}
-        ,{"restauranttype_en": "Coffee"}
+        ,{"restauranttype_en": "Bubble tea<BR>"}
+        ,{"restauranttype_en": "Coffee<BR>"}
         ,{"restauranttype_en": "Local and VietNam food"}
-        ,{"restauranttype_pt": "Bubble tea"}
-        ,{"restauranttype_pt": "Coffee"}
-        ,{"restauranttype_pt": "Local and VioetNam food"}
+        ,{"restauranttype_pt": "Bubble tea<BR>"}
+        ,{"restauranttype_pt": "Coffee<BR>"}
+        ,{"restauranttype_pt": "Local and VietNam food"}
    ]
    ,"about": [
     {"about_en": "About us"}
