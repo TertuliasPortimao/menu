@@ -257,7 +257,6 @@
              $.getJSON('./menu' + '.json', function(data) {
 
 
-
             // Clear the menu lists             
             $('.menutitle').empty();
             $('.restaurantname').empty();
@@ -267,8 +266,6 @@
 
                 var l = getjsonitem(item, "menutitle", lang);
                 if (l!=""){ $('.menutitle').append(l); }    
-                var l = getjsonitem(item, "restaurantname", lang);
-                if (l!=""){ $('.restaurantname').append(l); }
                 var l = getjsonitem(item, "restaurantname", lang);
                 if (l!=""){ $('.restaurantname').append(l); }
                 var l = getjsonitem(item, "restauranttype", lang);
@@ -285,14 +282,24 @@
             // Populate the button text with the data from the JSON file
 
               $.each(data.courses, function(index, item) {
-                var nn = "item.starterstag_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('.starterstag').append(eval(nn)); }
-                    var nn = "item.mainmenutag_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); }
-                    var nn = "item.snackstag_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('.snackstag').append(eval(nn)); }
-                    var nn = "item.drinkstag_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('.drinkstag').append(eval(nn)); } 
+
+                var l = getjsonitem(item, "starterstag", lang);
+                if (l!=""){ $('.starterstag').append(l); }  
+                var l = getjsonitem(item, "mainmenutag", lang);
+                if (l!=""){ $('.mainmenutag').append(l); }   
+                var l = getjsonitem(item, "snackstag", lang);
+                if (l!=""){ $('.snackstag').append(l); } 
+                var l = getjsonitem(item, "drinkstag", lang);
+                if (l!=""){ $('.drinkstag').append(l); } 
+
+            //    var nn = "item.starterstag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.starterstag').append(eval(nn)); }
+            //        var nn = "item.mainmenutag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); }
+            //        var nn = "item.snackstag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.snackstag').append(eval(nn)); }
+            //        var nn = "item.drinkstag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.drinkstag').append(eval(nn)); } 
               });   
 
               // Clear the menu lists             
