@@ -25,16 +25,13 @@
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </p>
         <div class="showcase-container">
-            <h1 class="main-title restaurantname" id="">Tertúlias*</h1>
+            <h1 class="main-title restaurantname" id="">Teeertúlias*</h1>
             <p class="restauranttype-list"></p>
         </div>
 
         <center>
             <a href="#starter-menu" class="btn btn-primary">Menu</a>
-             
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
-        </center>
+       </center>
         
     </section>
     
@@ -260,15 +257,15 @@
 
 
             // Clear the menu lists             
-            $('#showcase .restaurantname').empty();
-            $('#showcase .restauranttype-list').empty();
+            $('.restaurantname').empty();
+            $('.restauranttype-list').empty();
               // Populate the menu lists with the data from the JSON file
               $.each(data.identification, function(index, item) {
 
                 var l = getjsonitem(item, "restaurantname", lang);
-                if (l!=""){ $('#showcase .restaurantname').append(l); }
+                if (l!=""){ $('.restaurantname').append(l); }
                 var l = getjsonitem(item, "restauranttype", lang);
-                if (l!=""){ $('#showcase .restauranttype').append(l); }
+                if (l!=""){ $('.restauranttype').append(l); }
 
               });   
                    
