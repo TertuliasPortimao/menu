@@ -265,9 +265,9 @@
               // Populate the menu lists with the data from the JSON file
               $.each(data.identification, function(index, item) {
 
-                var l = getjsonitem(item, "restaurantname", v3);
+                var l = getjsonitem(item, "restaurantname", lang);
                 if (l!=""){ $('#showcase .restaurantname').append(eval(l)); }
-                var l = getjsonitem(item, "restauranttype", v3);
+                var l = getjsonitem(item, "restauranttype", lang);
                 if (l!=""){ $('#showcase .restauranttype').append(eval(l)); }
 
               });   
