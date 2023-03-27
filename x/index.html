@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tertúlias Portimaõ</title>
+    <title class="menutitle">*menutitle*</title>
      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" />
@@ -20,21 +20,20 @@
 <body>
     
     <section class="showcase-area" id="showcase">
-        <div class="showcase-container">
-            <h1 class="main-title" id="">Tertúlias</h1>
-            <p>Bubble tea</p>
-            <p>Coffee</p>
-            <p>Local & VietNam food</p>
-        </div>
-        
-        <center>
-            <a href="#starter-menu" class="btn btn-primary">Menu</a>
+        <p style="text-align:right;">
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
-            <p class="languages"></p>
-            <img class="flag">
+        </p>
+        <div class="showcase-container">
+            <h1 class="main-title restaurantname" id="">*Organization*</h1>
+            <center>
+            <p class="restauranttype-list"></p>
+            </center>
+        </div>
 
-        </center>
+        <center>
+            <a href="#starter-menu" class="btn btn-primary">Menu</a>
+       </center>
         
     </section>
     
@@ -62,19 +61,17 @@
     <section id="starter-menu">
 
         <center>
-            <a href="#main-menu"   class="btn btn-primary">Main course</a>
-            <a href="#snacks-menu" class="btn btn-primary">Snacks</a>
-            <a href="#drinks"      class="btn btn-primary">Drinks</a>
+            <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
+            <a href="#snacks-menu" class="btn btn-primary snackstag">Snacks*</a>
+            <a href="#drinks-menu" class="btn btn-primary drinkstag">Drinks*</a>
              
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
 
         <h2><BR></h2>
             
-        <h2 class="food-menu-heading">Starters</h2>
+        <h2 class="food-menu-heading starterstag">Starters</h2>
             
-        <div class="food-menu-container container">
+        <div class="food-menu-item container">
             <ul class="menu-list"></ul>
         </div>
             
@@ -90,19 +87,16 @@
     <section id="main-menu">
   
         <center>
-            <a href="#starter-menu" class="btn btn-primary">Starters</a>
-            <a href="#snacks-menu"  class="btn btn-primary">Snacks</a>
-            <a href="#drinks"       class="btn btn-primary">Drinks</a>
-
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+            <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
+            <a href="#snacks-menu"  class="btn btn-primary snackstag">Snacks*</a>
+            <a href="#drinks-menu"  class="btn btn-primary drinkstag">Drinks*</a>
         </center>
 
         <h2><BR></h2>
             
-        <h2 class="food-menu-heading">Main Menu</h2>
+        <h2 class="food-menu-heading mainmenutag">Main Menu</h2>
 
-        <div class="food-menu-container container">          
+        <div class="food-menu-item container">
             <ul class="menu-list"></ul>     
         </div>
            
@@ -116,52 +110,70 @@
     <section id="snacks-menu">
         
         <center>
-            <a href="#starter-menu" class="btn btn-primary">Starters</a>
-            <a href="#main-menu"    class="btn btn-primary">Main course</a>
-            <a href="#drinks"       class="btn btn-primary">Drinks</a>
-
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+            <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
+            <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
+            <a href="#drinks-menu"  class="btn btn-primary drinkstag">Drinks*</a>
         </center>
         
         <h2><BR></h2>
 
-        <h2 class="food-menu-heading">Snacks</h2>
+        <h2 class="food-menu-heading snackstag">Snacks</h2>
 
-        <div class="food-menu-container container">
+        <div class="food-menu-item container">
             <ul class="menu-list"></ul>        
         </div>
             
     </section>
         
  
-               
     <!-- ============== -->
     <!-- === Drinks === -->
     <!-- ============== -->
             
-    <section id="drinks">
+    <section id="drinks-menu">
         
         <center>
-            <a href="#starter-menu" class="btn btn-primary">Starters</a>
-            <a href="#main-menu"    class="btn btn-primary">Main course</a>
-            <a href="#snacks-menu"  class="btn btn-primary">Snacks</a>
-
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+            <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
+            <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
+            <a href="#snacks-menu"  class="btn btn-primary snackstag">Snacks*</a>
         </center>
         
-        <h2><BR></h2>
+        <section id="drinks-menu">
+            <h2><BR></h2>
+    
+            <section id="regular-drinks">
+                <h2 class="food-menu-heading drinkstag">Regular drinks</h2>
+                <div class="food-menu-item container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>
 
-        <h2 class="food-menu-heading">Drinks</h2>
-
-        <div class="food-menu-container container">
-            <ul class="menu-list"></ul>        
-        </div>
+            <section id="wine">
+                <h2><BR></h2>
+                <h2 class="food-menu-heading">Wine</h2>
+                <div class="food-menu-item container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>
             
+            <section id="bubble-milk-tea">
+                <h2><BR></h2>
+                <h2 class="food-menu-heading">Bubble Milk Tea</h2>
+                <div class="food-menu-item container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>
+            
+            <section id="bubble-fruit-tea">
+                <h2><BR></h2>
+                <h2 class="food-menu-heading">Bubble Fruit Tea</h2>
+                <div class="food-menu-item container">
+                    <ul class="menu-list"></ul>        
+                </div>
+            </section>  
+                                         
     </section>
         
-    
 
         
         
@@ -173,7 +185,7 @@
     <script>
         $(function() {
           // Load the English menu by default
-          loadMenu('en');
+          loadMenu('pt');
     
           // Handle click events on the language selector flags
           $('.flag').click(function() {
@@ -242,28 +254,58 @@
           // Load the menu from a JSON file for the specified language
           function loadMenu(lang) {
 
-             $.getJSON('menu' + '.json', function(data) {
+             $.getJSON('./menu' + '.json', function(data) {
 
-             $('#showcase .languages').empty();
-             $('#showcase .flag').empty();
-             if (lang == 'en') {     
-                $('#showcase .languages').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
-                } else {
-                $('#showcase .languages').append('<img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">');
-                }
-             if (lang == 'en') {     
-                $('#showcase .flag').append('<img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">');
-                } else {
-                $('#showcase .flag').append('<img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">');
-                }
-                
-               
-             
+
+            // Clear the menu lists             
+            $('.menutitle').empty();
+            $('.restaurantname').empty();
+            $('.restauranttype-list').empty();
+              // Populate the menu lists with the data from the JSON file
+              $.each(data.identification, function(index, item) {
+
+                var l = getjsonitem(item, "menutitle", lang);
+                if (l!=""){ $('.menutitle').append(l); }    
+                var l = getjsonitem(item, "restaurantname", lang);
+                if (l!=""){ $('.restaurantname').append(l); }
+                var l = getjsonitem(item, "restauranttype", lang);
+                if (l!=""){ $('.restauranttype-list').append(l); } 
+
+              });   
+                   
+
+            // Clear the button text             
+            $('.starterstag').empty();  
+            $('.mainmenutag').empty();  
+            $('.snackstag').empty();  
+            $('.drinkstag').empty();  
+            // Populate the button text with the data from the JSON file
+
+              $.each(data.courses, function(index, item) {
+
+                var l = getjsonitem(item, "starterstag", lang);
+                if (l!=""){ $('.starterstag').append(l); }  
+                var l = getjsonitem(item, "mainmenutag", lang);
+                if (l!=""){ $('.mainmenutag').append(l); }   
+                var l = getjsonitem(item, "snackstag", lang);
+                if (l!=""){ $('.snackstag').append(l); } 
+                var l = getjsonitem(item, "drinkstag", lang);
+                if (l!=""){ $('.drinkstag').append(l); } 
+
+            //    var nn = "item.starterstag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.starterstag').append(eval(nn)); }
+            //        var nn = "item.mainmenutag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); }
+            //        var nn = "item.snackstag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.snackstag').append(eval(nn)); }
+            //        var nn = "item.drinkstag_" + lang;                  
+            //        if(typeof eval(nn) !== 'undefined'){ $('.drinkstag').append(eval(nn)); } 
+              });   
+
               // Clear the menu lists             
               $('#about .small').empty();
               $('#about .about-list-header').empty();
               $('#about .about-list').empty();
-                
               // Populate the menu lists with the data from the JSON file
               $.each(data.about, function(index, item) {
                     var nn = "item.about_" + lang;                  
@@ -273,12 +315,15 @@
                     var nn = "item.description_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
               });   
-                  
-              
-              make_element('#starter-menu     .menu-list', data.starters,           lang) ;
-              make_element('#main-menu        .menu-list', data.main_dishes,        lang) ;
-              make_element('#snacks-menu      .menu-list', data.snacks_menu,        lang) ;              
-              make_element('#drinks           .menu-list', data.drinks,             lang) ;              
+                   
+
+              make_element('#starter-menu       .menu-list', data.starters,         lang) ;
+              make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
+              make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
+              make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
+              make_element('#wine               .menu-list', data.wine,             lang) ;              
+              make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
+              make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
                 
             });
           }

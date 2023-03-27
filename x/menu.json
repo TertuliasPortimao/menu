@@ -1,30 +1,51 @@
 {
-    "about": [
-         {"about_en": "About us"}
-        ,{"about_pt": "Sobre nos"}
-        
-        ,{"description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "}
-        ,{"description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "}
-        
-        ,{"description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. <BR>"}
-        ,{"description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. <BR>"}
-        ,{"description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. <BR>"}
-        ,{"description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "}
-        
-        ,{"description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "}
-        ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
-        ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
-        ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
-        
-    ]
-    
-    
+    "identification": [
+        {"menutitle": "Tertúlias Portimaõ"}
+        ,{"restaurantname": "Tertúlias"}
+        ,{"restauranttype_en": "Bubble tea<BR>"}
+        ,{"restauranttype_en": "Coffee<BR>"}
+        ,{"restauranttype_en": "Local and VietNam food"}
+        ,{"restauranttype_pt": "Bubble tea<BR>"}
+        ,{"restauranttype_pt": "Coffee<BR>"}
+        ,{"restauranttype_pt": "Local and VietNam food"}
+   ]
+   ,"about": [
+    {"about_en": "About us"}
+   ,{"about_pt": "Sobre nos"}
+   
+   ,{"description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "}
+   ,{"description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "}
+   
+   ,{"description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. "}
+   ,{"description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. "}
+   ,{"description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. "}
+   ,{"description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "}
+   
+   ,{"description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "}
+   ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
+   ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
+   ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
+   
+]
+,
+    "courses": [
+        {"starterstag_en": "Starters"}
+       ,{"starterstag_pt": "Iniciante"} 
+       ,{"mainmenutag_en": "Main course"}
+       ,{"mainmenutag_pt": "Principal"} 
+       ,{"snackstag_en": "Snacks"}
+       ,{"snackstag_pt": "Snacks"}
+       ,{"drinkstag_en": "Drinks"}
+       ,{"drinkstag_pt": "Bebidas"}
+   ]
+   
+
     ,"starters": [
       
         {
         "name": "Phống tôm",
-        "description_en": "Tapioca flour is taken from theroots of the cassava plant with a little baking powder added. ",
-        "description_pt": "Amido de tapioca é retirado das raízesda planta demandioca com um pouco de fermento em póadicionado. ",
+        "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
+        "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
         "price": "€ 2,00",
         "image_location": "./",
         "image": "phongtom.JPG"
@@ -33,8 +54,8 @@
         
         {
         "name": "Dim sum",
-        "description_en": "The crust is made from wheat flour, dumpling flour, tapioca flour, the fillling can be varied including meat, shrimps, vegetables, fruits, spices. ",
-        "description_pt": "A crosta é feita de farinha de trigo, farinha de bolinho, farinha de tapioca, o recheio pode ser variado incluindo carne, camarões, legumes, frutas, especiarias. ",
+        "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
+        "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
         "price": "€ 4,50",
         "image_location": "./",
         "image": "dimsum.png"
@@ -255,6 +276,8 @@
       {
           "name_pt": "MAMINHA (VACA)",
           "name_en": "MAMINHA STEAK",
+          "image_location": "./",
+          "image": "maminha.jpg",
           "price": "€ 10,80"
       }
         ,
@@ -281,6 +304,8 @@
       {
           "name_pt": "HAMBURGUER NO PRATO",
           "name_en": "BURGER ON PLATE",
+          "image_location": "./",
+          "image": "hamburger.jpg",
           "price": "€ 7,20"
       },
       {
@@ -300,7 +325,7 @@
       }
           
     ]
-    ,"snacks_menu": [ 
+    ,"snacks": [ 
         {
         "name": "BANH MŸ THIT NUÖNG",
         "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
@@ -418,30 +443,177 @@
           "price": "€ 3,90"     
       }
     ]
-    ,"drinks": [ 
+    
+   
+
+    ,"regular_drinks": [ 
         {
-        "name": "Bub 1",
-        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
-        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
-        "price": "€ 4,95",
+        "name": "Sangria",
         "image_location": "./",
-        "image": "bubble.png"
-        }
-        ,  {
-        "name": "Bub 1",
-        "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
-        "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
-        "price": "€ 4,95",
-        "image_location": "./",
-        "image": "bubbletea.PNG"
+        "image": "sangria.png",
+        "price": "€ 8,90"
         }
         ,  
         {
-        "name": "MŸ XÃO RAU Ⓥ",
-        "description_en": "Fried special noodles with vegetables and mushrooms. ",
-        "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
-        "price": "€ 3,90"
-        }
+        "name": "Natural juices",
+        "price": "€ 2,40"
+    }
+],"wine": [   
+    {
+    "name": "Tintos",
+    "description": "Instinto forte (Alentejo) ",
+    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+    },  
+    {
+    "description": "Pancel (Alentejo) ",
+    "price": "                 € 8,50 (75cl)"
+    },  
+    {
+    "description": "Vale dos pecados(Alentejo / reserva) ",
+    "price": "                 € 8,50 (75cl)"
+    },  
+    {
+    "description": "Paxa(Algarve) ",
+    "price": "                 € 11,50 (75cl)"
+    }
+    ,  
+    {
+    "name": "Brancos",
+    "description": "Instinto forte (Alentejo) ",
+    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+    },  
+    {
+    "description": "Paxa(Algarve) ",
+    "price": "                 € 11,50 (75cl)"
+    },  
+    {
+    "name": "Verdes",
+    "description": "Pego da rainha (Ribatejo) ",
+    "price": "€ 3,25 (37,5cl) / € 5,20 (75cl)"
+    },  
+    {
+    "description": "A B Alvarinho (Amarante) ",
+    "price": "                  € 8,50 (75cl)"
+    },  
+    {
+    "description": "Terras do sado(Setubal / rose) ",
+    "price": "                  € 6,50 (75cl)"
+    },  
+    {
+    "description": "Plexus (Tejo / frisante) ",
+    "price": "                  € 7,60 (75cl)"
+    }
+    ]
+    ,
+    "bubble_milk_tea": [ 
+        {
+            "name": "Original Milk tea",
+            "description_en": "Tea with original Milk",
+            "description_pt": "Cha com leite original",
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)",
+            "image_location": "./",
+            "image": "bubble.png"
+            },
+            {
+            "name": "Matcha Milk",
+            "description_en": "Matcha Milk with tapioca Pearls",
+            "description_pt": "Leite Macha Com pérola de tapioca",
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+            },  
+            {
+            "name": "Taro Milk",
+            "description_en": "Taro Milk with tapioca Pearls",
+            "description_pt": "Leite Taro com pérola de tapioca",
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+            },  
+            {
+            "name": "Coconut Milk",
+            "description_en": "Coconut Milk with tapioca Pearls",
+            "description_pt": "Leite Coco com pérola de tapioca",
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+            },  
+            {
+            "name": "Original milk",
+            "description_en": "Original milk with tapioca Pearls",
+            "description_pt": "Leite Original com pérola de tapioca",
+            "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+            "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+            }
+    ],"bubble_fruit_tea": [ 
+        {
+            "name_en": "Mango",
+            "name_pt": "Manga",
+            "description_en": "Mango Fruit tea",
+            "description_pt": "Chá de manga",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name_en": "Strawberry",
+            "name_pt": "Morango",
+            "description_en": "Strawberry Fruit tea",
+            "description_pt": "Chá de morango",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"            },  
+            {
+            "name_en": "Lychee",
+            "name_pt": "Lichia",
+            "description_en": "Lychee Fruit tea",
+            "description_pt": "Chá de lichia",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name_en": "Passion Fruit",
+            "name_pt": "Maracujá",
+            "description_en": "Passion Fruit tea",
+            "description_pt": "Chá de aracujá",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name": "Kiwi",
+            "description_en": "Kiwi Fruit tea",
+            "description_pt": "Chá de kiwi",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name_en": "Peach",
+            "name_pt": "Pêssego",
+            "description_en": "Peach Fruit tea",
+            "description_pt": "Chá de pêssego",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name_en": "Blueberry",
+            "name_pt": "Mirtilo",
+            "description_en": "Blueberry Fruit tea",
+            "description_pt": "Chá de mirtilo",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name_en": "Honeydew",
+            "name_pt": "Melado",
+            "description_en": "Honeydew Fruit tea",
+            "description_pt": "Chá de melado",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            },  
+            {
+            "name_en": "Green Apple",
+            "name_pt": "Maçã verde",
+            "description_en": "Green Apple Fruit tea",
+            "description_pt": "Chá de frutas maçã verde",
+            "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+            "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+            }
     ]
   }
   
