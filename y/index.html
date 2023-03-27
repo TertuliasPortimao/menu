@@ -25,10 +25,8 @@
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </p>
         <div class="showcase-container">
-            <h1 class="main-title" id="">Tertúlias</h1>
-            <p>Bubble tea</p>
-            <p>Coffee</p>
-            <p>Local & VietNam food</p>
+            <h1 class="main-title restaurantname" id="">Tertúlias*</h1>
+            <p class="restauranttype-list"></p>
         </div>
 
         <center>
@@ -68,8 +66,6 @@
             <a href="#snacks-menu" class="btn btn-primary snackstag">Snacks*</a>
             <a href="#drinks-menu" class="btn btn-primary drinkstag">Drinks*</a>
              
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
 
         <h2><BR></h2>
@@ -95,9 +91,6 @@
             <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
             <a href="#snacks-menu"  class="btn btn-primary snackstag">Snacks*</a>
             <a href="#drinks-menu"  class="btn btn-primary drinkstag">Drinks*</a>
-
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
 
         <h2><BR></h2>
@@ -121,9 +114,6 @@
             <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
             <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
             <a href="#drinks-menu"  class="btn btn-primary drinkstag">Drinks*</a>
-
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
         
         <h2><BR></h2>
@@ -147,9 +137,6 @@
             <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
             <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
             <a href="#snacks-menu"  class="btn btn-primary snackstag">Snacks*</a>
-
-            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
-            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </center>
         
         <section id="drinks-menu">
@@ -269,6 +256,29 @@
           function loadMenu(lang) {
 
              $.getJSON('./menu' + '.json', function(data) {
+
+
+
+            // Clear the menu lists             
+            $('#showcase .restaurantname').empty();
+            $('#showcase .restauranttype-list').empty();
+              // Populate the menu lists with the data from the JSON file
+              $.each(data.identification, function(index, item) {
+
+                var l = getjsonitem(item, "restaurantname", v3);
+                if (l!=""){ $('#showcase .restaurantname').append(eval(l)); }
+                var l = getjsonitem(item, "restauranttype", v3);
+                if (l!=""){ $('#showcase .restauranttype').append(eval(l)); }
+
+              });   
+                   
+
+
+
+
+
+
+
 
             // Clear the button text             
             $('.starterstag').empty();  

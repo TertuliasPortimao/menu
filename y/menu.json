@@ -1,23 +1,32 @@
 {
-    "about": [
-         {"about_en": "About us"}
-        ,{"about_pt": "Sobre nos"}
-        
-        ,{"description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "}
-        ,{"description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "}
-        
-        ,{"description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. "}
-        ,{"description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. "}
-        ,{"description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. "}
-        ,{"description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "}
-        
-        ,{"description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "}
-        ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
-        ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
-        ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
-        
-    ]
-    ,
+    "identification": [
+        {"restaurantname": "Tertúlias"}
+        ,{"restauranttype_en": "Bubble tea"}
+        ,{"restauranttype_en": "Coffee"}
+        ,{"restauranttype_en": "Local and VietNam food"}
+        ,{"restauranttype_pt": "Bubble tea"}
+        ,{"restauranttype_pt": "Coffee"}
+        ,{"restauranttype_pt": "Local and VioetNam food"}
+   ]
+   ,"about": [
+    {"about_en": "About us"}
+   ,{"about_pt": "Sobre nos"}
+   
+   ,{"description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "}
+   ,{"description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "}
+   
+   ,{"description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. "}
+   ,{"description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. "}
+   ,{"description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. "}
+   ,{"description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "}
+   
+   ,{"description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "}
+   ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
+   ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
+   ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
+   
+]
+,
     "courses": [
         {"starterstag_en": "Starters"}
        ,{"starterstag_pt": "Iniciante"} 
