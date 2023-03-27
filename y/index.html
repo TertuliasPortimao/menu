@@ -20,6 +20,9 @@
 <body>
     
     <section class="showcase-area" id="showcase">
+        <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
+        <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+
         <div class="showcase-container">
             <h1 class="main-title" id="">Tertúlias</h1>
             <p>Bubble tea</p>
@@ -267,15 +270,15 @@
              $.getJSON('./menu' + '.json', function(data) {
 
             // Clear the button text             
-            $('.startertag').empty();  
+            $('.starterstag').empty();  
             $('.mainmenutag').empty();  
             $('.snackstag').empty();  
             $('.drinkstag').empty();  
             // Populate the button text with the data from the JSON file
 
               $.each(data.buttons, function(index, item) {
-                    var nn = "item.startertag" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('.startertag').append(eval(nn)); }
+                    var nn = "item.starterstag" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('.starterstag').append(eval(nn)); }
                     var nn = "item.mainmenutag_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); }
                     var nn = "item.snackstag_" + lang;                  
