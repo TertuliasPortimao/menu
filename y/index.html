@@ -73,7 +73,7 @@
 
         <h2><BR></h2>
             
-        <h2 class="food-menu-heading">Starters</h2>
+        <h2 class="food-menu-heading starterstag">Starters</h2>
             
         <div class="food-menu-item container">
             <ul class="menu-list"></ul>
@@ -101,7 +101,7 @@
 
         <h2><BR></h2>
             
-        <h2 class="food-menu-heading">Main Menu</h2>
+        <h2 class="food-menu-heading mainmenutag">Main Menu</h2>
 
         <div class="food-menu-item container">
             <ul class="menu-list"></ul>     
@@ -276,7 +276,7 @@
             $('.drinkstag').empty();  
             // Populate the button text with the data from the JSON file
 
-              $.each(data.buttons, function(index, item) {
+              $.each(data.courses, function(index, item) {
                     var nn = "item.starterstag" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.starterstag').append(eval(nn)); }
                     var nn = "item.mainmenutag_" + lang;                  

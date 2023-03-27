@@ -18,15 +18,15 @@
         
     ]
     ,
-    "buttons": [
-        {"starterstag_en": "STARTERS"}
-       ,{"starterstag_pt": "INICIANTE"} 
-       ,{"mainmenutag_en": "MAIN COURSE"}
-       ,{"mainmenutag_pt": "PRINCIPAL"} 
-       ,{"snackstag_en": "SNACKS"}
-       ,{"snackstag_pt": "SNACKS"}
-       ,{"drinkstag_en": "DRINKS"}
-       ,{"drinkstag_pt": "BEBIDAS"}
+    "courses": [
+        {"starterstag_en": "Starters"}
+       ,{"starterstag_pt": "Iniciante"} 
+       ,{"mainmenutag_en": "Main course"}
+       ,{"mainmenutag_pt": "Principal"} 
+       ,{"snackstag_en": "Snacks"}
+       ,{"snackstag_pt": "Snacks"}
+       ,{"drinkstag_en": "Drinks"}
+       ,{"drinkstag_pt": "Bebidas"}
    ]
    
 
