@@ -264,7 +264,7 @@
           // Load the menu from a JSON file for the specified language
           function loadMenu(lang) {
 
-             $.getJSON('menu' + '.json', function(data) {
+             $.getJSON('./menu' + '.json', function(data) {
 
             // Clear the button text             
             $('.startertag').empty();  
@@ -278,9 +278,9 @@
                     if(typeof eval(nn) !== 'undefined'){ $('.startertag').append(eval(nn)); }
                     var nn = "item.mainmenutag_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); }
-                    var nn = "item.snackstag" + lang;                  
+                    var nn = "item.snackstag_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.snackstag').append(eval(nn)); }
-                    var nn = "item.drinkstag" + lang;                  
+                    var nn = "item.drinkstag_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.drinkstag').append(eval(nn)); } 
               });   
 
