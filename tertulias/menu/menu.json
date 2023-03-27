@@ -169,6 +169,8 @@
           "name": "XOI CHIEN CHAY Ⓥ",
           "description_en": "Sticky rice with herbs. ",
           "description_pt": "Refeição vegetariana. ",
+          "image_location": "./",
+          "image": "xoichienchay.JPG",
           "price": "€ 5,00"
       }
       ,
