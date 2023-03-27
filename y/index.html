@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tertúlias Portimaõ</title>
+    <title class="menutitle">*menutitle*</title>
      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" />
@@ -25,7 +25,7 @@
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </p>
         <div class="showcase-container">
-            <h1 class="main-title restaurantname" id="">Teeertúlias*</h1>
+            <h1 class="main-title restaurantname" id="">*Organization*</h1>
             <center>
             <p class="restauranttype-list"></p>
             </center>
@@ -259,11 +259,16 @@
 
 
             // Clear the menu lists             
+            $('.menutitle').empty();
             $('.restaurantname').empty();
             $('.restauranttype-list').empty();
               // Populate the menu lists with the data from the JSON file
               $.each(data.identification, function(index, item) {
 
+                var l = getjsonitem(item, "menutitle", lang);
+                if (l!=""){ $('.menutitle').append(l); }    
+                var l = getjsonitem(item, "restaurantname", lang);
+                if (l!=""){ $('.restaurantname').append(l); }
                 var l = getjsonitem(item, "restaurantname", lang);
                 if (l!=""){ $('.restaurantname').append(l); }
                 var l = getjsonitem(item, "restauranttype", lang);
@@ -271,13 +276,6 @@
 
               });   
                    
-
-
-
-
-
-
-
 
             // Clear the button text             
             $('.starterstag').empty();  
@@ -287,7 +285,7 @@
             // Populate the button text with the data from the JSON file
 
               $.each(data.courses, function(index, item) {
-                    var nn = "item.starterstag_" + lang;                  
+                var nn = "item.starterstag_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.starterstag').append(eval(nn)); }
                     var nn = "item.mainmenutag_" + lang;                  
                     if(typeof eval(nn) !== 'undefined'){ $('.mainmenutag').append(eval(nn)); }
