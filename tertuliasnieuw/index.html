@@ -222,13 +222,13 @@
                     if(typeof eval(nn) !== 'undefined')
                         { 
                             
-                            $('#lijst .coursecluster').append(eval(nn)); 
+                           // $('#lijst .coursecluster').append(eval(nn)); 
 
                    
 
                     clustercontent = "";
 
-                    clustercontent = clustercontent + '<section id="snacks-menu">';
+                    clustercontent = clustercontent + '<section id="' + eval(nn) + 'snacks-menu">';
         
                         clustercontent = clustercontent + '<center>';
                         clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
