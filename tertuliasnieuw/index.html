@@ -327,10 +327,10 @@
               $('#lijst .lijst-list').empty();
               // Populate the menu lists with the data from the JSON file
               $.each(data.courseslist, function(index, item) {
-                    var nn = "item.course_" + lang;                  
+                    var nn = "item.course";                  
                     if(typeof eval(nn) !== 'undefined'){ $('#lijst .koppen').append(eval(nn)); }
                     var nn = "item.coursetag_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('#about .lijst-list-header').append(eval(nn)); }
+                    if(typeof eval(nn) !== 'undefined'){ $('#lijst .lijst-list-header').append(eval(nn)); }
                    
               });   
                    
