@@ -233,14 +233,20 @@
             var nn = "item.course";                  
                     if(typeof eval(nn) !== 'undefined')
                         { 
-                            
+                            nnn = eval(nn);
+                            nl = "item.course_" + lang;
+                            if(typeof eval(nl) == 'undefined')
+                            {nl = "item.course";}
+                            if (typeof eval(nl) !== 'undefined') {nll = eval(nnl;} else {nll='*' + nn + '*';}
+                            }
+                        }
                            // $('#lijst .coursecluster').append(eval(nn)); 
 
                    
 
                     clustercontent = "";
 
-                    clustercontent = clustercontent + '<section id="' + eval(nn) + '-menu">';
+                    clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
         
                         clustercontent = clustercontent + '<center>';
                         clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
