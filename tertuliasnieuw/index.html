@@ -233,11 +233,11 @@
             var nn = "item.course";                  
                     if(typeof eval(nn) !== 'undefined')
                         { 
-                            nnn = eval(nn);
-                            nl = "item.course_" + lang;
+                            var nnn = eval(nn);
+                            var nl = "item.course_" + lang;
                             if(typeof eval(nl) == 'undefined')
-                            {nl = "item.course";}
-                            if (typeof eval(nl) !== 'undefined') {nll = eval(nnl;} else {nll='*' + nn + '*';}
+                            {var nl = "item.course";}
+                            if (typeof eval(nl) !== 'undefined') {var nll = eval(nnl);} else {var nll='*' + nn + '*';}
                             }
                         }
                            // $('#lijst .coursecluster').append(eval(nn)); 
