@@ -218,7 +218,6 @@
             
           function make_frame(item, lang) {
 
-            $('#lijst .coursecluster').empty();
             var nn = "item.course";                  
                     if(typeof eval(nn) !== 'undefined')
                         { 
@@ -351,15 +350,13 @@
 
 
 
-// Clear the menu lists             
-//$('#lijst .koppen').empty();
-              $('#lijst .lijst-list-header').empty();
-              $('#lijst .lijst-list').empty();
+            // --------------------- //                         
+            // Clear the menu lists  //    
+            // --------------------- //                         
+            $('#lijst .coursecluster').empty();
               // Populate the menu lists with the data from the JSON file
               $.each(data.courseslist, function(index, item) {
-
-                    make_frame(item, lang) ;
-                   
+                    make_frame(item, lang) ;                 
               });   
                    
 
