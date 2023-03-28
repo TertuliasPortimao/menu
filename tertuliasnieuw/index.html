@@ -52,7 +52,23 @@
             </div>
         </div>
     </section>
+
+    <section id="lijst">
+        <div class="about-wrapper container">
+            <div class="lijst-text">
+                <p class="koppen">About Us</p>
+                
+                <h2 class="lijst-list-header"></h2>
+
+                <BR>
+                    
+                <p class="lijst-list"></p>
+                    
+            </div>
+        </div>
+    </section>
    
+           
            
     <!-- ================ -->
     <!-- === Starters === -->
@@ -301,6 +317,29 @@
                 if (l!=""){ $('.drinkstag').append(l); } 
 
               });   
+
+
+
+
+// Clear the menu lists             
+$('#lijst .koppen').empty();
+              $('#lijst .lijst-list-header').empty();
+              $('#lijst .lijst-list').empty();
+              // Populate the menu lists with the data from the JSON file
+              $.each(data.courseslist, function(index, item) {
+                    var nn = "item.course_" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('#lijst .koppen').append(eval(nn)); }
+                    var nn = "item.coursetag_" + lang;                  
+                    if(typeof eval(nn) !== 'undefined'){ $('#about .lijst-list-header').append(eval(nn)); }
+                   
+              });   
+                   
+
+
+
+
+
+
 
               // Clear the menu lists             
               $('#about .small').empty();
