@@ -54,18 +54,7 @@
     </section>
 
     <section id="lijst">
-        <div class="about-wrapper container">
-            <div class="lijst-text">
-                <p class="koppen">Test</p>
-                
-                <h2 class="lijst-list-header"></h2>
-
-                <BR>
-                    
-                <p class="lijst-list"></p>
-                    
-            </div>
-        </div>
+        <ul class="coursecluster"></ul>     
     </section>
    
            
@@ -225,6 +214,47 @@
             }
 
 
+          // v3 = lang;
+            
+          function make_frame(item, lang) {
+
+            $('#lijst .coursecluster').empty();
+            var nn = "item.course";                  
+                    if(typeof eval(nn) !== 'undefined')
+                        { 
+                            
+                            $('#lijst .coursecluster').append(eval(nn)); 
+
+                   
+
+                    clustercontent = "";
+
+                    clustercontent = clustercontent + '<section id="snacks-menu">';
+        
+                        clustercontent = clustercontent + '<center>';
+                        clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
+                        clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
+                        clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
+                        clustercontent = clustercontent + '</center>';
+        
+                        clustercontent = clustercontent + '<h2><BR></h2>';
+
+                        clustercontent = clustercontent + '<h2 class="food-menu-heading snackstag">Snacks</h2>';
+
+                        clustercontent = clustercontent + '<div class="food-menu-item container">';
+                        clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
+                        clustercontent = clustercontent + '</div>';
+            
+                        clustercontent = clustercontent + '</section>';
+        
+                        $('#lijst .coursecluster').append(clustercontent); 
+                        }
+
+          }
+
+
+
+
           // v1 = '#starter-menu .menu-list'
           // v2 = data.starters;
           // v3 = lang;
@@ -327,10 +357,8 @@
               $('#lijst .lijst-list').empty();
               // Populate the menu lists with the data from the JSON file
               $.each(data.courseslist, function(index, item) {
-                    var nn = "item.course";                  
-                    if(typeof eval(nn) !== 'undefined'){ $('#lijst .koppen').append(eval(nn)); }
-                    var nn = "item.coursetag_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('#lijst .lijst-list-header').append(eval(nn)); }
+
+                    make_frame(item, lang) ;
                    
               });   
                    
