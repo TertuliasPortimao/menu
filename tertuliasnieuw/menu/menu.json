@@ -37,7 +37,21 @@
        ,{"snackstag_pt": "Snacks"}
        ,{"drinkstag_en": "Drinks"}
        ,{"drinkstag_pt": "Bebidas"}
-   ]
+   ],
+   "courseslist": [
+    {"course": "Starters",
+    "coursetag_en": "Starters",
+    "coursetag_pt": "Iniciante"}
+    ,{"course": "Main",
+       "coursetag_en": "Main course",
+       "coursetag_pt": "Principal"}
+       ,{"course": "Snacks",
+       "coursetag_en": "Snacks",
+       "coursetag_pt": "Snacks"}
+       ,{"course": "Drinks",
+       "coursetag_en": "Drinks",
+       "coursetag_pt": "Bebidas"}
+  ]
    
 
     ,"starters": [
