@@ -240,7 +240,7 @@
                             if(typeof eval(nl) == 'undefined')
                             {var nl = "item.course";}
                             if (typeof eval(nl) !== 'undefined') {var nll = eval(nl);} else {var nll = '*' + nn + '*';}
-                            }
+                            
                         }
                         
                         $('#lijst .coursecluster').append(eval(nn)); 
@@ -259,7 +259,7 @@
         
                         clustercontent = clustercontent + '<h2><BR></h2>';
 
-               //         clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
+                        clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
 
                         clustercontent = clustercontent + '<div class="food-menu-item container">';
                         clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
@@ -378,9 +378,9 @@
               // Populate the menu lists with the data from the JSON file
                 
                 
-          //    $.each(data.courseslist, function(index, item) {
-          //          make_frame(item, lang) ;                 
-        //      });   
+             $.each(data.courseslist, function(index, item) {
+                 make_frame(item, lang) ;                 
+              });   
                    
 
 
