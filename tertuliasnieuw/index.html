@@ -341,31 +341,19 @@
 
                 var inx = "v2." + "course";
                 var itemcontent = eval(inx); 
-                alert(itemcontent);
-
-                let resultString = "";
-                for (const [key, value] of v2.course)
-                {
-                    resultString += `${key}: ${value}\n`
-                }
-                alert(resultString);
-
-               
-
-                        
 
                //alert(v1 + "/" + eval(v2 + ".course"));
                alert(v1 + "/" + v2.course + "/" + v2);
 
                 $(v1).empty();
                 if  (
-                        ( (eval(v2 + ".course") == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
-                        ((eval(v2 + ".course") == "main")               && (v1 == '#main-menu          .menu-list') ) ||
-                        ((eval(v2 + ".course") == "snacks")             && (v1 == '#snacks-menu        .menu-list') ) ||
-                        ((eval(v2 + ".course") == "regular_drinks")     && (v1 == '#regular-drinks     .menu-list') ) ||
-                        ((eval(v2 + ".course") == "wine")               && (v1 == '#wine               .menu-list') ) ||
-                        ((eval(v2 + ".course") == "bubble_milk_tea")    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
-                        ((eval(v2 + ".course") == "bubble_fruit_tea")   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
+                        ( (itemcontent == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
+                        ( (itemcontent == "main")               && (v1 == '#main-menu          .menu-list') ) ||
+                        ( (itemcontent == "snacks")             && (v1 == '#snacks-menu        .menu-list') ) ||
+                        ( (itemcontent == "regular_drinks")     && (v1 == '#regular-drinks     .menu-list') ) ||
+                        ( (itemcontent == "wine")               && (v1 == '#wine               .menu-list') ) ||
+                        ( (itemcontent == "bubble_milk_tea")    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
+                        ( (itemcontent == "bubble_fruit_tea")   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
                     )
                     {
                         alert ('Raak');
