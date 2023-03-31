@@ -201,18 +201,21 @@
 
     <script>
         
-        $(function() {
+        $(function() 
+        {
           // Load the English menu by default
-          loadMenu('pt');
+            loadMenu('pt');
     
           // Handle click events on the language selector flags
-          $('.flag').click(function() {
-            var lang = $(this).data('lang');
-            loadMenu(lang);
-          });
+            $('.flag').click(function() 
+                {
+                    var lang = $(this).data('lang');
+                    loadMenu(lang);
+                }
+            );
     
     
-          function getjsonitem(iblock, itemname, language) 
+            function getjsonitem(iblock, itemname, language) 
             { 
                 var itemcontent = "";
                 var in_l = "iblock." + itemname + "_" + language;
@@ -230,7 +233,8 @@
           // v3 = lang;
        
           
-          function make_frame(item, lang) {
+            function make_frame(item, lang) 
+            {
             var nnn = "*?*";
             var nn = "item.course";                  
                     if(typeof eval(nn) !== 'undefined')
@@ -271,7 +275,7 @@
                         clustercontent = clustercontent + '</section>';
         
                         $('#lijst .coursecluster').append(clustercontent); 
-                        }
+            }
 
           
 
@@ -282,11 +286,13 @@
           // v2 = data.starters;
           // v3 = lang;
             
-          function make_element(v1, v2, v3) {
-            $(v1).empty();
-              var dsi = v2;
+            function make_element(v1, v2, v3) 
+            {
+                $(v1).empty();
+                var dsi = v2;
              // $.each(data.starters, function(index, item) {
-              $.each(dsi, function(index, item) {
+                $.each(dsi, function(index, item) 
+                {
               
                     var n = getjsonitem(item, "name", v3);
                     var d = getjsonitem(item, "description", v3);
@@ -316,120 +322,116 @@
                     var p8 = '</div> ' ;
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
               
-              });
-                
-
+                });
             }
 
 
+           // make_elementx('#starter-menu       .menu-list', data.gangen,  lang, "starter") ;
 
-            function make_elementx(v1, v2, v3, v4) {
-                
+            function make_elementx(v1, v2, v3, v4) 
+            {
+ 
              //   alert(v1 + "/" + eval(v2 + ".course"));
 
-            $(v1).empty();
-            if (
-                ((eval(v2 + ".course") == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
-                ((eval(v2 + ".course") == "main")               && (v1 == '#main-menu          .menu-list') ) ||
-                ((eval(v2 + ".course") == "snacks")             && (v1 == '#snacks-menu        .menu-list') ) ||
-                ((eval(v2 + ".course") == "regular_drinks")     && (v1 == '#regular-drinks     .menu-list') ) ||
-                ((eval(v2 + ".course") == "wine")               && (v1 == '#wine               .menu-list') ) ||
-                ((eval(v2 + ".course") == "bubble_milk_tea")    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
-                ((eval(v2 + ".course") == "bubble_fruit_tea")   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
-                )
-            {
-                alert ('Raak');
-              var dsi = v2 + ".dish";
+                $(v1).empty();
+                if  (
+                        ((eval(v2 + ".course") == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
+                        ((eval(v2 + ".course") == "main")               && (v1 == '#main-menu          .menu-list') ) ||
+                        ((eval(v2 + ".course") == "snacks")             && (v1 == '#snacks-menu        .menu-list') ) ||
+                        ((eval(v2 + ".course") == "regular_drinks")     && (v1 == '#regular-drinks     .menu-list') ) ||
+                        ((eval(v2 + ".course") == "wine")               && (v1 == '#wine               .menu-list') ) ||
+                        ((eval(v2 + ".course") == "bubble_milk_tea")    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
+                        ((eval(v2 + ".course") == "bubble_fruit_tea")   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
+                    )
+                    {
+                        alert ('Raak');
+                        var dsi = v2 + ".dish";
              // $.each(data.starters, function(index, item) {
-              $.each(dsi, function(index, item) {
-              
-                    var n = getjsonitem(item, "name", v3);
-                    var d = getjsonitem(item, "description", v3);
-                    var p = getjsonitem(item, "price", v3);
-                    var i = getjsonitem(item, "image", v3);
+                        $.each(dsi, function(index, item) 
+                            {
+                                var n = getjsonitem(item, "name", v3);
+                                var d = getjsonitem(item, "description", v3);
+                                var p = getjsonitem(item, "price", v3);
+                                var i = getjsonitem(item, "image", v3);
                 //    var l = getjsonitem(item, "image_location", v3);
-                    var l = "./menu/images/";
+                                var l = "./menu/images/";
                   
                   
                   
-                    var p1 = '<div class="food-menu-item" align=center>' ;
-                    var p2 = ''; 
-                    if (i!="")
-                        { var p2 = '  <div class="food-img" align=center> '
-                                 + '    <img  src="' + l + i + '" alt="' + n + '" /> '
-                                 + '  </div> ' 
-                                 + '  <BR> ' ;}
+                                var p1 = '<div class="food-menu-item" align=center>' ;
+                                var p2 = ''; 
+                                if (i!="")
+                                    { var p2 = '  <div class="food-img" align=center> '
+                                        + '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                        + '  </div> ' 
+                                        + '  <BR> ' ;
+                                    }
                   
-                    var p3 = '  <div class="food-description" align=center> ';
-                    var p4 = '';
-                    var p5 = '';
-                    var p6 = '';
-                    if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
-                    if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
-                    if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
-                    var p7 = '  <BR></div> ' ;
-                    var p8 = '</div> ' ;
-                    $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
+                                var p3 = '  <div class="food-description" align=center> ';
+                                var p4 = '';
+                                var p5 = '';
+                                var p6 = '';
+                                if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
+                                if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
+                                if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
+                                var p7 = '  <BR></div> ' ;
+                                var p8 = '</div> ' ;
+                                $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
               
-              });
-                
+                            }
+                        )
+                    }; 
             }
-            }
-
-
-
-
-
+            
 
           // Load the menu from a JSON file for the specified language
-          function loadMenu(lang) {
+            function loadMenu(lang) 
+            {
 
             //$.getJSON("https://webkamer.nl/test/Tertulias/menutertulias.json", function(data) {
                 // Werkt niet, moet CORS zijn 
-            $.getJSON('./menu/menu' + '.json', function(data) {
+                $.getJSON('./menu/menu' + '.json', function(data) 
+                {
              
 
-
-
-
-
-
             // Clear the menu lists             
-            $('.menutitle').empty();
-            $('.restaurantname').empty();
-            $('.restauranttype-list').empty();
+                $('.menutitle').empty();
+                $('.restaurantname').empty();
+                $('.restauranttype-list').empty();
               // Populate the menu lists with the data from the JSON file
-              $.each(data.identification, function(index, item) {
-
-                var l = getjsonitem(item, "menutitle", lang);
-                if (l!=""){ $('.menutitle').append(l); }    
-                var l = getjsonitem(item, "restaurantname", lang);
-                if (l!=""){ $('.restaurantname').append(l); }
-                var l = getjsonitem(item, "restauranttype", lang);
-                if (l!=""){ $('.restauranttype-list').append(l); } 
-
-              });   
+                $.each(data.identification, function(index, item) 
+                    {
+                    var l = getjsonitem(item, "menutitle", lang);
+                    if (l!=""){ $('.menutitle').append(l); }    
+                    var l = getjsonitem(item, "restaurantname", lang);
+                    if (l!=""){ $('.restaurantname').append(l); }
+                    var l = getjsonitem(item, "restauranttype", lang);
+                    if (l!=""){ $('.restauranttype-list').append(l); } 
+                    }
+                );   
                    
 
             // Clear the button text             
-            $('.starterstag').empty();  
-            $('.mainmenutag').empty();  
-            $('.snackstag').empty();  
-            $('.drinkstag').empty();  
+                $('.starterstag').empty();  
+                $('.mainmenutag').empty();  
+                $('.snackstag').empty();  
+                $('.drinkstag').empty();  
             // Populate the button text with the data from the JSON file
 
-              $.each(data.courses, function(index, item) {
+                $.each(data.courses, function(index, item) 
+                    {
 
-                var l = getjsonitem(item, "starterstag", lang);
-                if (l!=""){ $('.starterstag').append(l); }  
-                var l = getjsonitem(item, "mainmenutag", lang);
-                if (l!=""){ $('.mainmenutag').append(l); }   
-                var l = getjsonitem(item, "snackstag", lang);
-                if (l!=""){ $('.snackstag').append(l); } 
-                var l = getjsonitem(item, "drinkstag", lang);
-                if (l!=""){ $('.drinkstag').append(l); } 
+                    var l = getjsonitem(item, "starterstag", lang);
+                    if (l!=""){ $('.starterstag').append(l); }  
+                    var l = getjsonitem(item, "mainmenutag", lang);
+                    if (l!=""){ $('.mainmenutag').append(l); }   
+                    var l = getjsonitem(item, "snackstag", lang);
+                    if (l!=""){ $('.snackstag').append(l); } 
+                    var l = getjsonitem(item, "drinkstag", lang);
+                    if (l!=""){ $('.drinkstag').append(l); } 
 
-              });   
+                    }
+                );   
 
 
 
@@ -437,13 +439,15 @@
             // --------------------- //                         
             // Clear the menu lists  //    
             // --------------------- //                         
-            $('#lijst .coursecluster').empty();
+                $('#lijst .coursecluster').empty();
               // Populate the menu lists with the data from the JSON file
                 
                 
-             $.each(data.courseslist, function(index, item) {
-                 make_frame(item, lang) ;                 
-              });   
+                $.each(data.courseslist, function(index, item) 
+                    {
+                        make_frame(item, lang) ;                 
+                    }
+                );   
                    
 
 
@@ -453,18 +457,20 @@
 
 
               // Clear the menu lists             
-              $('#about .small').empty();
-              $('#about .about-list-header').empty();
-              $('#about .about-list').empty();
+                $('#about .small').empty();
+                $('#about .about-list-header').empty();
+                $('#about .about-list').empty();
               // Populate the menu lists with the data from the JSON file
-              $.each(data.about, function(index, item) {
-                    var nn = "item.about_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
-                    var nn = "item.description_header_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
-                    var nn = "item.description_" + lang;                  
-                    if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
-              });   
+                $.each(data.about, function(index, item) 
+                    {
+                        var nn = "item.about_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
+                        var nn = "item.description_header_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
+                        var nn = "item.description_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
+                    }
+                );   
                    
 
            //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
@@ -480,22 +486,24 @@
            //   make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
            //   make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
                 
-              make_elementx('#starter-menu       .menu-list', data.gangen,  lang, "starter") ;
-              make_elementx('#main-menu          .menu-list', data.gangen,  lang, "main") ;
-              make_elementx('#snacks-menu        .menu-list', data.gangen,  lang, "snack") ;              
-              make_elementx('#regular-drinks     .menu-list', data.gangen,  lang, "drink") ;              
-              make_elementx('#wine               .menu-list', data.gangen,  lang, "wine") ;              
-              make_elementx('#bubble-milk-tea    .menu-list', data.gangen,  lang, "bmilk") ;              
-              make_elementx('#bubble-fruit-tea   .menu-list', data.gangen,  lang, "bfruit") ;              
-                
-
-
-
-
-            });
-          }
-          
+                $.each(data.gangen, function(index, item) 
+                    {
+                        make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
+                        make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
+                        make_elementx('#snacks-menu        .menu-list', item,  lang, "snack") ;              
+                        make_elementx('#regular-drinks     .menu-list', item,  lang, "drink") ;              
+                        make_elementx('#wine               .menu-list', item,  lang, "wine") ;              
+                        make_elementx('#bubble-milk-tea    .menu-list', item,  lang, "bmilk") ;              
+                        make_elementx('#bubble-fruit-tea   .menu-list', item,  lang, "bfruit") ;              
+                    }
+                );
+                }
+                );
+            }  
         });
+
+
+
       </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
