@@ -39,7 +39,7 @@
        ,{"drinkstag_pt": "Bebidas"}
    ],
    "courseslist": [
-    {"course": "starters",
+    {"course": "starter",
     "coursetag_en": "Starters",
     "coursetag_pt": "Iniciante"}
     ,{"course": "main",
