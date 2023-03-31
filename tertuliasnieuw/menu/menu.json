@@ -42,7 +42,7 @@
     {"course": "starters",
     "coursetag_en": "Starters",
     "coursetag_pt": "Iniciante"}
-    ,{"course": "main_dishes",
+    ,{"course": "main",
        "coursetag_en": "main",
        "coursetag_pt": "Principal"}
        ,{"course": "snacks",
