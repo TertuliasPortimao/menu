@@ -337,6 +337,17 @@
             function make_elementx(v1, v2, v3, v4) 
             {
  
+
+                let resultString = "";
+                for (const [key, value] of v2)
+                {
+                    resultString += `${key}: ${value}\n`
+                }
+                alert(resultString);
+
+
+
+
                //alert(v1 + "/" + eval(v2 + ".course"));
                alert(v1 + "/" + v2.course + "/" + v2);
 
