@@ -326,16 +326,22 @@
             }
 
 
-           // make_elementx('#starter-menu       .menu-list', data.gangen,  lang, "starter") ;
+
+
+           //$.each(data.gangen, function(index, item) 
+             //       {
+               //         make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
+                 //       make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
+
 
             function make_elementx(v1, v2, v3, v4) 
             {
  
-             //   alert(v1 + "/" + eval(v2 + ".course"));
+               alert(v1 + "/" + eval(v2 + ".course"));
 
                 $(v1).empty();
                 if  (
-                        ((eval(v2 + ".course") == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
+                        ( (eval(v2 + ".course") == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
                         ((eval(v2 + ".course") == "main")               && (v1 == '#main-menu          .menu-list') ) ||
                         ((eval(v2 + ".course") == "snacks")             && (v1 == '#snacks-menu        .menu-list') ) ||
                         ((eval(v2 + ".course") == "regular_drinks")     && (v1 == '#regular-drinks     .menu-list') ) ||
