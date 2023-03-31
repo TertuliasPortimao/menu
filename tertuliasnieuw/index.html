@@ -325,9 +325,15 @@
 
             function make_elementx(v1, v2, v3) {
             $(v1).empty();
-            if ($(v1).course == 'starter') 
-
-
+            if (
+                (($(v2).course == 'starter')            && (v1 == '#starter-menu       .menu-list') ) || 
+                (($(v2).course == 'main')               && (v1 == '#main-menu          .menu-list') ) ||
+                (($(v2).course == 'snacks')             && (v1 == '#snacks-menu        .menu-list') ) ||
+                (($(v2).course == 'regular_drinks')     && (v1 == '#regular-drinks     .menu-list') ) ||
+                (($(v2).course == 'wine')               && (v1 == '#wine               .menu-list') ) ||
+                (($(v2).course == 'bubble_milk_tea')    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
+                (($(v2).course == 'bubble_fruit_tea')   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
+                )
             {
 
               var dsi = v2 + '.dish';
@@ -461,15 +467,29 @@
            //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
            alert(data.gangen.course);
 
+
+           
            //if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
-              make_elementx('#starter-menu      .menu-list', data.gangen,           lang) ;
-              make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
-              make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
-              make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
-              make_element('#wine               .menu-list', data.wine,             lang) ;              
-              make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
-              make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
+           //   make_elementx('#starter-menu      .menu-list', data.gangen,           lang) ;
+           //   make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
+           //   make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
+           //   make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
+           //   make_element('#wine               .menu-list', data.wine,             lang) ;              
+           //   make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
+           //   make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
                 
+              make_elementx('#starter-menu       .menu-list', data.gangen,           lang, "starter") ;
+              make_elementx('#main-menu          .menu-list', data.main_dishes,      lang, "main") ;
+              make_elementx('#snacks-menu        .menu-list', data.snacks,           lang, "snack") ;              
+              make_elementx('#regular-drinks     .menu-list', data.regular_drinks,   lang, "drink") ;              
+              make_elementx('#wine               .menu-list', data.wine,             lang, "wine") ;              
+              make_elementx('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang, "bmilk") ;              
+              make_elementx('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang, "bfruit") ;              
+                
+
+
+
+
             });
           }
           
