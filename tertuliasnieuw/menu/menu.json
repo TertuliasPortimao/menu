@@ -1,5 +1,6 @@
 {
-    "identification": [
+    "identification": 
+    [
         {"menutitle": "Tertúlias Portimaõ"}
         ,{"restaurantname": "Tertúlias"}
         ,{"restauranttype_en": "Bubble tea<BR>"}
@@ -8,8 +9,9 @@
         ,{"restauranttype_pt": "Bubble tea<BR>"}
         ,{"restauranttype_pt": "Coffee<BR>"}
         ,{"restauranttype_pt": "Local and VietNam food"}
-   ]
-   ,"about": [
+    ]
+   ,"about": 
+    [
     {"about_en": "About us"}
    ,{"about_pt": "Sobre nos"}
    
@@ -25,10 +27,10 @@
    ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
    ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
    ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
-   
-]
+    ]
 ,
-    "courses": [
+    "courses": 
+    [
         {"starterstag_en": "Starters"}
        ,{"starterstag_pt": "Iniciante"} 
        ,{"mainmenutag_en": "Main course"}
@@ -37,7 +39,7 @@
        ,{"snackstag_pt": "Snacks"}
        ,{"drinkstag_en": "Drinks"}
        ,{"drinkstag_pt": "Bebidas"}
-   ],
+    ],
    "courseslist": [
     {"course": "starter",
     "coursetag_en": "Starters",
@@ -665,11 +667,11 @@
 
     ,
    "gangen": [
-    {"course": "starter",
-    "coursetag_en": "Starters",
-    "coursetag_pt": "Iniciante",
+        {"course": "starter",
+        "coursetag_en": "Starters",
+        "coursetag_pt": "Iniciante",
 
-    "dish": [
+        "dish": [
       
         {
         "name": "Phống tôm",
@@ -739,9 +741,9 @@
         "image": "nemcuonchay.png"
         }
     
-    ]
+        ]
     
-    }
+        }
 
 
 
@@ -1260,7 +1262,7 @@
     "dish": [
       
         
-    ],"bubble_fruit_tea": [ 
+   
         {
             "name_en": "Mango",
             "name_pt": "Manga",
@@ -1334,13 +1336,6 @@
         
     ]
 }
-
-
-
-
-
-
-
 
 
 
