@@ -201,7 +201,6 @@
 
     <script>
         
-        alert("Hello! I am an alert box!!");
         $(function() {
           // Load the English menu by default
           loadMenu('pt');
@@ -409,6 +408,8 @@
                    
 
            //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
+           alert(data.gangen.course);
+
               if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
               make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
               make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
