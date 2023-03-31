@@ -323,7 +323,9 @@
 
 
 
-            function make_elementx(v1, v2, v3) {
+            function make_elementx(v1, v2, v3, v4) {
+                alert(v1 + "/" + v2 + "/" + v3 + "/" + v4);
+
             $(v1).empty();
             if (
                 (($(v2).course == 'starter')            && (v1 == '#starter-menu       .menu-list') ) || 
@@ -465,8 +467,7 @@
                    
 
            //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
-           alert(data.gangen.course);
-
+          
 
            
            //if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
