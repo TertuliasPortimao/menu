@@ -466,8 +466,8 @@
     
    
 
-    ,"regular_drinks": [ 
-        {
+        ,"regular_drinks": [ 
+            {
         "name": "Sangria",
         "image_location": "./",
         "image": "sangria.png",
@@ -477,8 +477,9 @@
         {
         "name": "Natural juices",
         "price": "€ 2,40"
-    }
-],"wine": [   
+        }
+    ]
+    ,"wine": [   
     {
     "name": "Tintos",
     "description": "Instinto forte (Alentejo) ",
@@ -737,9 +738,10 @@
         "image_location": "./",
         "image": "nemcuonchay.png"
         }
-        
+    
     ]
-}
+    
+    }
 
 
 
