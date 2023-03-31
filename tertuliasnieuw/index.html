@@ -321,6 +321,57 @@
 
             }
 
+
+
+            function make_elementx(v1, v2, v3) {
+            $(v1).empty();
+            if ($(v1).course == 'starter') 
+
+
+            {
+
+              var dsi = v2 + '.dish';
+             // $.each(data.starters, function(index, item) {
+              $.each(dsi, function(index, item) {
+              
+                    var n = getjsonitem(item, "name", v3);
+                    var d = getjsonitem(item, "description", v3);
+                    var p = getjsonitem(item, "price", v3);
+                    var i = getjsonitem(item, "image", v3);
+                //    var l = getjsonitem(item, "image_location", v3);
+                    var l = "./menu/images/";
+                  
+                  
+                  
+                    var p1 = '<div class="food-menu-item" align=center>' ;
+                    var p2 = ''; 
+                    if (i!="")
+                        { var p2 = '  <div class="food-img" align=center> '
+                                 + '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                 + '  </div> ' 
+                                 + '  <BR> ' ;}
+                  
+                    var p3 = '  <div class="food-description" align=center> ';
+                    var p4 = '';
+                    var p5 = '';
+                    var p6 = '';
+                    if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
+                    if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
+                    if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
+                    var p7 = '  <BR></div> ' ;
+                    var p8 = '</div> ' ;
+                    $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
+              
+              });
+                
+            }
+            }
+
+
+
+
+
+
           // Load the menu from a JSON file for the specified language
           function loadMenu(lang) {
 
@@ -410,7 +461,8 @@
            //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
            alert(data.gangen.course);
 
-              if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
+           //if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
+              make_elementx('#starter-menu      .menu-list', data.gangen,           lang) ;
               make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
               make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
               make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
