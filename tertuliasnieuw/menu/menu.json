@@ -50,7 +50,11 @@
        "coursetag_pt": "Snacks"}
        ,{"course": "drinks",
        "coursetag_en": "Drinks",
-       "coursetag_pt": "Bebidas"}
+       "coursetag_pt": "Bebidas"},
+       {"course": "drinks",
+       "coursetag_en": "NogeenDrinks",
+       "coursetag_pt": "NogeenBebidas"}
+
   ]
    
 
