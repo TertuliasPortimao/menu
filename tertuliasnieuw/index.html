@@ -364,12 +364,8 @@ $(function()
 
                 $.each(item.dish, function(index, item2) 
                     {
-                        make_element('#' + nnn + '-menu       .menu-list', item2.dish.name,         lang) ;
-                        $('#lijst .coursecluster').append('#->' + '#' + nnn + '-menu       .menu-list' + '/item2.dish->/' + item2.dish + '/lang->/' +  lang); 
-
+                        make_element('#' + nnn + '-menu .menu-list', item2.dish, lang) ;
                     });   
-                   
-                
 
             }
 
@@ -419,95 +415,7 @@ $(function()
 
 
 
-            function make_elementx(v1, v2, v3, v4) 
-            {
-                var inx = "v2." + "course";
-                var itemcontent = eval(inx); 
-
-                alert(itemcontent);
-
-                let resultString = "";
-                for (const [key, value] of v2.course)
-                {
-                    resultString += `${key}: ${value}\n`
-                }
-                alert(resultString);
-
-                        
-
-            // alert(v1 + "/" + eval(v2 + ".course"));
-                alert(v1 + "/" + v2.course + "/" + v2);
-
-                $(v1).empty();
-                if  (
-                        ( (itemcontent == "starter")            && (v1 == '#starter-menu       .menu-list') ) || 
-                        ( (itemcontent == "main")               && (v1 == '#main-menu          .menu-list') ) ||
-                        ( (itemcontent == "snacks")             && (v1 == '#snacks-menu        .menu-list') ) ||
-                        ( (itemcontent == "regular_drinks")     && (v1 == '#regular-drinks     .menu-list') ) ||
-                        ( (itemcontent == "wine")               && (v1 == '#wine               .menu-list') ) ||
-                        ( (itemcontent == "bubble_milk_tea")    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
-                        ( (itemcontent == "bubble_fruit_tea")   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
-                    )
-                {
-                    alert ('Raak');
-
-                    for(let i = 0; i < v2.length; i++) 
-                    {
-                        let obj = v2[i];
-                        alert (obj.course);
-                    }
-
-                        
-                //  v2.forEach(function(obj) {  alert (obj.course); });
-
-                //  var dsi = eval(v2 + ".dish");
-                    var ddsi = v2 + ".dish";
-
-
- /*                       
-                    var dsi = eval(ddsi);
-                //  $.each(data.starters, function(index, item) 
-                    {
-                        $.each(dsi, function(index, item) 
-                        {
-                            var n = getjsonitem(item, "name", v3);
-                            var d = getjsonitem(item, "description", v3);
-                            var p = getjsonitem(item, "price", v3);
-                            var i = getjsonitem(item, "image", v3);
-                //          var l = getjsonitem(item, "image_location", v3);
-                            var l = "./menu/images/";
-                  
-                            alert("n" + n);
-                            alert("d" + d);
-                            alert("p" + p);
-                            alert("i" + i);
-                  
-                            var p1 = '<div class="food-menu-item" align=center>' ;
-                            var p2 = ''; 
-                            if (i!="")
-                            {   var p2 =        
-                                        '  <div class="food-img" align=center> '
-                                    +   '    <img  src="' + l + i + '" alt="' + n + '" /> '
-                                    +   '  </div> ' 
-                                    +   '  <BR> ' ;
-                            }
-                  
-                            var p3 = '  <div class="food-description" align=center> ';
-                            var p4 = '';
-                            var p5 = '';
-                            var p6 = '';
-                            if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
-                            if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
-                            if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
-                            var p7 = '  <BR></div> ' ;
-                            var p8 = '</div> ' ;
-                            $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);          
-                        });
-
-*/
-                }; 
-            }
-            
+         
 
 
             // ------------------------------------------------------------ //
