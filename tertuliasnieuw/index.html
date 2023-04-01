@@ -2,6 +2,11 @@
 
 <html lang="en">
 
+
+
+<!-- ------------------------------->
+<!-- ----------- Head -------------->
+<!-- ------------------------------->
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,14 +21,22 @@
 
     
 
-    
+<!-- -------------------------------------->
+<!-- ----------- Body --------------------->
+<!-- -------------------------------------->    
 <body>
     
+
+<!--       ----------------------------- -->
+<!--       ----------- Paginakop ------- -->
+<!--       ----------------------------- -->    
     <section class="showcase-area" id="showcase">
+        
         <p style="text-align:right;">
             <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
             <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
         </p>
+
         <div class="showcase-container">
             <h1 class="main-title restaurantname" id="">*Organization*</h1>
             <center>
@@ -34,10 +47,13 @@
         <center>
             <a href="#starter-menu" class="btn btn-primary">Menu</a>
        </center>
-        
     </section>
     
 
+
+<!--       ----------------------------- -->
+<!--       ----------- About ----------- -->
+<!--       ----------------------------- -->      
     <section id="about">
         <div class="about-wrapper container">
             <div class="about-text">
@@ -56,9 +72,7 @@
         
         
         
-        
-        
-        
+             
     <section id="lijst">
         <ul class="coursecluster"></ul>     
     </section>
@@ -73,91 +87,63 @@
            
     <!-- ================ -->
     <!-- === Starters === -->
-    <!-- ================ -->
-                    
+    <!-- ================ -->         
     <section id="starter-menu">
-
         <center>
             <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
             <a href="#snacks-menu" class="btn btn-primary snackstag">Snacks*</a>
             <a href="#drinks-menu" class="btn btn-primary drinkstag">Drinks*</a>
-             
         </center>
-
-        <h2><BR></h2>
-            
+        <h2><BR></h2>          
         <h2 class="food-menu-heading starterstag">Starters</h2>
-            
         <div class="food-menu-item container">
             <ul class="menu-list"></ul>
         </div>
-            
-    </section>
+    </section>           
 
-       
-       
-                                   
     <!-- ============ -->
     <!-- === Main === -->
-    <!-- ============ -->
-                            
+    <!-- ============ -->                     
     <section id="main-menu">
-  
         <center>
             <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
             <a href="#snacks-menu"  class="btn btn-primary snackstag">Snacks*</a>
             <a href="#drinks-menu"  class="btn btn-primary drinkstag">Drinks*</a>
         </center>
-
-        <h2><BR></h2>
-            
+        <h2><BR></h2>          
         <h2 class="food-menu-heading mainmenutag">Main Menu</h2>
-
         <div class="food-menu-item container">
             <ul class="menu-list"></ul>     
-        </div>
-           
+        </div>           
     </section>
         
-            
     <!-- ============== -->
     <!-- === Snacks === -->
-    <!-- ============== -->
-            
-    <section id="snacks-menu">
-        
+    <!-- ============== -->         
+    <section id="snacks-menu">       
         <center>
             <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
             <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
             <a href="#drinks-menu"  class="btn btn-primary drinkstag">Drinks*</a>
-        </center>
-        
+        </center>       
         <h2><BR></h2>
-
         <h2 class="food-menu-heading snackstag">Snacks</h2>
-
         <div class="food-menu-item container">
             <ul class="menu-list"></ul>        
-        </div>
-            
+        </div>           
     </section>
         
- 
     <!-- ============== -->
     <!-- === Drinks === -->
-    <!-- ============== -->
-            
-    <section id="drinks-menu">
-        
+    <!-- ============== -->        
+    <section id="drinks-menu">      
         <center>
             <a href="#starter-menu" class="btn btn-primary starterstag">Starters*</a>
             <a href="#main-menu"   class="btn btn-primary mainmenutag">Main course*</a>
             <a href="#snacks-menu"  class="btn btn-primary snackstag">Snacks*</a>
-        </center>
-        
+        </center>        
         <section id="drinks-menu">
-            <h2><BR></h2>
-    
+            <h2><BR></h2>   
             <section id="regular-drinks">
                 <h2 class="food-menu-heading drinkstag">Regular drinks</h2>
                 <div class="food-menu-item container">
@@ -187,8 +173,7 @@
                 <div class="food-menu-item container">
                     <ul class="menu-list"></ul>        
                 </div>
-            </section>  
-                                         
+            </section>                                        
     </section>
         
 
@@ -199,82 +184,177 @@
     </footer>
     <!-- .................../ JS Code for smooth scrolling /...................... -->
 
-    <script>
+
+
+
+
+<!--       ============================= -->
+<!--       =========== Javascript ====== -->
+<!--       ============================= -->
+
+<script>
         
-        $(function() 
-        {
-          // Load the English menu by default
-            loadMenu('pt');
+$(function() 
+{
+        // ---------------- //
+        // Kickoff Mainline //
+        // ---------------- //
+
+            loadMenu('en');                 // Load the English menu by default
     
-          // Handle click events on the language selector flags
-            $('.flag').click(function() 
+          
+            $('.flag').click(function()     // Handle click events on the language selector flags
                 {
                     var lang = $(this).data('lang');
                     loadMenu(lang);
                 }
             );
     
+        // -------- //
+        // Mainline //
+        // -------- //
+
+            // ------------------------------------------------------------ //
+            // F: Load the menu from a JSON file for the specified language //
+            // ------------------------------------------------------------ //
+            function loadMenu(lang) 
+            {
+                $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
+                //$.getJSON("https://webkamer.nl/test/Tertulias/menutertulias.json", function(data) {
+                // Werkt niet, moet CORS zijn 
+                {         
+
+                // Clear the menu lists             
+                    $('.menutitle').empty();
+                    $('.restaurantname').empty();
+                    $('.restauranttype-list').empty();
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.identification, function(index, item) 
+                    {
+                        var l = getjsonitem(item, "menutitle", lang);
+                        if (l!=""){ $('.menutitle').append(l); }    
+                        var l = getjsonitem(item, "restaurantname", lang);
+                        if (l!=""){ $('.restaurantname').append(l); }
+                        var l = getjsonitem(item, "restauranttype", lang);
+                        if (l!=""){ $('.restauranttype-list').append(l); } 
+                    });   
+                   
+
+                // Clear the button text             
+                    $('.starterstag').empty();  
+                    $('.mainmenutag').empty();  
+                    $('.snackstag').empty();  
+                    $('.drinkstag').empty();  
+
+                // Populate the button text with the data from the JSON file
+                    $.each(data.courses, function(index, item) 
+                    {
+                        var l = getjsonitem(item, "starterstag", lang);
+                        if (l!=""){ $('.starterstag').append(l); }  
+                        var l = getjsonitem(item, "mainmenutag", lang);
+                        if (l!=""){ $('.mainmenutag').append(l); }   
+                        var l = getjsonitem(item, "snackstag", lang);
+                        if (l!=""){ $('.snackstag').append(l); } 
+                        var l = getjsonitem(item, "drinkstag", lang);
+                        if (l!=""){ $('.drinkstag').append(l); } 
+                    });   
+
+
+                // --------------------- //                         
+                // Clear the menu lists  //    
+                // --------------------- //                         
+                    $('#lijst .coursecluster').empty();
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.courseslist, function(index, item) 
+                    {
+                        make_frame(item, lang) ;                 
+                    });   
+                   
+
+                // Clear the menu lists             
+                    $('#about .small').empty();
+                    $('#about .about-list-header').empty();
+                    $('#about .about-list').empty();
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.about, function(index, item) 
+                    {
+                        var nn = "item.about_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
+                        var nn = "item.description_header_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
+                        var nn = "item.description_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
+                    });   
+                   
+                //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
+        
+                    make_elementx('#starter-menu      .menu-list', data.gangen,           lang) ;
+                    make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
+                    make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
+                    make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
+                    make_element('#wine               .menu-list', data.wine,             lang) ;              
+                    make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
+                    make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
+                
+                // Uitgemodelleerd alternatief
+                    alert ("1");
+                    $.each(data.gangen, function(index, item) 
+                    {
+                        alert ("2");
+                    //if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
+                        make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
+                        make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
+                        make_elementx('#snacks-menu        .menu-list', item,  lang, "snack") ;              
+                        make_elementx('#regular-drinks     .menu-list', item,  lang, "drink") ;              
+                        make_elementx('#wine               .menu-list', item,  lang, "wine") ;              
+                        make_elementx('#bubble-milk-tea    .menu-list', item,  lang, "bmilk") ;              
+                        make_elementx('#bubble-fruit-tea   .menu-list', item,  lang, "bfruit") ;              
+                    });
+
+                }); // einde verwerking json file
+            }  // Einde functie loadmenu
+
     
-            function getjsonitem(iblock, itemname, language) 
-            { 
-                var itemcontent = "";
-                var in_l = "iblock." + itemname + "_" + language;
-                var in_nl = "iblock." + itemname;
-                if (typeof eval(in_l) !== 'undefined') 
-                        {var itemcontent = eval(in_l); } // pak de taalspecifieke  
-                else 
-                        {if (typeof eval(in_nl) !== 'undefined') 
-                            {var itemcontent = eval(in_nl); } // Pak de algemene 
-                        }
-                return itemcontent;
-            }
-
-
-          // v3 = lang;
+        // -------------------- //
+        // Mainline subroutines //
+        // -------------------- //
        
-          
             function make_frame(item, lang) 
             {
-            var nnn = "*?*";
-            var nn = "item.course";                  
-                    if(typeof eval(nn) !== 'undefined')
-                        { 
-                            var nnn = eval(nn);
-                            var nl = "item.coursetag_" + lang;
-                            if(typeof eval(nl) == 'undefined')
-                            {var nl = "item.course";}
+                var nnn = "*?*";
+                var nn = "item.course";                  
+                if(typeof eval(nn) !== 'undefined')
+                { 
+                    var nnn = eval(nn);
+                    var nl = "item.coursetag_" + lang;
+                    if(typeof eval(nl) == 'undefined')
+                    {   var nl = "item.course";}
                         
-                            if (typeof eval(nl) !== 'undefined') {var nll = eval(nl);} else {var nll = '*' + nn + '*';}
-                            
+                    if (typeof eval(nl) !== 'undefined') 
+                    {   var nll = eval(nl);} 
+                    else 
+                    {   var nll = '*' + nn + '*';}
                         
-                        
-                        $('#lijst .coursecluster').append(eval(nn)); 
+                    $('#lijst .coursecluster').append(eval(nn)); 
 
-                        }
+                }
 
-                    var clustercontent = "";
+                var clustercontent = "";
 
-                    clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
-        
-                        clustercontent = clustercontent + '<center>';
-                        clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
-                        clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
-                        clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
-                        clustercontent = clustercontent + '</center>';
-        
-                        clustercontent = clustercontent + '<h2><BR></h2>';
-
-                        clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
-                        
-                        clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
-
-                        clustercontent = clustercontent + '<div class="food-menu-item container">';
-                        clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
-                        clustercontent = clustercontent + '</div>';
-            
-                        clustercontent = clustercontent + '</section>';
-        
-                        $('#lijst .coursecluster').append(clustercontent); 
+                clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
+                clustercontent = clustercontent + '<center>';
+                clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
+                clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
+                clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
+                clustercontent = clustercontent + '</center>';
+                clustercontent = clustercontent + '<h2><BR></h2>';
+                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
+                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
+                clustercontent = clustercontent + '<div class="food-menu-item container">';
+                clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
+                clustercontent = clustercontent + '</div>';
+                clustercontent = clustercontent + '</section>';
+                $('#lijst .coursecluster').append(clustercontent); 
             }
 
           
@@ -290,19 +370,16 @@
             {
                 $(v1).empty();
                 var dsi = v2;
-             // $.each(data.starters, function(index, item) {
+            // $.each(data.starters, function(index, item) {
                 $.each(dsi, function(index, item) 
                 {
-              
                     var n = getjsonitem(item, "name", v3);
                     var d = getjsonitem(item, "description", v3);
                     var p = getjsonitem(item, "price", v3);
                     var i = getjsonitem(item, "image", v3);
-                //    var l = getjsonitem(item, "image_location", v3);
+            //      var l = getjsonitem(item, "image_location", v3);
                     var l = "./menu/images/";
-                  
-                  
-                  
+
                     var p1 = '<div class="food-menu-item" align=center>' ;
                     var p2 = ''; 
                     if (i!="")
@@ -310,7 +387,6 @@
                                  + '    <img  src="' + l + i + '" alt="' + n + '" /> '
                                  + '  </div> ' 
                                  + '  <BR> ' ;}
-                  
                     var p3 = '  <div class="food-description" align=center> ';
                     var p4 = '';
                     var p5 = '';
@@ -321,27 +397,16 @@
                     var p7 = '  <BR></div> ' ;
                     var p8 = '</div> ' ;
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
-              
                 });
             }
 
 
 
 
-           //$.each(data.gangen, function(index, item) 
-             //       {
-               //         make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
-                 //       make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
-
-
             function make_elementx(v1, v2, v3, v4) 
             {
- 
-
-
                 var inx = "v2." + "course";
                 var itemcontent = eval(inx); 
-
 
                 alert(itemcontent);
 
@@ -352,12 +417,10 @@
                 }
                 alert(resultString);
 
-               
-
                         
 
-               // alert(v1 + "/" + eval(v2 + ".course"));
-               alert(v1 + "/" + v2.course + "/" + v2);
+            // alert(v1 + "/" + eval(v2 + ".course"));
+                alert(v1 + "/" + v2.course + "/" + v2);
 
                 $(v1).empty();
                 if  (
@@ -369,198 +432,96 @@
                         ( (itemcontent == "bubble_milk_tea")    && (v1 == '#bubble-milk-tea    .menu-list') ) ||
                         ( (itemcontent == "bubble_fruit_tea")   && (v1 == '#bubble-fruit-tea   .menu-list') ) 
                     )
-                    {
-                        alert ('Raak');
+                {
+                    alert ('Raak');
 
-                        for(let i = 0; i < v2.length; i++) {
-                         let obj = v2[i];
-                         alert (obj.course);
-                        }
+                    for(let i = 0; i < v2.length; i++) 
+                    {
+                        let obj = v2[i];
+                        alert (obj.course);
+                    }
 
                         
-                        //v2.forEach(function(obj) {  alert (obj.course); });
+                //  v2.forEach(function(obj) {  alert (obj.course); });
 
-                        //var dsi = eval(v2 + ".dish");
-                        var ddsi = v2 + ".dish";
-
+                //  var dsi = eval(v2 + ".dish");
+                    var ddsi = v2 + ".dish";
 
 
  /*                       
-                        var dsi = eval(ddsi);
-             // $.each(data.starters, function(index, item) {
+                    var dsi = eval(ddsi);
+                //  $.each(data.starters, function(index, item) 
+                    {
                         $.each(dsi, function(index, item) 
-                            {
-                                var n = getjsonitem(item, "name", v3);
-                                var d = getjsonitem(item, "description", v3);
-                                var p = getjsonitem(item, "price", v3);
-                                var i = getjsonitem(item, "image", v3);
-                //    var l = getjsonitem(item, "image_location", v3);
-                                var l = "./menu/images/";
+                        {
+                            var n = getjsonitem(item, "name", v3);
+                            var d = getjsonitem(item, "description", v3);
+                            var p = getjsonitem(item, "price", v3);
+                            var i = getjsonitem(item, "image", v3);
+                //          var l = getjsonitem(item, "image_location", v3);
+                            var l = "./menu/images/";
                   
-                                alert("n" + n);
-                                alert("d" + d);
-                                alert("p" + p);
-                                alert("i" + i);
+                            alert("n" + n);
+                            alert("d" + d);
+                            alert("p" + p);
+                            alert("i" + i);
                   
-                                var p1 = '<div class="food-menu-item" align=center>' ;
-                                var p2 = ''; 
-                                if (i!="")
-                                    { var p2 = '  <div class="food-img" align=center> '
-                                        + '    <img  src="' + l + i + '" alt="' + n + '" /> '
-                                        + '  </div> ' 
-                                        + '  <BR> ' ;
-                                    }
-                  
-                                var p3 = '  <div class="food-description" align=center> ';
-                                var p4 = '';
-                                var p5 = '';
-                                var p6 = '';
-                                if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
-                                if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
-                                if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
-                                var p7 = '  <BR></div> ' ;
-                                var p8 = '</div> ' ;
-                                $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
-              
+                            var p1 = '<div class="food-menu-item" align=center>' ;
+                            var p2 = ''; 
+                            if (i!="")
+                            {   var p2 =        
+                                        '  <div class="food-img" align=center> '
+                                    +   '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                    +   '  </div> ' 
+                                    +   '  <BR> ' ;
                             }
-                        
-
-
-
-                        )
+                  
+                            var p3 = '  <div class="food-description" align=center> ';
+                            var p4 = '';
+                            var p5 = '';
+                            var p6 = '';
+                            if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
+                            if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
+                            if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
+                            var p7 = '  <BR></div> ' ;
+                            var p8 = '</div> ' ;
+                            $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);          
+                        });
 
 */
-
-                    }; 
+                }; 
             }
             
 
-          // Load the menu from a JSON file for the specified language
-            function loadMenu(lang) 
-            {
 
-            //$.getJSON("https://webkamer.nl/test/Tertulias/menutertulias.json", function(data) {
-                // Werkt niet, moet CORS zijn 
-                $.getJSON('./menu/menu' + '.json', function(data) 
-                {
-             
-
-            // Clear the menu lists             
-                $('.menutitle').empty();
-                $('.restaurantname').empty();
-                $('.restauranttype-list').empty();
-              // Populate the menu lists with the data from the JSON file
-                $.each(data.identification, function(index, item) 
-                    {
-                    var l = getjsonitem(item, "menutitle", lang);
-                    if (l!=""){ $('.menutitle').append(l); }    
-                    var l = getjsonitem(item, "restaurantname", lang);
-                    if (l!=""){ $('.restaurantname').append(l); }
-                    var l = getjsonitem(item, "restauranttype", lang);
-                    if (l!=""){ $('.restauranttype-list').append(l); } 
-                    }
-                );   
-                   
-
-            // Clear the button text             
-                $('.starterstag').empty();  
-                $('.mainmenutag').empty();  
-                $('.snackstag').empty();  
-                $('.drinkstag').empty();  
-            // Populate the button text with the data from the JSON file
-
-                $.each(data.courses, function(index, item) 
-                    {
-
-                    var l = getjsonitem(item, "starterstag", lang);
-                    if (l!=""){ $('.starterstag').append(l); }  
-                    var l = getjsonitem(item, "mainmenutag", lang);
-                    if (l!=""){ $('.mainmenutag').append(l); }   
-                    var l = getjsonitem(item, "snackstag", lang);
-                    if (l!=""){ $('.snackstag').append(l); } 
-                    var l = getjsonitem(item, "drinkstag", lang);
-                    if (l!=""){ $('.drinkstag').append(l); } 
-
-                    }
-                );   
-
-
-
-
-            // --------------------- //                         
-            // Clear the menu lists  //    
-            // --------------------- //                         
-                $('#lijst .coursecluster').empty();
-              // Populate the menu lists with the data from the JSON file
-                
-                
-                $.each(data.courseslist, function(index, item) 
-                    {
-                        make_frame(item, lang) ;                 
-                    }
-                );   
-                   
-
-
-
-
-
-
-
-              // Clear the menu lists             
-                $('#about .small').empty();
-                $('#about .about-list-header').empty();
-                $('#about .about-list').empty();
-              // Populate the menu lists with the data from the JSON file
-                $.each(data.about, function(index, item) 
-                    {
-                        var nn = "item.about_" + lang;                  
-                        if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
-                        var nn = "item.description_header_" + lang;                  
-                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
-                        var nn = "item.description_" + lang;                  
-                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
-                    }
-                );   
-                   
-
-           //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
-          
-
-           
-           //if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
-           //   make_elementx('#starter-menu      .menu-list', data.gangen,           lang) ;
-           //   make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
-           //   make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
-           //   make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
-           //   make_element('#wine               .menu-list', data.wine,             lang) ;              
-           //   make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
-           //   make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
-                alert ("1");
-                $.each(data.gangen, function(index, item) 
-                    {
-                        alert ("2");
-
-                        make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
-                        make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
-                        make_elementx('#snacks-menu        .menu-list', item,  lang, "snack") ;              
-                        make_elementx('#regular-drinks     .menu-list', item,  lang, "drink") ;              
-                        make_elementx('#wine               .menu-list', item,  lang, "wine") ;              
-                        make_elementx('#bubble-milk-tea    .menu-list', item,  lang, "bmilk") ;              
-                        make_elementx('#bubble-fruit-tea   .menu-list', item,  lang, "bfruit") ;              
-                    }
-                );
+            // ------------------------------------------------------------ //
+            // F: ...                                                       //
+            // ------------------------------------------------------------ //
+            function getjsonitem(iblock, itemname, language) 
+            { 
+                var itemcontent = "";
+                var in_l = "iblock." + itemname + "_" + language;
+                var in_nl = "iblock." + itemname;
+                if (typeof eval(in_l) !== 'undefined') 
+                {   var itemcontent = eval(in_l); } // pak de taalspecifieke  
+                else 
+                {   if (typeof eval(in_nl) !== 'undefined') 
+                    {   var itemcontent = eval(in_nl); } // Pak de algemene 
                 }
-                );
-            }  
-        });
+                return itemcontent;
+            }
 
 
 
-      </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./components/app.js"></script>
+});
+
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./components/app.js"></script>
        
 </body>
 
