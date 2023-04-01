@@ -302,22 +302,7 @@ $(function()
 
                     alert ("1");
 
-                    /*               
-                // Uitgemodelleerd alternatief
-                    alert ("1");
-                    $.each(data.gangen, function(index, item) 
-                    {
-                        alert ("2");
-                    //if (data.gangen.course == 'starter')  {make_element('#starter-menu       .menu-list', data.gangen.dish,     lang) ;}
-                        make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
-                        make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
-                        make_elementx('#snacks-menu        .menu-list', item,  lang, "snack") ;              
-                        make_elementx('#regular-drinks     .menu-list', item,  lang, "drink") ;              
-                        make_elementx('#wine               .menu-list', item,  lang, "wine") ;              
-                        make_elementx('#bubble-milk-tea    .menu-list', item,  lang, "bmilk") ;              
-                        make_elementx('#bubble-fruit-tea   .menu-list', item,  lang, "bfruit") ;              
-                    });
-*/
+                   
                 }); // einde verwerking json file
             }  // Einde functie loadmenu
 
@@ -411,6 +396,7 @@ $(function()
                     var p7 = '  <BR></div> ' ;
                     var p8 = '</div> ' ;
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
+                    $(v1).append(item.name);
                 });
             }
 
