@@ -361,6 +361,15 @@ $(function()
                 clustercontent = clustercontent + '</div>';
                 clustercontent = clustercontent + '</section>';
                 $('#lijst .coursecluster').append(clustercontent); 
+
+                $.each(item.dish, function(index, item2) 
+                //  $.each(data.courseslist, function(index, item) 
+                    {
+                        $('#lijst .coursecluster').append(item2.name);                     
+                    });   
+                   
+                
+
             }
 
           
