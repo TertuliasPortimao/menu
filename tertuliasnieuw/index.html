@@ -260,6 +260,11 @@ $(function()
                     });   
 
 
+
+
+
+
+
                 // --------------------- //                         
                 // Clear the menu lists  //    
                 // --------------------- //                         
@@ -286,9 +291,7 @@ $(function()
                         var nn = "item.description_" + lang;                  
                         if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
                     });   
-                   
-                //   make_element('#starter-menu       .menu-list', data.starters,    lang) ;
-        
+                           
                     make_element('#starter-menu       .menu-list', data.starters,         lang) ;
                     make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
                     make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
@@ -354,8 +357,7 @@ $(function()
                 clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
                 clustercontent = clustercontent + '</center>';
                 clustercontent = clustercontent + '<h2><BR></h2>';
-                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
-                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
+                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '(flex)' + '</h2>';
                 clustercontent = clustercontent + '<div class="food-menu-item container">';
                 clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
                 clustercontent = clustercontent + '</div>';
