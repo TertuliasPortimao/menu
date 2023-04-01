@@ -265,7 +265,8 @@ $(function()
                 // --------------------- //                         
                     $('#lijst .coursecluster').empty();
                 // Populate the menu lists with the data from the JSON file
-                    $.each(data.courseslist, function(index, item) 
+                    $.each(data.gangen, function(index, item) 
+                //  $.each(data.courseslist, function(index, item) 
                     {
                         make_frame(item, lang) ;                 
                     });   
