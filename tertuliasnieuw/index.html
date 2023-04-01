@@ -364,7 +364,7 @@ $(function()
 
                 $.each(item.dish, function(index, item2) 
                     {
-                        make_element('#' + nnn + '-menu       .menu-list', item2.dish,         lang) ;
+                        make_element('#' + nnn + '-menu       .menu-list', item2.dish.name,         lang) ;
                         $('#lijst .coursecluster').append('#->' + '#' + nnn + '-menu       .menu-list' + '/item2.dish->/' + item2.dish + '/lang->/' +  lang); 
 
                     });   
