@@ -536,9 +536,11 @@
            //   make_element('#wine               .menu-list', data.wine,             lang) ;              
            //   make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
            //   make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
-                
+                alert ("1");
                 $.each(data.gangen, function(index, item) 
                     {
+                        alert ("2");
+
                         make_elementx('#starter-menu       .menu-list', item,  lang, "starter") ;
                         make_elementx('#main-menu          .menu-list', item,  lang, "main") ;
                         make_elementx('#snacks-menu        .menu-list', item,  lang, "snack") ;              
