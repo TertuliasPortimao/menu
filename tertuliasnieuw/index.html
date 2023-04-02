@@ -269,18 +269,17 @@ $(function()
                 // Clear the menu lists  //    
                 // --------------------- //                         
                     $('#lijst .coursecluster').empty();
+                // Clear the menu lists             
+                      $('#about .small').empty();
+                    $('#about .about-list-header').empty();
+                    $('#about .about-list').empty();
                 // Populate the menu lists with the data from the JSON file
                     $.each(data.gangen, function(index, item) 
                 //  $.each(data.courseslist, function(index, item) 
                     {
                         make_frame(item, lang) ;                 
                     });   
-                   
-
-                // Clear the menu lists             
-                    $('#about .small').empty();
-                    $('#about .about-list-header').empty();
-                    $('#about .about-list').empty();
+                
                 // Populate the menu lists with the data from the JSON file
                     $.each(data.about, function(index, item) 
                     {
