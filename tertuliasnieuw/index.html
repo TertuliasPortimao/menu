@@ -359,8 +359,8 @@ $(function()
                 alert(str);
 
 */
-
-                $.each(item.dish, function(index, item2) 
+                var dishes = item.dish;
+                $.each(dishes, function(index, item2) 
                     {
                         make_element('#' + nnn + '-menu .menu-list', item2.dish, lang) ;
                         alert("jaja");
