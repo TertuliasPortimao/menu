@@ -352,7 +352,7 @@ $(function()
 
 
                 let str = "";
-                Object.keys(item.gangen).forEach(k => {
+                Object.keys(item.dish).forEach(k => {
                     str += k + ":\n";
                     str += obj[k].join(",\n");
                 });
@@ -360,7 +360,7 @@ $(function()
 
 
 
-                $.each(item.gangen, function(index, item2) 
+                $.each(item.dish, function(index, item2) 
                     {
                         make_element('#' + nnn + '-menu .menu-list', item2.dish, lang) ;
                     });   
