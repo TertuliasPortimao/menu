@@ -431,8 +431,9 @@ $(function()
                 var in_l = "iblock." + itemname + "_" + language;
                 var in_nl = "iblock." + itemname;
 
-                alert("in_l=" + in_l + ", in_nl=" + in_nl + "languagep=" + language + ", itemname=" + itemname );
-
+                t1 = typeof eval(in_l);
+                t2 = typeof eval(in_nl);
+                t3 = typeof eval(iblock);
 
                 if (typeof eval(in_l) !== 'undefined') 
                 {   var itemcontent = eval(in_l); } // pak de taalspecifieke  
@@ -440,6 +441,9 @@ $(function()
                 {   if (typeof eval(in_nl) !== 'undefined') 
                     {   var itemcontent = eval(in_nl); } // Pak de algemene 
                 }
+
+                alert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
+
                 return itemcontent;
             }
 
