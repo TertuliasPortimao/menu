@@ -430,6 +430,10 @@ $(function()
                 var itemcontent = "";
                 var in_l = "iblock." + itemname + "_" + language;
                 var in_nl = "iblock." + itemname;
+
+                alert("in_l=" + in_l + ", in_nl=" + in_nl + "languagep=" + language + ", itemname=" + itemname );
+
+
                 if (typeof eval(in_l) !== 'undefined') 
                 {   var itemcontent = eval(in_l); } // pak de taalspecifieke  
                 else 
