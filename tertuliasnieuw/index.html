@@ -354,7 +354,7 @@ $(function()
                 let str = "";
                 Object.keys(item.dish).forEach(k => {
                     str += k + ":\n";
-                    str += obj[k].join(",\n");
+                    str += item.dish[k].join(",\n");
                 });
                 alert(str);
 
