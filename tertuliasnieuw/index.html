@@ -267,10 +267,10 @@ $(function()
 
 */
                 var dishes = item.dish;
-                $.each(dishes, function(index, item) 
+                $.each(dishes, function(index, item2) 
                     {
-                        make_element('#' + nnn + '-menu .menu-list', item, lang) ;
-           //             alert("jaja");
+                        make_element('#' + nnn + '-menu .menu-list', item2, lang) ;
+                        alert("each item in dish...");
                     });   
 
             }
@@ -288,6 +288,8 @@ $(function()
             {
                 $(v1).empty();
                 var dsi = v2;
+                alert ("in make_element met vars:" + v1 + v2 + v3);
+
             // $.each(data.starters, function(index, item) {
                 $.each(dsi, function(index, item) 
                 {
@@ -316,8 +318,8 @@ $(function()
                     var p8 = '</div> ' ;
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
                     $(v1).append(item.name);
-                    
-                    alert(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
+
+                    alert("    .... maakt" + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
 
              //       alert("n=" + n + ", d=" + d + "p=" + p + ", i=" + i + ", l=" + l);
 
