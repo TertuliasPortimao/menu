@@ -291,12 +291,12 @@ $(function()
                 alert ("in make_element met vars:" + v1 + v2 + v3);
 
             // $.each(data.starters, function(index, item) {
-                $.each(dsi, function(index, item) 
+                $.each(dsi, function(index, item2) 
                 {
-                    var n = getjsonitem(item, "name", v3);
-                    var d = getjsonitem(item, "description", v3);
-                    var p = getjsonitem(item, "price", v3);
-                    var i = getjsonitem(item, "image", v3);
+                    var n = getjsonitem(item2, "name", v3);
+                    var d = getjsonitem(item2, "description", v3);
+                    var p = getjsonitem(item2, "price", v3);
+                    var i = getjsonitem(item2, "image", v3);
             //      var l = getjsonitem(item, "image_location", v3);
                     var l = "./menu/images/";
 
@@ -317,7 +317,7 @@ $(function()
                     var p7 = '  <BR></div> ' ;
                     var p8 = '</div> ' ;
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
-                    $(v1).append(item.name);
+                    $(v1).append(item2.name);
 
                     alert("    .... maakt" + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
 
@@ -353,7 +353,7 @@ $(function()
                 }
 
                 // lert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
-
+alert ("........itemcontent: " + itemcontent)
                 return itemcontent;
             }
 
