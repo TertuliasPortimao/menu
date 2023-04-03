@@ -299,8 +299,6 @@ $(function()
                     make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
                     make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
 
-                    alert ("1");
-
                    
                 }); // einde verwerking json file
             }  // Einde functie loadmenu
@@ -332,7 +330,7 @@ $(function()
 
                 }
 
-                alert("nnn=" + nnn + ", nll=" + nll);
+               // alert("nnn=" + nnn + ", nll=" + nll);
                 var clustercontent = "";
 
                 clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
@@ -363,7 +361,7 @@ $(function()
                 $.each(dishes, function(index, item) 
                     {
                         make_element('#' + nnn + '-menu .menu-list', item, lang) ;
-                        alert("jaja");
+           //             alert("jaja");
                     });   
 
             }
@@ -411,7 +409,7 @@ $(function()
                     $(v1).append(item.name);
 
 
-                    alert("n=" + n + ", d=" + d + "p=" + p + ", i=" + i + ", l=" + l);
+             //       alert("n=" + n + ", d=" + d + "p=" + p + ", i=" + i + ", l=" + l);
 
                 });
             }
@@ -442,7 +440,7 @@ $(function()
                     {   var itemcontent = eval(in_nl); } // Pak de algemene 
                 }
 
-                alert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
+                // lert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
 
                 return itemcontent;
             }
