@@ -132,7 +132,7 @@ $(function()
                 {         
 
 
-
+/*
                 console.log(JSON.stringify(data, null, 2));
                 alert(JSON.stringify(data, null, 2));
                 
@@ -149,7 +149,7 @@ $(function()
                             );
                     }
                 );
-
+*/
 
 
 
@@ -323,6 +323,23 @@ $(function()
 
             // $.each(data.starters, function(index, item) {
                 //$.each(dsi, function(index, item2) 
+
+
+
+                
+                        v1.forEach(
+                            (dish) => 
+                            {
+                            //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
+                               console.log(`- ${dish.name}: $${dish.price}`);
+                        }
+                            );
+                    
+                
+
+
+
+
                 $.each(v2, function(index, item2) 
                 {
             //        alert('element gevonden');
