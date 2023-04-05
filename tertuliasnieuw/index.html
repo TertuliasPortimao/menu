@@ -290,7 +290,8 @@ $(function()
                 alert(str);
 
 */
-                var dishes = item.dish;
+//                var dishes = item.dish;
+                var dishes = JSON.parse(item.dish);
         //        alert ("item.dish bare " + item.dish);
          //       jxx = JSON.stringify(dishes, undefined, 2);
         //        alert ("item.dish stringified: " + jxx);
@@ -326,8 +327,8 @@ $(function()
 
 
 
-                xx = JSON.parse(v2);
-                        xx.forEach(
+                // xx = JSON.parse(v2);
+                        v2.forEach(
                             (dish) => 
                             {
                             //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
