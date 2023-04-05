@@ -135,6 +135,23 @@ $(function()
 
                 console.log(JSON.stringify(data, null, 2));
                 alert(JSON.stringify(data, null, 2));
+                
+                menu.gangen.forEach(
+                    (course) => 
+                    {
+                        console.log(`Course: ${course.course}`);
+                        course.dish.forEach(
+                            (dish) => 
+                            {
+                            //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
+                               console.log(`- ${dish.name}: $${dish.price}`);
+                        }
+                            );
+                    }
+                );
+
+
+
 
                 // Clear the menu lists             
                     $('.menutitle').empty();
