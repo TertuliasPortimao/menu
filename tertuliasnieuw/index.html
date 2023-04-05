@@ -300,6 +300,8 @@ $(function()
                 $.each(dsi, function(index, item2) 
                 {
                     alert('element gevonden');
+                    jx = JSON.stringify(item2, undefined, 2);
+                    alert('stringified: ' + jx);
                     var n = getjsonitem(item2, "name", v3);
                     var d = getjsonitem(item2, "description", v3);
                     var p = getjsonitem(item2, "price", v3);
