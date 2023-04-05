@@ -326,8 +326,8 @@ $(function()
 
 
 
-
-                        dsi.forEach(
+                xx = JSON.parse(v2);
+                        xx.forEach(
                             (dish) => 
                             {
                             //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
@@ -340,7 +340,7 @@ $(function()
 
 
 
-                $.each(v2, function(index, item2) 
+                $.each(xx, function(index, item2) 
                 {
             //        alert('element gevonden');
                     jx = JSON.stringify(item2, undefined, 2);
