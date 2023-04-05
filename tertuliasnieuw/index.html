@@ -267,6 +267,7 @@ $(function()
 
 */
                 var dishes = item.dish;
+                alert (item.dish);
           //      alert("1. make frame voor: " + nnn + '/' + nll );
 
                 $.each(dishes, function(index, item2) 
@@ -290,11 +291,12 @@ $(function()
             {
                 $(v1).empty();
                 var dsi = v2;
-               // alert ("3. in make_element met vars:" + v1 + v2 + v3);
+                alert ("3. in make_element met vars:" + v1 + v2 + v3);
 
             // $.each(data.starters, function(index, item) {
                 $.each(dsi, function(index, item2) 
                 {
+                    alert('element gevonden');
                     var n = getjsonitem(item2, "name", v3);
                     var d = getjsonitem(item2, "description", v3);
                     var p = getjsonitem(item2, "price", v3);
