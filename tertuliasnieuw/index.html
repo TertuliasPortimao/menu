@@ -269,8 +269,7 @@ $(function()
                 alert(str);
 
 */
-//var dishes = item.dish;
-var dishes = item;
+                var dishes = item.dish;
                 alert ("item.dish bare " + item.dish);
                 jxx = JSON.stringify(dishes, undefined, 2);
                 alert ("item.dish stringified: " + jxx);
@@ -279,7 +278,8 @@ var dishes = item;
 
           //      alert("1. make frame voor: " + nnn + '/' + nll );
 
-                $.each(dishes, function(index, item2) 
+                $.each(item.dish, function(index, item2) 
+                //$.each(dishes, function(index, item2) 
                     {
                        // alert("2. vanuit make frame * => each item in dish... voor: " + nnn + '/' + nll + ' => ' + 'make_element');
                         make_element('#' + nnn + '-menu .menu-list', item2, lang) ;
