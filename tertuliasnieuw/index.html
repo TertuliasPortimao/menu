@@ -218,8 +218,7 @@ $(function()
             function make_frame(item, lang) 
             {
                 console.log(item);
-                alert ('taal:' + lang);
-                alert ('item:' + item);
+                
                 var nnn = "*?*";
                 var nn = "item.course";                  
                 if(typeof eval(nn) !== 'undefined')
@@ -270,18 +269,16 @@ $(function()
 
 */
                 var dishes = item.dish;
-                alert ("item.dish bare " + item.dish);
-                jxx = JSON.stringify(dishes, undefined, 2);
-                alert ("item.dish stringified: " + jxx);
-                jxx = JSON.stringify(item, undefined, 2);
-                alert ("item stringified: " + jxx);
+        //        alert ("item.dish bare " + item.dish);
+         //       jxx = JSON.stringify(dishes, undefined, 2);
+        //        alert ("item.dish stringified: " + jxx);
+         //       jxx = JSON.stringify(item, undefined, 2);
+         //       alert ("item stringified: " + jxx);
 
-          //      alert("1. make frame voor: " + nnn + '/' + nll );
 
                 $.each(item.dish, function(index, item2) 
                 //$.each(dishes, function(index, item2) 
                     {
-                       // alert("2. vanuit make frame * => each item in dish... voor: " + nnn + '/' + nll + ' => ' + 'make_element');
                         make_element('#' + nnn + '-menu .menu-list', item2, lang) ;
                     });   
 
@@ -300,13 +297,13 @@ $(function()
             {
                 $(v1).empty();
                 var dsi = v2;
-                alert ("3. in make_element met vars:" + v1 + v2 + v3);
+           //     alert ("3. in make_element met vars:" + v1 + v2 + v3);
 
             // $.each(data.starters, function(index, item) {
                 //$.each(dsi, function(index, item2) 
                 $.each(v2, function(index, item2) 
                 {
-                    alert('element gevonden');
+            //        alert('element gevonden');
                     jx = JSON.stringify(item2, undefined, 2);
                     alert('stringified: ' + jx);
                     var n = getjsonitem(item2, "name", v3);
@@ -335,7 +332,6 @@ $(function()
                     $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
                     $(v1).append(item2.name);
 
-            //        alert("5. vanuit make element * => each dsi maakt: " + "    .... maakt" + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
 
 
                 });
@@ -369,8 +365,8 @@ $(function()
 
                 // lert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
                 jq = JSON.stringify(iblock, undefined, 2);
-                    alert('iblock stringified: ' + jq);
-                alert ("4. ........itemcontent: " + iblock + '/' + itemname + '/' + language + '/' + itemcontent);
+              //      alert('iblock stringified: ' + jq);
+              //  alert ("4. ........itemcontent: " + iblock + '/' + itemname + '/' + language + '/' + itemcontent);
                 return itemcontent;
             }
 
