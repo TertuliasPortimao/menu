@@ -270,7 +270,10 @@ $(function()
 
 */
                 var dishes = item.dish;
-                alert (item.dish);
+                alert ("item.dish bare " + item.dish);
+                jxx = JSON.stringify(dishes, undefined, 2);
+                alert ("item.dish stringified: " + jxx);
+
           //      alert("1. make frame voor: " + nnn + '/' + nll );
 
                 $.each(dishes, function(index, item2) 
