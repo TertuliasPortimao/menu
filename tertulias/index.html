@@ -234,7 +234,7 @@
                         { var p2 = '  <div class="food-img" align=center> '
                                  + '    <img  src="' + l + i + '" alt="' + n + '" /> '
                                  + '  </div> ' 
-                                 + '  <BR> ' ;}
+                                 + '  ' ;}
                   
                     var p3 = '<div class="food-description" align=center>';
                     var p4 = '';
@@ -243,8 +243,8 @@
                     if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
                     if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
                     if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
-                    var p7 = '  <BR></div> ' ;
-                    var p8 = '</div> ' ;
+                    var p7 = '  </div> ' ;
+                    var p8 = '</div> <BR> ' ;
                     $(v1).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
               
               });
