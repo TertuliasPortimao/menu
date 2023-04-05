@@ -364,6 +364,8 @@ $(function()
                 }
 
                 // lert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
+                jq = JSON.stringify(iblock, undefined, 2);
+                    alert('iblock stringified: ' + jq);
                 alert ("4. ........itemcontent: " + iblock + '/' + itemname + '/' + language + '/' + itemcontent);
                 return itemcontent;
             }
