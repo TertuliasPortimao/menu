@@ -152,6 +152,7 @@ $(function()
                 // Populate the button text with the data from the JSON file
                     $.each(data.courses, function(index, courseitem) 
                     {
+                        alert("courseitem:" + courseitem);
                         var l = getjsonitem(courseitem, "starterstag", lang);
                         if (l!=""){ $('.starterstag').append(l); }  
                         var l = getjsonitem(courseitem, "mainmenutag", lang);
@@ -192,12 +193,7 @@ $(function()
                     if (typeof eval(nl) !== 'undefined') 
                     {   var nll = eval(nl);} 
                     else 
-                    {   var nll = '*' + nn + '*';}
-                        
-                    $('#lijst .coursecluster').append("1+" + eval(nn)); 
-                    $('#lijst .coursecluster').append("2+" + nnn); 
-                    $('#lijst .coursecluster').append("3+" + nll); 
-
+                    {   var nll = '*' + nn + '*';}   
                 }
 
                 var clustercontent = "";
@@ -208,7 +204,7 @@ $(function()
                 clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
                 clustercontent = clustercontent + '</center>';
                 clustercontent = clustercontent + '<h2><BR></h2>';
-                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '(flex)' + '</h2>';
+                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
                 clustercontent = clustercontent + '<div class="food-menu-item container">';
                 clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
                 clustercontent = clustercontent + '</div>';
