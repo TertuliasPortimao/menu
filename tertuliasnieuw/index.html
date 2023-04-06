@@ -238,9 +238,15 @@ $(function()
                  //       }
                 //);
                     
-                $.each(dishitem, function(index, mydish) 
-                {
+
+
+
+                //$.each(dishitem, function(index, mydish) 
+                //{
                     alert ("binnen bij element met index:" + index + " en mydish:" + mydish);
+
+
+
                     var n = getjsonitem(mydish, "name", taal);
                     var d = getjsonitem(mydish, "description", taal);
                     var p = getjsonitem(mydish, "price", taal);
@@ -267,12 +273,15 @@ $(function()
                     $(pagetag).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
                     $(pagetag).append(mydish.name);
                     alert ("die maakt: " + p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
-                });
+              //  });
             }
 
 
             function getjsonitem(jsonpart, required_itemname, language) 
             { 
+
+                alert ("binnen bij getjsonitem met jsonpart:" + jsonpart + " en required_itemname:" + required_itemname+ " en language:" + language);
+
                 var itemcontent = "";
 
                 var required_itemname_in_mylanguage = "jsonpart." + required_itemname + "_" + language;
