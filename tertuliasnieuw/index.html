@@ -206,7 +206,7 @@ $(function()
        
             function make_frame(item, lang) 
             {              
-                if(typeof eval(nn) !== 'undefined')
+                if(typeof eval("item.course") !== 'undefined')
                 { 
                     var coursekey = eval("item.course");
                     var courselabel = getjsonitem(item, "coursetag", lang);
