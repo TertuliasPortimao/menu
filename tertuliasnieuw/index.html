@@ -245,21 +245,36 @@ $(function()
 
 
             function make_gangennavbutton(item, lang) 
-            {          
-
-                var nn = "item.course";  
-                if(typeof eval(nn) !== 'undefined')
-                { 
-                    var nn = "item.course";  
-                    if(typeof eval(nn) !== 'undefined')
+            {        
+                /*  
+                    var course = "item.course";  
+                    if(typeof eval(course) !== 'undefined')
                     { 
-                        var nnn = eval(nn);
-                        var nnt = getjsonitem(item, "coursetag", lang);
-                        var menuline = '<a href="#' + nnn + '-menu"' + 'class="btn btn-primary ' + nnn + 'stag">' + nnt + '</a>';
+                        var showbutton = "item.button";  
+                        if(typeof eval(showbutton) !== 'undefined')
+                        {var mustshowbutton = eval(showbutton);
+                            if (mustshowbutton!=='n')
+                            var mustshowbutton = eval(showbutton);
+                            if (mustshowbutton)
+                        var coursename = eval(course);
+                        var coursetag = getjsonitem(item, "coursetag", lang);
+                        var menuline = '<a href="#' + coursename + '-menu"' + 'class="btn btn-primary ' + coursename + 'stag">' + coursetag + '</a>';
+                        $('#lijst .menu-button-list').append(menuline); 
+                        }
+                    }  
+                */
+                if(typeof eval("item.course") !== 'undefined')
+                { 
+                    if ( (eval("item.button") == 'undefined') || (eval("item.button") !== 'n') )
+
+                    {
+                        var coursetag = getjsonitem(item, "coursetag", lang);
+                        var menuline = '<a href="#' + eval("item.course") + '-menu"' + 'class="btn btn-primary ' + eval("item.course") + 'stag">' + coursetag + '</a>';
                         $('#lijst .menu-button-list').append(menuline); 
                     }
                 }
-            }
+            }  
+            
 
 
             function make_element(pagetag, dishitem, taal) 
