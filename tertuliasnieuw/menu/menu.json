@@ -40,8 +40,8 @@
 
       {
           "course": "starter",
-          "coursetag_en": "Starters",
-          "coursetag_pt": "Iniciante",
+          "coursetag_en": "Vietnamese starters",
+          "coursetag_pt": "Aperitivos vietnamitas",
 
           "dish": 
           
@@ -131,9 +131,9 @@
       
     
       {
-          "course": "main",
-          "coursetag_en": "Main course",
-          "coursetag_pt": "Principal",
+          "course": "vietnamese_main",
+          "coursetag_en": "Vietnamese main courses",
+          "coursetag_pt": "Pratos principais vietnamitas",
 
           "dish": 
           
@@ -238,7 +238,22 @@
                   "price": "€ 7,00",
                   "group": "Vietnamese"
               }
-              ,
+
+          ]
+  
+      }
+      ,
+      
+      
+    
+      {
+          "course": "common_main",
+          "coursetag_en": "Main course",
+          "coursetag_pt": "Principal",
+
+          "dish": 
+          
+          [
               {
                   "name_pt": "SARDINHA",
                   "name_en": "SARDINES",
@@ -391,9 +406,9 @@
 
       
       {
-          "course": "snacks",
-          "coursetag_en": "Snacks",
-          "coursetag_pt": "Snacks",
+          "course": "vietnamese_snacks",
+          "coursetag_en": "Vietnamese snacks",
+          "coursetag_pt": "Lanches vietnamitas",
  
           "dish": 
           
@@ -428,7 +443,21 @@
                 "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
                 "price": "€ 5,50",
                 "group": "Vietnamese"
-                },
+                }
+    
+          ]
+      }
+      ,
+
+      
+      {
+          "course": "common_snacks",
+          "coursetag_en": "Snacks",
+          "coursetag_pt": "Lanches",
+ 
+          "dish": 
+          
+          [
               {
                   "name_pt": "BIFANA EM CARCAÇA",
                   "name_en": "PORK SANDWCH - ROLL",
