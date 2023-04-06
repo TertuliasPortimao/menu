@@ -53,7 +53,8 @@
                 "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
                 "price": "€ 2,00",
                 "image_location": "./",
-                "image": "phongtom.JPG"
+                "image": "phongtom.JPG",
+                "group": "Vietnamese"
                 }
                 ,
                 
@@ -63,7 +64,8 @@
                 "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
                 "price": "€ 4,50",
                 "image_location": "./",
-                "image": "dimsum.png"
+                "image": "dimsum.png",
+                "group": "Vietnamese"
                 }
                 ,
                 {
@@ -72,7 +74,8 @@
                 "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
                 "price": "€ 3,50",
                 "image_location": "./",
-                "image": "goicuontom.png"
+                "image": "goicuontom.png",
+                "group": "Vietnamese"
                 }
                 ,
                 
@@ -82,7 +85,8 @@
                 "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
                 "price": "€ 3,00",
                 "image_location": "./",
-                "image": "goicuonchay.png"
+                "image": "goicuonchay.png",
+                "group": "Vietnamese"
                 }
                 ,
                 
@@ -92,7 +96,8 @@
                 "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
                 "price": "€ 4,95",
                 "image_location": "./",
-                "image": "tomchienxu.JPG"
+                "image": "tomchienxu.JPG",
+                "group": "Vietnamese"
                 }
                 ,
                 
@@ -102,7 +107,8 @@
                 "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
                 "price": "€ 4,50",
                 "image_location": "./",
-                "image": "nemcuon.JPG"
+                "image": "nemcuon.JPG",
+                "group": "Vietnamese"
                 }
                 ,
                 
@@ -112,7 +118,8 @@
                 "description_pt": "Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
                 "price": "€ 4,95",
                 "image_location": "./",
-                "image": "nemcuonchay.png"
+                "image": "nemcuonchay.png",
+                "group": "Vietnamese"
                 }
 
           ]
@@ -138,7 +145,8 @@
                 "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
                 "price": "€ 10,30",
                 "image_location": "./",
-                "image": "phobo.PNG"
+                "image": "phobo.PNG",
+                "group": "Vietnamese"
               }
                 ,
               {
@@ -147,7 +155,8 @@
                   "description_pt": "Sopa especial com massa de arroz e frango. ",
                   "price": "€ 10,30",
                   "image_location": "./",
-                  "image": "phoga.PNG"
+                  "image": "phoga.PNG",
+                  "group": "Vietnamese"
               }
               ,
               {
@@ -156,7 +165,8 @@
                   "description_pt": "Special noodles fritos com macarrão e vegetais e cogumelos. ",
                   "price": "€ 11,00",
                   "image_location": "./",
-                  "image": "phochay.PNG"
+                  "image": "phochay.PNG",
+                  "group": "Vietnamese"
               }
               ,
               {
@@ -165,7 +175,8 @@
                   "description_pt": "Bun cha é servido com carne de porco gordurosa grelhada obre um prato de macarrão de arroz branco e ervas com um acompanhamento de molho. ",
                   "price": "€ 11,00",
                   "image_location": "./",
-                  "image": "bunchahanoi.PNG"
+                  "image": "bunchahanoi.PNG",
+                  "group": "Vietnamese"
               }
                   ,
               {
@@ -174,14 +185,16 @@
                   "description_pt": "Arroz, costelas de porco e um molho especial. ",
                   "price": "€ 10,50",
                   "image_location": "./",
-                  "image": "comsuonchuangot.png"
+                  "image": "comsuonchuangot.png",
+                  "group": "Vietnamese"
               }
               ,
               {
                   "name": "COM GÀ CHUA NGOT",
                   "description_en": "Rice, chicken, and a special sauce. ",
                   "description_pt": "Arroz, frango e um molho especial. ",
-                  "price": "€ 10,50"
+                  "price": "€ 10,50",
+                  "group": "Vietnamese"
               }
                   ,
               {
@@ -190,47 +203,54 @@
                   "description_pt": "Refeição vegetariana. ",
                   "image_location": "./",
                   "image": "xoichienchay.JPG",
-                  "price": "€ 5,00"
+                  "price": "€ 5,00",
+                  "group": "Vietnamese"
               }
               ,
               {
                   "name": "XÔI CHIÊN RUÔC",
                   "description_en": "Sticky rice with herbs, pork. ",
                   "description_pt": "Arroz grudento com ervilha verde, porco. ",
-                  "price": "€ 7,00"
+                  "price": "€ 7,00",
+                  "group": "Vietnamese"
               }
               ,
               {
                   "name": "BÒ SÔT VANG",
                   "description_en": "Stewed Beef with red wine and herbs in claypot. ",
                   "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
-                  "price": "€ 10,30"
+                  "price": "€ 10,30",
+                  "group": "Vietnamese"
               }
               ,
               {
                   "name": "BÚN NEM CUÔN",
                   "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
                   "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
-                  "price": "€ 7,00"
+                  "price": "€ 7,00",
+                  "group": "Vietnamese"
               }
               ,
               {
                   "name": "BÚN NEM CUÔN CHAY Ⓥ",
                   "description_en": "Noodles, Salad, Vegetarian spring rolls with noodles, vegetables, and tofu. ",
                   "description_pt": "Macarrão, Salada, Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
-                  "price": "€ 7,00"
+                  "price": "€ 7,00",
+                  "group": "Vietnamese"
               }
               ,
               {
                   "name_pt": "SARDINHA",
                   "name_en": "SARDINES",
-                  "price": "€ 9,20"
+                  "price": "€ 9,20",
+                  "group": "local"
               }
               ,
               {
                   "name_pt": "ROBALO",
                   "name_en": "SEABASS",
-                  "price": "€ 10,30"
+                  "price": "€ 10,30",
+                  "group": "Local"
               }
               ,
               {
@@ -238,7 +258,8 @@
                   "name_en": "SEABREAM",
                   "price": "€ 10,30",
                   "image_location": "./",
-                  "image": "dourada.png"
+                  "image": "dourada.png",
+                  "group": "Local"
               }
               ,
               {
@@ -246,7 +267,8 @@
                   "name_en": "SALMON",
                   "price": "€ 12,50",
                   "image_location": "./",
-                  "image": "salmao.jpg"
+                  "image": "salmao.jpg",
+                  "group": "Local"
               }
               ,
               {
@@ -254,44 +276,51 @@
                   "name_en": "TUNA SALAD",
                   "price": "€ 7,50",
                   "image_location": "./",
-                  "image": "saladatum.jpg"
+                  "image": "saladatum.jpg",
+                  "group": "Local"
               }
               ,
               {
                   "name_pt": "LULAS FRITAS",
                   "name_en": "FRIED SQUID FISH",
-                  "price": "€ 10,80"
+                  "price": "€ 10,80",
+                  "group": "Local"
               }
               ,
               {
                   "name": "FRANCESINHA",
                   "price": "€ 10,80",
                   "image_location": "./",
-                  "image": "franshinha.jpg"
+                  "image": "franshinha.jpg",
+                  "group": "Local"
               }
               ,
               {
                   "name_pt": "BIFE DE FRANGO",
                   "name_en": "CHICKEN STEAK",
-                  "price": "€ 8,60"
+                  "price": "€ 8,60",
+                  "group": "Local"
               }
               ,
               {
                   "name_pt": "PLUMAS DE PORCO PRETO",
                   "name_en": "BLACK PIG PLUMAS",
-                  "price": "€ 10,30"
+                  "price": "€ 10,30",
+                  "group": "Local"
               }
               ,
               {
                   "name_pt": "SECRETOS DE PORCO PRETO",
                   "name_en": "BLACK PIG SECRETOS",
-                  "price": "€ 10,30"
+                  "price": "€ 10,30",
+                  "group": "Local"
               }
               ,
               {
                   "name_pt": "LAHARTINHOS PORCO PRETO",
                   "name_en": "BLACK PIG LAGARTINHO",
-                  "price": "€ 11,30"
+                  "price": "€ 11,30",
+                  "group": "Local"
               }
               ,
               {
@@ -299,50 +328,59 @@
                   "name_en": "MAMINHA STEAK",
                   "image_location": "./",
                   "image": "maminha.jpg",
-                  "price": "€ 10,80"
+                  "price": "€ 10,80",
+                  "group": "Local"
               }
                 ,
               {
                   "name_pt": "BIFE DE VACA",
                   "name_en": "GRILLED BEEF",
-                  "price": "€ 10,80"
+                  "price": "€ 10,80",
+                  "group": "Local"
               } ,
               {
                   "name_pt": "PICANHA",
                   "name_en": "FILET STEAK",
-                  "price": "€ 12,50"
+                  "price": "€ 12,50",
+                  "group": "Local"
               },
               {
                   "name_pt": "BITOQUE DE VACA",
                   "name_en": "BEEF STEAK",
-                  "price": "€ 8,90"
+                  "price": "€ 8,90",
+                  "group": "Local"
               },
               {
                   "name_pt": "BITOQUE DE FRANGO",
                   "name_en": "CHICKEN STEAK",
-                  "price": "€ 8,60"
+                  "price": "€ 8,60",
+                  "group": "Local"
               },
               {
                   "name_pt": "HAMBURGUER NO PRATO",
                   "name_en": "BURGER ON PLATE",
                   "image_location": "./",
                   "image": "hamburger.jpg",
-                  "price": "€ 7,20"
+                  "price": "€ 7,20",
+                  "group": "Local"
               },
               {
                   "name_pt": "OMELETE SIMPLES",
                   "name_en": "PLAIN OMELETTE",
-                  "price": "€ 7,20"
+                  "price": "€ 7,20",
+                  "group": "Local"
               },
               {
                   "name_pt": "OMELETE MISTA",
                   "name_en": "HAM AND CHEESE OMELETTE",
-                  "price": "€ 7,60"
+                  "price": "€ 7,60",
+                  "group": "Local"
               },
               {
                   "name_pt": "SALADA FRANGO",
                   "name_en": "CHICKEN SALAD",
-                  "price": "€ 7,50"
+                  "price": "€ 7,50",
+                  "group": "Local"
               }
 
           ]
@@ -365,79 +403,92 @@
                 "name": "BANH MŸ THIT NUÖNG",
                 "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
                 "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
-                "price": "€ 4,50"
+                "price": "€ 4,50",
+                "group": "Vietnamese"
                 }
                 ,  
                 {
                 "name": "MŸ XÃO RAU Ⓥ",
                 "description_en": "Fried special noodles with vegetables and mushrooms. ",
                 "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
-                "price": "€ 3,90"
+                "price": "€ 3,90",
+                "group": "Vietnamese"
                 }
                 ,  
                 {
                 "name": "MŸ XÃO TÔM",
                 "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
                 "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
-                "price": "€ 7,50"
+                "price": "€ 7,50",
+                "group": "Vietnamese"
                 },  
                 {
                 "name": "MŸ XÃO GÀ",
                 "description_en": "Special fried noodles with vegetables, mushrooms and chicken. ",
                 "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
-                "price": "€ 5,50"
+                "price": "€ 5,50",
+                "group": "Vietnamese"
                 },
               {
                   "name_pt": "BIFANA EM CARCAÇA",
                   "name_en": "PORK SANDWCH - ROLL",
-                  "price": "€ 2,60"
+                  "price": "€ 2,60",
+                  "group": "Local"
               },
               {
                   "name_pt": "BIFANA EM PÃO",
                   "name_en": "PORK SANDWCH - SLICED BREAD",
-                  "price": "€ 3,70"
+                  "price": "€ 3,70",
+                  "group": "Local"
                  
               },
               {
                   "name_pt": "SANDES PRESUNTO",
                   "name_en": "SMOKED HAM SANDWICH - ROLL",
-                  "price": "€ 2,90"   
+                  "price": "€ 2,90",
+                  "group": "Local"
               },
               {
                   "name_pt": "SANDES PRESUNTO PÃO",
                   "name_en": "SMOKED HAM SANDWICH - SLICED",
-                  "price": "€ 3,80"     
+                  "price": "€ 3,80",
+                  "group": "Local"   
               },
               {
                   "name_pt": "HAMBURGUER SIMPLES",
                   "name_en": "PLAIN BURGER",
                   "description_en": "Bread, Hamburger, lettuce, Tomato. ",
                   "description_pt": "Pão, Hamburguer, alface, Tomate. ",
-                  "price": "€ 5,40"     
+                  "price": "€ 5,40",
+                  "group": "Local"     
               },
               {
                   "name_pt": "HAMBURGUER ESPECIAL",
                   "name_en": "SPECIAL BURGER",
                   "description_en": "Bread, hamburger, lettuce, Tomato, Bacon, Special sauce. ",
                   "description_pt": "Pão, Hamburguer, Alface, Tomate, Bacon, Molho Especial. ",
-                  "price": "€ 6,40"     
+                  "price": "€ 6,40",
+                  "group": "Local"     
               },
               {
                   "name_en": "EGG SANDWICH",
                   "name_pt": "SANDES DE OVO",
                   "description_en": "1 Egg Lettuce Tomato. ",
                   "description_pt": "1 Ovo Alface Tomate. ",
-                  "price": "€ 3,50"     
+                  "price": "€ 3,50",
+                  "group": "Local"     
               },
               {
                   "name_en": "EGG SANDWICH - Sliced Bread",
                   "name_pt": "SANDES DE OVO EM PÃO",
-                  "price": "€ 4,50"     
+                  "price": "€ 4,50",
+                  "group": "Local"     
               },
               {
                   "name_en": "HAM AND CHEESE TOAST - XL",
                   "name_pt": "TOSTA MISTA - XL",
-                  "price": "€ 4,50"     
+                  "price": "€ 4,50",
+                  "group": "Local"     
               },
               {
                   "name_en": "TOAST OF THE HOUSE - XL",
@@ -446,7 +497,8 @@
                   "image": "tostacasa.jpg",
                   "description_en": "Cheese, Bacon, Tomato, Onion, Oregano. ",
                   "description_pt": "Queijo, Bacon, Tomate, Cebola, Oregãos. ",
-                  "price": "€ 5,50"     
+                  "price": "€ 5,50",
+                  "group": "Local"     
               }
                 ,
               {
@@ -454,28 +506,32 @@
                   "name_pt": "TOSTA DE ATUM - XL",
                   "description_en": "Tomato, Tuna, Pasta. ",
                   "description_pt": "Tomate, Pasta de Atum. ",
-                  "price": "€ 5,50"     
+                  "price": "€ 5,50",
+                  "group": "Local"     
               },
               {
                   "name_en": "TUNA BAGUETTE - XL",
                   "name_pt": "BAGUETE DE ATUM - XL",
                   "description_en": "Lettuce, Tomato, Tuna Pasta. ",
                   "description_pt": "Alface, Tomate, Pasta de Atum. ",
-                  "price": "€ 3,90"     
+                  "price": "€ 3,90",
+                  "group": "Local"     
               },
               {
                   "name_en": "CHICKEN TOAST - XL",
                   "name_pt": "TOSTA DE FRANGO - XL",
                   "description_en": "Tomato, Chicken, Cocktail Sauce. ",
                   "description_pt": "Tomate, Frango, Molho Cocktail. ",
-                  "price": "€ 5,20"     
+                  "price": "€ 5,20",
+                  "group": "Local"     
               },
               {
                   "name_en": "CHICKEN BAGUETTE - XL",
                   "name_pt": "BAGUETE DE FRANGO - XL",
                   "description_en": "Lettuce, Tomato, Chicken, Cocktail Sauce. ",
                   "description_pt": "Alface, Tomate, Frango, Molho Cocktail. ",
-                  "price": "€ 3,90"     
+                  "price": "€ 3,90",
+                  "group": "Local"     
               }
     
           ]
@@ -503,7 +559,6 @@
                 "name": "Natural juices",
                 "price": "€ 2,40"
                 }
-
           ]
       
       }   
