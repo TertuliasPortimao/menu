@@ -1,0 +1,400 @@
+{
+    "identification": 
+    
+    [
+        
+        {
+            "menutitle": "Tertúlias Portimaõ"
+        }
+
+        ,
+        
+        {
+            "restaurantname": "Tertúlias"
+        }
+        
+        ,
+        
+        {
+            "restauranttype_en": "Bubble tea<BR>"
+        }
+
+        ,
+        
+        {
+            "restauranttype_en": "Coffee<BR>"
+        }
+
+        ,
+        
+        {
+            "restauranttype_en": "Local and VietNam food"
+        }
+
+        ,
+        
+        {
+            "restauranttype_pt": "Bubble tea<BR>"
+        }
+        
+        ,
+        
+        {
+            "restauranttype_pt": "Coffee<BR>"
+        }
+        
+        ,
+        
+        {
+            "restauranttype_pt": "Local and VietNam food"
+        }
+
+    ]
+
+   ,"about": 
+
+    [
+        {
+            "about_en": "About us"
+        }
+
+        ,
+        
+        {
+            "about_pt": "Sobre nos"
+        }
+   
+        ,
+        
+        {
+            "description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "
+        }
+        
+        ,
+        
+        {
+            "description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "
+        }
+   
+        ,
+        
+        {
+            "description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. "
+        }
+
+        ,
+        
+        {
+            "description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. "
+        }
+
+        ,
+        
+        {
+            "description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. "
+        }
+
+        ,
+        
+        {
+            "description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "
+        }
+   
+        ,
+        
+        {
+            "description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "
+        }
+        
+        ,
+        
+        {
+            "description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "
+        }
+        
+        ,
+        
+        {
+            "description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "
+        }
+        
+        ,
+        
+        {
+            "description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "
+        }
+    
+    ]
+
+    
+    ,
+
+    "gangen": 
+   
+    [
+
+        {
+            "course": "starter",
+            "coursetag_en": "Starters",
+            "coursetag_pt": "Iniciante",
+
+            "dish": 
+            
+            [
+      
+                {   
+                    "name": "PPPhống tôm",
+                    "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
+                    "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
+                    "price": "€ 2,00",
+                    "image_location": "./",
+                    "image": "phongtom.JPG"
+                }
+
+                ,
+        
+                { 
+                    "name": "Dim sum",
+                    "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
+                    "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
+                    "price": "€ 4,50",
+                    "image_location": "./",
+                    "image": "dimsum.png"
+                }
+
+            ]
+    
+        }
+
+        ,
+        
+
+
+        {
+            "course": "special",
+            "coursetag_en": "Special",
+            "coursetag_pt": "Especialemento",
+
+            "dish": 
+            
+            [
+      
+                {   
+                    "name": "PPPPPPPPPhống tôm",
+                    "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
+                    "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
+                    "price": "€ 2,12",
+                    "image_location": "./",
+                    "image": "phongtom.JPG"
+                }
+
+                ,
+        
+                { 
+                    "name": "Dimmmmm sum",
+                    "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
+                    "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
+                    "price": "€ 4,59",
+                    "image_location": "./",
+                    "image": "dimsum.png"
+                }
+
+            ]
+    
+        }
+
+        ,
+
+
+        {
+            "course": "main",
+            "coursetag_en": "main",
+            "coursetag_pt": "Principal",
+   
+            "dish": 
+            
+            [
+         
+                {
+                    "name": "Phở bò",
+                    "description_en": "Beef rice noodle special soup. ",
+                    "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
+                    "price": "€ 10,30",
+                    "image_location": "./",
+                    "image": "phobo.PNG"
+                }
+
+                ,
+      
+                {
+                    "name": "Phở gà",
+                    "description_en": "Chicken rice noodle special soup. ",
+                    "description_pt": "Sopa especial com massa de arroz e frango. ",
+                    "price": "€ 10,30",
+                    "image_location": "./",
+                    "image": "phoga.PNG"
+                }
+      
+            ]
+        }
+
+        ,
+        
+        {
+            "course": "snacks",
+            "coursetag_en": "Snacks",
+            "coursetag_pt": "Snacks",
+
+            "dish": 
+            
+            [
+     
+                {
+                    "name": "BANH MŸ THIT NUÖNG",
+                    "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+                    "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+                    "price": "€ 4,50"
+                }
+        
+                ,  
+                
+                {
+                    "name": "MŸ XÃO RAU Ⓥ",
+                    "description_en": "Fried special noodles with vegetables and mushrooms. ",
+                    "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+                    "price": "€ 3,90"
+                }
+
+            ]
+        
+        }   
+
+        ,
+        
+        {
+            "course": "regular_drinks",
+            "coursetag_en": "Drinks",
+            "coursetag_pt": "Bebidas",
+
+            "dish": 
+            
+            [
+      
+                {
+                    "name": "Sangria",
+                    "image_location": "./",
+                    "image": "sangria.png",
+                    "price": "€ 8,90"
+                }
+            
+                ,  
+            
+                {
+                    "name": "Natural juices",
+                    "price": "€ 2,40"
+                }
+        
+            ]
+
+        }
+  
+        ,
+        
+        {
+            "course": "wine",
+            "coursetag_en": "Wine",
+            "coursetag_pt": "Vinho",
+
+            "dish": 
+            
+            [
+      
+                {
+                    "name": "Tintos",
+                    "description": "Instinto forte (Alentejo) ",
+                    "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+                }
+                
+                ,  
+                
+                {
+                    "description": "Pancel (Alentejo) ",
+                    "price": "                 € 8,50 (75cl)"
+                }
+        
+            ]
+        }
+
+        ,
+        
+        {
+            "course": "bubble_milk_tea",
+            "coursetag_en": "Bubble Milk Tea",
+            "coursetag_pt": "Bubble Milk Tea",
+
+            "dish": 
+            [
+      
+                {
+                    "name": "Original Milk tea",
+                    "description_en": "Tea with original Milk",
+                    "description_pt": "Cha com leite original",
+                    "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                    "price_pt": "€ 3,55 (mer) / € 3,75 (large)",
+                    "image_location": "./",
+                    "image": "bubble.png"
+                }
+                
+                ,
+            
+                {
+                    "name": "Matcha Milk",
+                    "description_en": "Matcha Milk with tapioca Pearls",
+                    "description_pt": "Leite Macha Com pérola de tapioca",
+                    "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                    "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+                }
+
+            ]
+
+        }
+
+        ,
+        
+        {
+            "course": "bubble_fruit_tea",
+            "coursetag_en": "Bubble Fruit Tea",
+            "coursetag_pt": "Bubble Fruit Tea",
+
+            "dish": 
+            [
+      
+                {
+                    "name_en": "Mango",
+                    "name_pt": "Manga",
+                    "description_en": "Mango Fruit tea",
+                    "description_pt": "Chá de manga",
+                    "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                    "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                }
+                
+                ,  
+            
+                {
+                    "name_en": "Strawberry",
+                    "name_pt": "Morango",
+                    "description_en": "Strawberry Fruit tea",
+                    "description_pt": "Chá de morango",
+                    "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                    "price_pt": "€ 3,25 (mer) / € 3,50 (large)"            
+                }
+        
+            ]
+        
+        }
+
+   ]
+
+}
+
+  
