@@ -41,7 +41,7 @@
       {
           "course": "starter",
           "coursetag_en": "Vietnamese starters",
-          "coursetag_pt": "Aperitivos vietnamitas",
+          "coursetag_pt": "Iniciante vietnamitas",
 
           "dish": 
           
@@ -133,7 +133,7 @@
       {
           "course": "vietnamese_main",
           "coursetag_en": "Vietnamese main courses",
-          "coursetag_pt": "Pratos principais vietnamitas",
+          "coursetag_pt": "Principal vietnamitas",
 
           "dish": 
           
@@ -408,7 +408,7 @@
       {
           "course": "vietnamese_snacks",
           "coursetag_en": "Vietnamese snacks",
-          "coursetag_pt": "Lanches vietnamitas",
+          "coursetag_pt": "Snacks vietnamitas",
  
           "dish": 
           
@@ -452,8 +452,7 @@
       
       {
           "course": "common_snacks",
-          "coursetag_en": "Snacks",
-          "coursetag_pt": "Lanches",
+          "coursetag": "Snacks",
  
           "dish": 
           
@@ -659,8 +658,7 @@
       
       {
           "course": "bubble_milk_tea",
-          "coursetag_en": "Bubble Milk Tea",
-          "coursetag_pt": "Bubble Milk Tea",
+          "coursetag": "Bubble Milk Tea",
           "jumpto_via_button": "y",
           "show_buttonline": "Y",
 
@@ -713,8 +711,7 @@
       
       {
           "course": "bubble_fruit_tea",
-          "coursetag_en": "Bubble Fruit Tea",
-          "coursetag_pt": "Bubble Fruit Tea",
+          "coursetag": "Bubble Fruit Tea",
           "jumpto_via_button": "y",
           "show_buttonline": "Y",
 
