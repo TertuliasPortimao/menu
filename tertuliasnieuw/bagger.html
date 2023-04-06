@@ -214,6 +214,7 @@ $(function()
                 clustercontent = clustercontent + '</section>';
                 $('#lijst .coursecluster').append(clustercontent); 
 
+                var dishes = item.dish;
                 $.each(item.dish, function(index, dishitem) 
                     {
                         make_element('#' + nnn + '-menu .menu-list', dishitem, lang) ;
@@ -227,12 +228,12 @@ $(function()
                 $(pagetag).empty();
 
                 // $.each(data.xxxxx, function(index, dishitem) {
-                //dishitem.forEach(
-                //   (dish) => 
-                 //       {
-                 //              console.log(`- ${dish.name}: $${dish.price}`);
-                 //       }
-                //);
+                dishitem.forEach(
+                    (dish) => 
+                        {
+                               console.log(`- ${dish.name}: $${dish.price}`);
+                        }
+                );
                     
                 $.each(dishitem, function(index, item2) 
                 {
