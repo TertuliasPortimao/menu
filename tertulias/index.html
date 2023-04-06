@@ -108,7 +108,7 @@ $(function()
             function loadMenu(lang) 
             {
 
-
+/*
 
                 function readTextFile(file, callback) {
                     var rawFile = new XMLHttpRequest();
@@ -130,6 +130,7 @@ $(function()
                 }
             );
 
+*/
 
 
 
@@ -138,8 +139,8 @@ $(function()
 
 
 
-
-                $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
+                // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
+                $.getJSON('https://webkamer.nl/activefiles/corsextract.php', function(data) // Process inhoud van json-file
                 {
                 // Clear the variable content             
                 // -- Restaurant info block            
