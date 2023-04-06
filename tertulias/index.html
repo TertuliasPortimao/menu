@@ -122,9 +122,8 @@ $(function()
                     }
                     rawFile.send(null);
                 }
-
                 // readTextFile("/Users/Documents/workspace/test.json", function(text)
-                readTextFile("https://webkamer.nl/test/Tertulias/menu.json", function(text)
+                readTextFile("https://webkamer.nl/activefiles/corsextract.php", function(text)
                 {
                     var data = JSON.parse(text);
                     console.log(data);
