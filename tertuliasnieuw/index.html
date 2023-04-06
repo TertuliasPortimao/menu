@@ -179,7 +179,6 @@ $(function()
        
             function make_frame(item, lang) 
             {              
-                alert ("binnen bij make_frame met item:" + item + " en lang:" + lang);
   
                 var nnn = "*?*";
                 var nn = "item.course";                  
@@ -226,27 +225,6 @@ $(function()
 
             function make_element(pagetag, dishitem, taal) 
             {
-                alert ("binnen bij make_element met pagetag:" + pagetag + " en dishitem:" + dishitem+ " en taal:" + taal);
-
-                $(pagetag).empty();
-
-                // $.each(data.xxxxx, function(index, dishitem) {
-                //dishitem.forEach(
-                //   (dish) => 
-                 //       {
-                 //              console.log(`- ${dish.name}: $${dish.price}`);
-                 //       }
-                //);
-                    
-
-
-
-                //$.each(dishitem, function(index, mydish) 
-                //{
-                    //alert ("binnen bij element met index:" + index + " en mydish:" + mydish);
-
-
-
                     var n = getjsonitem(dishitem, "name", taal);
                     var d = getjsonitem(dishitem, "description", taal);
                     var p = getjsonitem(dishitem, "price", taal);
@@ -271,16 +249,11 @@ $(function()
                     var p7 = '  <BR></div> ' ;
                     var p8 = '</div> ' ;
                     $(pagetag).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
-                    $(pagetag).append(dishitem.name);
-                    alert ("die maakt: " + p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
-              //  });
             }
 
 
             function getjsonitem(jsonpart, required_itemname, language) 
             { 
-
-                alert ("binnen bij getjsonitem met jsonpart:" + jsonpart + " en required_itemname:" + required_itemname+ " en language:" + language);
 
                 var itemcontent = "";
 
