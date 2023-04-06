@@ -222,8 +222,8 @@ $(function()
                 if(typeof eval(nn) !== 'undefined')
                 { 
                     var nnn = eval(nn);
-                    $('#lijst .coursecluster .menu-button-list').append(nnn); 
-                    alert('course:' + nnn);
+                    var menuline = '<a href="#' + nnn + '-menu"' + 'class="btn btn-primary ' + nnn + 'stag">' + nnn + '</a>';
+                    $('#lijst .menu-button-list').append(menuline); 
                 }
 
                 
