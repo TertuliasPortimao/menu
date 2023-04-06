@@ -206,47 +206,34 @@ $(function()
        
             function make_frame(item, lang) 
             {              
-  
-                var nnn = "*?*";
-                var nn = "item.course";                  
                 if(typeof eval(nn) !== 'undefined')
                 { 
-                    var nnn = eval(nn);
-                    var nl = "item.coursetag_" + lang;
-                    if(typeof eval(nl) == 'undefined')
-                    {   var nl = "item.course";}
-                        
-                    if (typeof eval(nl) !== 'undefined') 
-                    {   var nll = eval(nl);} 
-                    else 
-                    {   var nll = '*' + nn + '*';}   
-                }
+                    var coursekey = eval("item.course");
+                    var courselabel = getjsonitem(item, "coursetag", lang);
 
-                var nlx = getjsonitem(item, "coursetag", lang);
-                nll = nll + '/' + nlx; 
+                    var clustercontent              = '<section id="' + coursekey + '-menu">';
+                    clustercontent = clustercontent + '<center>';
                 
-                var clustercontent = "";
-                clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
-                clustercontent = clustercontent + '<center>';
-                
-                if ( (eval("item.show_buttonline") == 'undefined') || (eval("item.show_buttonline") !== 'n') )
-                {
-                    clustercontent = clustercontent + '<ul class="menu-button-list"></ul>';  
-                }
-                clustercontent = clustercontent + '</center>';
-                clustercontent = clustercontent + '<h2><BR></h2>';
-                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
-                clustercontent = clustercontent + '<div class="food-menu-item container">';
-                clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
-                clustercontent = clustercontent + '</div>';
-                clustercontent = clustercontent + '</section>';
-                $('#lijst .coursecluster').append(clustercontent); 
-
-                $.each(item.dish, function(index, dishitem) 
+                    if ( (eval("item.show_buttonline") == 'undefined') || (eval("item.show_buttonline") !== 'n') )
                     {
-                        make_element('#' + nnn + '-menu .menu-list', dishitem, lang) ;
-                    });   
-                }
+                        clustercontent = clustercontent + '<ul class="menu-button-list"></ul>';  
+                    }
+                    clustercontent = clustercontent + '</center>';
+                    clustercontent = clustercontent + '<h2><BR></h2>';
+                    clustercontent = clustercontent + '<h2 class="food-menu-heading ' + coursekey + 'tag">' + courselabel + '</h2>';
+                    clustercontent = clustercontent + '<div class="food-menu-item container">';
+                    clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
+                    clustercontent = clustercontent + '</div>';
+                    clustercontent = clustercontent + '</section>';
+                    $('#lijst .coursecluster').append(clustercontent); 
+
+                    $.each(item.dish, function(index, dishitem) 
+                    {
+                        make_element('#' + coursekey + '-menu .menu-list', dishitem, lang) ;
+                    });  
+                    
+                }   
+            }
 
 
             function make_gangennavbutton(item, lang) 
