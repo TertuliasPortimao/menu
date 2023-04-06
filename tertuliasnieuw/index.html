@@ -226,8 +226,10 @@ $(function()
                 clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
                 clustercontent = clustercontent + '<center>';
                 
-                clustercontent = clustercontent + '<ul class="menu-button-list"></ul>';  
-
+                if ( (eval("item.show_buttonline") == 'undefined') || (eval("item.show_buttonline") !== 'n') )
+                {
+                    clustercontent = clustercontent + '<ul class="menu-button-list"></ul>';  
+                }
                 clustercontent = clustercontent + '</center>';
                 clustercontent = clustercontent + '<h2><BR></h2>';
                 clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '</h2>';
@@ -265,8 +267,7 @@ $(function()
                 */
                 if(typeof eval("item.course") !== 'undefined')
                 { 
-                    if ( (eval("item.button") == 'undefined') || (eval("item.button") !== 'n') )
-
+                    if ( (eval("item.jumpto_via_button") == 'undefined') || (eval("item.jumpto_via_button") !== 'n') )
                     {
                         var coursetag = getjsonitem(item, "coursetag", lang);
                         var menuline = '<a href="#' + eval("item.course") + '-menu"' + 'class="btn btn-primary ' + eval("item.course") + 'stag">' + coursetag + '</a>';

@@ -514,7 +514,8 @@
           "course": "wine",
           "coursetag_en": "Wine",
           "coursetag_pt": "Vinho",
-          "button": "n",
+          "jumpto_via_button": "n",
+          "show_buttonline": "n",
 
 
           "dish": 
@@ -576,6 +577,8 @@
           "course": "bubble_milk_tea",
           "coursetag_en": "Bubble Milk Tea",
           "coursetag_pt": "Bubble Milk Tea",
+          "jumpto_via_button": "n",
+          "show_buttonline": "j",
 
           "dish": 
           
@@ -628,6 +631,8 @@
           "course": "bubble_fruit_tea",
           "coursetag_en": "Bubble Fruit Tea",
           "coursetag_pt": "Bubble Fruit Tea",
+          "jumpto_via_button": "j",
+          "show_buttonline": "n",
 
           "dish": 
           [
