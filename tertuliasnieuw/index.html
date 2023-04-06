@@ -178,7 +178,9 @@ $(function()
         // -------------------- //
        
             function make_frame(item, lang) 
-            {                
+            {              
+                alert ("binnen bij make_frame" + item + "/" + lang);
+  
                 var nnn = "*?*";
                 var nn = "item.course";                  
                 if(typeof eval(nn) !== 'undefined')
@@ -224,6 +226,8 @@ $(function()
 
             function make_element(pagetag, dishitem, taal) 
             {
+                alert ("binnen bij make_element" + pagetag + dishitem);
+
                 $(pagetag).empty();
 
                 // $.each(data.xxxxx, function(index, dishitem) {
@@ -234,12 +238,13 @@ $(function()
                  //       }
                 //);
                     
-                $.each(dishitem, function(index, item2) 
+                $.each(dishitem, function(index, mydish) 
                 {
-                    var n = getjsonitem(item2, "name", taal);
-                    var d = getjsonitem(item2, "description", taal);
-                    var p = getjsonitem(item2, "price", taal);
-                    var i = getjsonitem(item2, "image", taal);
+                    alert ("binnen bij element" + mydish);
+                    var n = getjsonitem(mydish, "name", taal);
+                    var d = getjsonitem(mydish, "description", taal);
+                    var p = getjsonitem(mydish, "price", taal);
+                    var i = getjsonitem(mydish, "image", taal);
             //      var l = getjsonitem(item, "image_location", taal);
                     var l = "./menu/images/";
 
@@ -260,7 +265,7 @@ $(function()
                     var p7 = '  <BR></div> ' ;
                     var p8 = '</div> ' ;
                     $(pagetag).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
-                    $(pagetag).append(item2.name);
+                    $(pagetag).append(mydish.name);
 
                 });
             }
