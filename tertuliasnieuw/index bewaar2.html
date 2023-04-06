@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<!-- ------------------------------->
+<!-- ----------- Head -------------->
+<!-- ------------------------------->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="menutitle">*menutitle*</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./components/style.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+    
+
+<!-- -------------------------------------->
+<!-- ----------- Body --------------------->
+<!-- -------------------------------------->    
+<body>
+    
+
+<!--       ----------------------------- -->
+<!--       ----------- Paginakop ------- -->
+<!--       ----------------------------- -->    
+    <section class="showcase-area" id="showcase">
+        
+        <p style="text-align:right;">
+            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
+            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+        </p>
+
+        <div class="showcase-container">
+            <h1 class="main-title restaurantname" id="">*Organization*</h1>
+            <center>
+            <p class="restauranttype-list"></p>
+            </center>
+        </div>
+
+        <center>
+            <a href="#starter-menu" class="btn btn-primary">Menu</a>
+       </center>
+    </section>
+    
+
+
+<!--       ----------------------------- -->
+<!--       ----------- About ----------- -->
+<!--       ----------------------------- -->      
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                
+                <h2 class="about-list-header"></h2>
+
+                <BR>
+                    
+                <p class="about-list"></p>
+                    
+            </div>
+        </div>
+    </section>
+
+        
+    
+    
+             
+    <section id="lijst">
+        <h2>Extra</h2>
+        <ul class="coursecluster"></ul>     
+    </section>
+   
+  
+        
+        
+        
+        
+    <footer id="footer">
+        <h2><a class="restaurantname"></a> &copy; all rights reserved</h2>
+    </footer>
+    <!-- .................../ JS Code for smooth scrolling /...................... -->
+
+
+
+
+
+<!--       ============================= -->
+<!--       =========== Javascript ====== -->
+<!--       ============================= -->
+
+<script>
+        
+$(function() 
+{
+        // ---------------- //
+        // Kickoff Mainline //
+        // ---------------- //
+
+            loadMenu('en');                 // Load the English menu by default
+    
+          
+            $('.flag').click(function()     // Handle click events on the language selector flags
+                {
+                    var lang = $(this).data('lang');
+                    loadMenu(lang);
+                }
+            );
+    
+        // -------- //
+        // Mainline //
+        // -------- //
+
+            // ------------------------------------------------------------ //
+            // F: Load the menu from a JSON file for the specified language //
+            // ------------------------------------------------------------ //
+            function loadMenu(lang) 
+            {
+                $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
+                //$.getJSON("https://webkamer.nl/test/Tertulias/menutertulias.json", function(data) {
+                // Werkt niet, moet CORS zijn 
+                {         
+
+
+/*
+                console.log(JSON.stringify(data, null, 2));
+                alert(JSON.stringify(data, null, 2));
+                
+                data.gangen.forEach(
+                    (course) => 
+                    {
+                        console.log(`Course: ${course.course}`);
+                        course.dish.forEach(
+                            (dish) => 
+                            {
+                            //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
+                               console.log(`- ${dish.name}: $${dish.price}`);
+                        }
+                            );
+                    }
+                );
+*/
+
+
+
+                // Clear the menu lists             
+                    $('.menutitle').empty();
+                    $('.restaurantname').empty();
+                    $('.restauranttype-list').empty();
+
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.identification, function(index, item) 
+                    {
+                        var l = getjsonitem(item, "menutitle", lang);
+                        if (l!=""){ $('.menutitle').append(l); }    
+                        var l = getjsonitem(item, "restaurantname", lang);
+                        if (l!=""){ $('.restaurantname').append(l); }
+                        var l = getjsonitem(item, "restauranttype", lang);
+                        if (l!=""){ $('.restauranttype-list').append(l); } 
+                    });   
+                   
+
+                // Clear the button text             
+                    $('.starterstag').empty();  
+                    $('.mainmenutag').empty();  
+                    $('.snackstag').empty();  
+                    $('.drinkstag').empty();  
+
+                // Populate the button text with the data from the JSON file
+                    $.each(data.courses, function(index, item) 
+                    {
+                        var l = getjsonitem(item, "starterstag", lang);
+                        if (l!=""){ $('.starterstag').append(l); }  
+                        var l = getjsonitem(item, "mainmenutag", lang);
+                        if (l!=""){ $('.mainmenutag').append(l); }   
+                        var l = getjsonitem(item, "snackstag", lang);
+                        if (l!=""){ $('.snackstag').append(l); } 
+                        var l = getjsonitem(item, "drinkstag", lang);
+                        if (l!=""){ $('.drinkstag').append(l); } 
+                    });   
+
+
+
+
+
+
+
+                // --------------------- //                         
+                // Clear the menu lists  //    
+                // --------------------- //                         
+                    $('#lijst .coursecluster').empty();
+                // Clear the menu lists             
+                      $('#about .small').empty();
+                    $('#about .about-list-header').empty();
+                    $('#about .about-list').empty();
+
+                    
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.gangen, function(index, item) 
+                //  $.each(data.courseslist, function(index, item) 
+                    {
+                        make_frame(item, lang) ;                 
+                    });   
+                
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.about, function(index, item) 
+                    {
+                        var nn = "item.about_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
+                        var nn = "item.description_header_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
+                        var nn = "item.description_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
+                    });   
+                           
+                    make_element('#starter-menu       .menu-list', data.starters,         lang) ;
+                    make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
+                    make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
+                    make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
+                    make_element('#wine               .menu-list', data.wine,             lang) ;              
+                    make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
+                    make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
+
+                   
+                }); // einde verwerking json file
+            }  // Einde functie loadmenu
+
+    
+        // -------------------- //
+        // Mainline subroutines //
+        // -------------------- //
+       
+            function make_frame(item, lang) 
+            {
+                console.log(item);
+                
+                var nnn = "*?*";
+                var nn = "item.course";                  
+                if(typeof eval(nn) !== 'undefined')
+                { 
+                    var nnn = eval(nn);
+                    var nl = "item.coursetag_" + lang;
+                    if(typeof eval(nl) == 'undefined')
+                    {   var nl = "item.course";}
+                        
+                    if (typeof eval(nl) !== 'undefined') 
+                    {   var nll = eval(nl);} 
+                    else 
+                    {   var nll = '*' + nn + '*';}
+                        
+                    $('#lijst .coursecluster').append("1+" + eval(nn)); 
+                    $('#lijst .coursecluster').append("2+" + nnn); 
+                    $('#lijst .coursecluster').append("3+" + nll); 
+
+                }
+
+               // alert("nnn=" + nnn + ", nll=" + nll);
+                var clustercontent = "";
+
+                clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
+                clustercontent = clustercontent + '<center>';
+                clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
+                clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
+                clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
+                clustercontent = clustercontent + '</center>';
+                clustercontent = clustercontent + '<h2><BR></h2>';
+                clustercontent = clustercontent + '<h2 class="food-menu-heading ' + nnn + 'tag">' + nll + '(flex)' + '</h2>';
+                clustercontent = clustercontent + '<div class="food-menu-item container">';
+                clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
+                clustercontent = clustercontent + '</div>';
+                clustercontent = clustercontent + '</section>';
+                $('#lijst .coursecluster').append(clustercontent); 
+
+               // alert(clustercontent);
+
+
+/*
+                let str = "";
+                Object.keys(item.dish).forEach(k => {
+                    str += k + ":\n";
+                    str += item.dish[k].join(",\n");
+                });
+                alert(str);
+
+*/
+//                var dishes = item.dish;
+                var dishes = JSON.parse(item.dish);
+        //        alert ("item.dish bare " + item.dish);
+         //       jxx = JSON.stringify(dishes, undefined, 2);
+        //        alert ("item.dish stringified: " + jxx);
+         //       jxx = JSON.stringify(item, undefined, 2);
+         //       alert ("item stringified: " + jxx);
+
+
+                $.each(item.dish, function(index, item2) 
+                //$.each(dishes, function(index, item2) 
+                    {
+                        make_element('#' + nnn + '-menu .menu-list', item2, lang) ;
+                    });   
+
+            }
+
+          
+
+
+
+
+          // v1 = '#starter-menu .menu-list'
+          // v2 = data.starters;
+          // v3 = lang;
+            
+            function make_element(v1, v2, v3) 
+            {
+                $(v1).empty();
+                var dsi = v2;
+           //     alert ("3. in make_element met vars:" + v1 + v2 + v3);
+
+            // $.each(data.starters, function(index, item) {
+                //$.each(dsi, function(index, item2) 
+
+
+
+                // xx = JSON.parse(v2);
+                        v2.forEach(
+                            (dish) => 
+                            {
+                            //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
+                               console.log(`- ${dish.name}: $${dish.price}`);
+                        }
+                            );
+                    
+                
+
+
+
+
+                $.each(xx, function(index, item2) 
+                {
+            //        alert('element gevonden');
+                    jx = JSON.stringify(item2, undefined, 2);
+            //        alert('stringified: ' + jx);
+                    var n = getjsonitem(item2, "name", v3);
+                    var d = getjsonitem(item2, "description", v3);
+                    var p = getjsonitem(item2, "price", v3);
+                    var i = getjsonitem(item2, "image", v3);
+            //      var l = getjsonitem(item, "image_location", v3);
+                    var l = "./menu/images/";
+
+                    var p1 = '<div class="food-menu-item" align=center>' ;
+                    var p2 = ''; 
+                    if (i!="")
+                        { var p2 = '  <div class="food-img" align=center> '
+                                 + '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                 + '  </div> ' 
+                                 + '  <BR> ' ;}
+                    var p3 = '  <div class="food-description" align=center> ';
+                    var p4 = '';
+                    var p5 = '';
+                    var p6 = '';
+                    if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
+                    if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
+                    if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
+                    var p7 = '  <BR></div> ' ;
+                    var p8 = '</div> ' ;
+                    $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
+                    $(v1).append(item2.name);
+
+
+
+                });
+            }
+
+
+
+
+         
+
+
+            // ------------------------------------------------------------ //
+            // F: ...                                                       //
+            // ------------------------------------------------------------ //
+            function getjsonitem(iblock, itemname, language) 
+            { 
+                var itemcontent = "";
+                var in_l = "iblock." + itemname + "_" + language;
+                var in_nl = "iblock." + itemname;
+
+                t1 = typeof eval(in_l);
+                t2 = typeof eval(in_nl);
+                t3 = ""; // typeof eval(iblock);
+
+                if (typeof eval(in_l) !== 'undefined') 
+                {   var itemcontent = eval(in_l); } // pak de taalspecifieke  
+                else 
+                {   if (typeof eval(in_nl) !== 'undefined') 
+                    {   var itemcontent = eval(in_nl); } // Pak de algemene 
+                }
+
+                // lert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
+                jq = JSON.stringify(iblock, undefined, 2);
+              //      alert('iblock stringified: ' + jq);
+              //  alert ("4. ........itemcontent: " + iblock + '/' + itemname + '/' + language + '/' + itemcontent);
+                return itemcontent;
+            }
+
+
+
+
+});
+
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./components/app.js"></script>
+       
+</body>
+
+</html>
+

@@ -49,11 +49,6 @@
        </center>
     </section>
     
-
-
-<!--       ----------------------------- -->
-<!--       ----------- About ----------- -->
-<!--       ----------------------------- -->      
     <section id="about">
         <div class="about-wrapper container">
             <div class="about-text">
@@ -68,28 +63,15 @@
             </div>
         </div>
     </section>
-
-        
-        
-        
-        
     
-    
-             
     <section id="lijst">
         <h2>Extra</h2>
         <ul class="coursecluster"></ul>     
     </section>
-   
-  
-        
-        
-        
         
     <footer id="footer">
         <h2><a class="restaurantname"></a> &copy; all rights reserved</h2>
     </footer>
-    <!-- .................../ JS Code for smooth scrolling /...................... -->
 
 
 
@@ -127,109 +109,67 @@ $(function()
             function loadMenu(lang) 
             {
                 $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
-                //$.getJSON("https://webkamer.nl/test/Tertulias/menutertulias.json", function(data) {
-                // Werkt niet, moet CORS zijn 
-                {         
-
-
-/*
-                console.log(JSON.stringify(data, null, 2));
-                alert(JSON.stringify(data, null, 2));
-                
-                data.gangen.forEach(
-                    (course) => 
-                    {
-                        console.log(`Course: ${course.course}`);
-                        course.dish.forEach(
-                            (dish) => 
-                            {
-                            //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
-                               console.log(`- ${dish.name}: $${dish.price}`);
-                        }
-                            );
-                    }
-                );
-*/
-
-
-
-                // Clear the menu lists             
-                    $('.menutitle').empty();
+                {
+                // Clear the variable content             
+                // -- Restaurant info block            
+                $('.menutitle').empty();
                     $('.restaurantname').empty();
                     $('.restauranttype-list').empty();
-                // Populate the menu lists with the data from the JSON file
-                    $.each(data.identification, function(index, item) 
-                    {
-                        var l = getjsonitem(item, "menutitle", lang);
-                        if (l!=""){ $('.menutitle').append(l); }    
-                        var l = getjsonitem(item, "restaurantname", lang);
-                        if (l!=""){ $('.restaurantname').append(l); }
-                        var l = getjsonitem(item, "restauranttype", lang);
-                        if (l!=""){ $('.restauranttype-list').append(l); } 
-                    });   
-                   
-
-                // Clear the button text             
+                // -- Restaurant about info block             
+                    $('#about .small').empty();
+                    $('#about .about-list-header').empty();
+                    $('#about .about-list').empty();
+                // -- The button text             
                     $('.starterstag').empty();  
                     $('.mainmenutag').empty();  
                     $('.snackstag').empty();  
                     $('.drinkstag').empty();  
-
-                // Populate the button text with the data from the JSON file
-                    $.each(data.courses, function(index, item) 
-                    {
-                        var l = getjsonitem(item, "starterstag", lang);
-                        if (l!=""){ $('.starterstag').append(l); }  
-                        var l = getjsonitem(item, "mainmenutag", lang);
-                        if (l!=""){ $('.mainmenutag').append(l); }   
-                        var l = getjsonitem(item, "snackstag", lang);
-                        if (l!=""){ $('.snackstag').append(l); } 
-                        var l = getjsonitem(item, "drinkstag", lang);
-                        if (l!=""){ $('.drinkstag').append(l); } 
-                    });   
-
-
-
-
-
-
-
-                // --------------------- //                         
-                // Clear the menu lists  //    
-                // --------------------- //                         
+                // -- The menu lists                          
                     $('#lijst .coursecluster').empty();
-                // Clear the menu lists             
-                      $('#about .small').empty();
-                    $('#about .about-list-header').empty();
-                    $('#about .about-list').empty();
-                // Populate the menu lists with the data from the JSON file
-                    $.each(data.gangen, function(index, item) 
-                //  $.each(data.courseslist, function(index, item) 
-                    {
-                        make_frame(item, lang) ;                 
-                    });   
                 
-                // Populate the menu lists with the data from the JSON file
-                    $.each(data.about, function(index, item) 
+                // Populate the restaurant info with the data from the JSON file
+                    $.each(data.identification, function(index, identitem) 
                     {
-                        var nn = "item.about_" + lang;                  
+                        var l = getjsonitem(identitem, "menutitle", lang);
+                        if (l!=""){ $('.menutitle').append(l); }    
+                        var l = getjsonitem(identitem, "restaurantname", lang);
+                        if (l!=""){ $('.restaurantname').append(l); }
+                        var l = getjsonitem(identitem, "restauranttype", lang);
+                        if (l!=""){ $('.restauranttype-list').append(l); } 
+                    });   
+
+                // Also populate the restaurant about info with the data from the JSON file
+                    $.each(data.about, function(index, aboutitem) 
+                    {
+                        var nn = "aboutitem.about_" + lang;                  
                         if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
-                        var nn = "item.description_header_" + lang;                  
+                        var nn = "aboutitem.description_header_" + lang;                  
                         if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
-                        var nn = "item.description_" + lang;                  
+                        var nn = "aboutitem.description_" + lang;                  
                         if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
                     });   
-                           
-                    make_element('#starter-menu       .menu-list', data.starters,         lang) ;
-                    make_element('#main-menu          .menu-list', data.main_dishes,      lang) ;
-                    make_element('#snacks-menu        .menu-list', data.snacks,           lang) ;              
-                    make_element('#regular-drinks     .menu-list', data.regular_drinks,   lang) ;              
-                    make_element('#wine               .menu-list', data.wine,             lang) ;              
-                    make_element('#bubble-milk-tea    .menu-list', data.bubble_milk_tea,  lang) ;              
-                    make_element('#bubble-fruit-tea   .menu-list', data.bubble_fruit_tea, lang) ;              
 
-                   
+                // Populate the button text with the data from the JSON file
+                    $.each(data.courses, function(index, courseitem) 
+                    {
+                        var l = getjsonitem(courseitem, "starterstag", lang);
+                        if (l!=""){ $('.starterstag').append(l); }  
+                        var l = getjsonitem(courseitem, "mainmenutag", lang);
+                        if (l!=""){ $('.mainmenutag').append(l); }   
+                        var l = getjsonitem(courseitem, "snackstag", lang);
+                        if (l!=""){ $('.snackstag').append(l); } 
+                        var l = getjsonitem(courseitem, "drinkstag", lang);
+                        if (l!=""){ $('.drinkstag').append(l); } 
+                    });       
+                    
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.gangen, function(index, gangitem) 
+                    {
+                        make_frame(gangitem, lang) ;                 
+                    });   
+                
                 }); // einde verwerking json file
+
             }  // Einde functie loadmenu
 
     
@@ -238,9 +178,7 @@ $(function()
         // -------------------- //
        
             function make_frame(item, lang) 
-            {
-                console.log(item);
-                
+            {                
                 var nnn = "*?*";
                 var nn = "item.course";                  
                 if(typeof eval(nn) !== 'undefined')
@@ -261,9 +199,7 @@ $(function()
 
                 }
 
-               // alert("nnn=" + nnn + ", nll=" + nll);
                 var clustercontent = "";
-
                 clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
                 clustercontent = clustercontent + '<center>';
                 clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
@@ -278,79 +214,34 @@ $(function()
                 clustercontent = clustercontent + '</section>';
                 $('#lijst .coursecluster').append(clustercontent); 
 
-               // alert(clustercontent);
-
-
-/*
-                let str = "";
-                Object.keys(item.dish).forEach(k => {
-                    str += k + ":\n";
-                    str += item.dish[k].join(",\n");
-                });
-                alert(str);
-
-*/
-//                var dishes = item.dish;
-                var dishes = JSON.parse(item.dish);
-        //        alert ("item.dish bare " + item.dish);
-         //       jxx = JSON.stringify(dishes, undefined, 2);
-        //        alert ("item.dish stringified: " + jxx);
-         //       jxx = JSON.stringify(item, undefined, 2);
-         //       alert ("item stringified: " + jxx);
-
-
-                $.each(item.dish, function(index, item2) 
-                //$.each(dishes, function(index, item2) 
+                var dishes = item.dish;
+                $.each(item.dish, function(index, dishitem) 
                     {
-                        make_element('#' + nnn + '-menu .menu-list', item2, lang) ;
+                        make_element('#' + nnn + '-menu .menu-list', dishitem, lang) ;
                     });   
-
-            }
-
-          
+                }
 
 
 
-
-          // v1 = '#starter-menu .menu-list'
-          // v2 = data.starters;
-          // v3 = lang;
-            
-            function make_element(v1, v2, v3) 
+            function make_element(pagetag, dishitem, taal) 
             {
-                $(v1).empty();
-                var dsi = v2;
-           //     alert ("3. in make_element met vars:" + v1 + v2 + v3);
+                $(pagetag).empty();
 
-            // $.each(data.starters, function(index, item) {
-                //$.each(dsi, function(index, item2) 
-
-
-
-                // xx = JSON.parse(v2);
-                        v2.forEach(
-                            (dish) => 
-                            {
-                            //    console.log(`- ${dish.dish_name}: $${dish.price.toFixed(2)}`);
+                // $.each(data.xxxxx, function(index, dishitem) {
+                dishitem.forEach(
+                    (dish) => 
+                        {
                                console.log(`- ${dish.name}: $${dish.price}`);
                         }
-                            );
+                );
                     
-                
-
-
-
-
-                $.each(xx, function(index, item2) 
+                $.each(dishitem, function(index, item2) 
                 {
-            //        alert('element gevonden');
-                    jx = JSON.stringify(item2, undefined, 2);
-            //        alert('stringified: ' + jx);
-                    var n = getjsonitem(item2, "name", v3);
-                    var d = getjsonitem(item2, "description", v3);
-                    var p = getjsonitem(item2, "price", v3);
-                    var i = getjsonitem(item2, "image", v3);
-            //      var l = getjsonitem(item, "image_location", v3);
+                    var n = getjsonitem(item2, "name", taal);
+                    var d = getjsonitem(item2, "description", taal);
+                    var p = getjsonitem(item2, "price", taal);
+                    var i = getjsonitem(item2, "image", taal);
+            //      var l = getjsonitem(item, "image_location", taal);
                     var l = "./menu/images/";
 
                     var p1 = '<div class="food-menu-item" align=center>' ;
@@ -369,49 +260,28 @@ $(function()
                     if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
                     var p7 = '  <BR></div> ' ;
                     var p8 = '</div> ' ;
-                    $(v1).append(p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8);
-                    $(v1).append(item2.name);
-
-
+                    $(pagetag).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
+                    $(pagetag).append(item2.name);
 
                 });
             }
 
 
-
-
-         
-
-
-            // ------------------------------------------------------------ //
-            // F: ...                                                       //
-            // ------------------------------------------------------------ //
-            function getjsonitem(iblock, itemname, language) 
+            function getjsonitem(jsonpart, required_itemname, language) 
             { 
                 var itemcontent = "";
-                var in_l = "iblock." + itemname + "_" + language;
-                var in_nl = "iblock." + itemname;
 
-                t1 = typeof eval(in_l);
-                t2 = typeof eval(in_nl);
-                t3 = ""; // typeof eval(iblock);
+                var required_itemname_in_mylanguage = "jsonpart." + required_itemname + "_" + language;
+                var required_itemname_in_general_language = "jsonpart." + required_itemname;
 
-                if (typeof eval(in_l) !== 'undefined') 
-                {   var itemcontent = eval(in_l); } // pak de taalspecifieke  
+                if (typeof eval(required_itemname_in_mylanguage) !== 'undefined') 
+                {   var itemcontent = eval(required_itemname_in_mylanguage); } // pak de taalspecifieke  
                 else 
-                {   if (typeof eval(in_nl) !== 'undefined') 
-                    {   var itemcontent = eval(in_nl); } // Pak de algemene 
+                {   if (typeof eval(required_itemname_in_general_language) !== 'undefined') 
+                    {   var itemcontent = eval(required_itemname_in_general_language); } // Pak de algemene 
                 }
-
-                // lert("itemname=" + itemname + ", languagep=" + language + " ===> in_l=" + in_l + "(" + t1 + ")" + ", in_nl=" + in_nl + "(" + t2 + ")" + ", type iblock=" + t3 + ", itemcontent=" + itemcontent);
-                jq = JSON.stringify(iblock, undefined, 2);
-              //      alert('iblock stringified: ' + jq);
-              //  alert ("4. ........itemcontent: " + iblock + '/' + itemname + '/' + language + '/' + itemcontent);
                 return itemcontent;
             }
-
-
-
 
 });
 
@@ -421,7 +291,9 @@ $(function()
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./components/app.js"></script>
-       
+
+<!-- .................../ JS Code for smooth scrolling /...................... -->
+
 </body>
 
 </html>
