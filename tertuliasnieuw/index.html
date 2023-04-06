@@ -179,7 +179,7 @@ $(function()
        
             function make_frame(item, lang) 
             {              
-                alert ("binnen bij make_frame" + item + "/" + lang);
+                alert ("binnen bij make_frame met item:" + item + " en lang:" + lang);
   
                 var nnn = "*?*";
                 var nn = "item.course";                  
@@ -226,7 +226,7 @@ $(function()
 
             function make_element(pagetag, dishitem, taal) 
             {
-                alert ("binnen bij make_element" + pagetag + dishitem);
+                alert ("binnen bij make_element met pagetag:" + pagetag + " en dishitem:" + dishitem+ " en taal:" + taal);
 
                 $(pagetag).empty();
 
@@ -240,7 +240,7 @@ $(function()
                     
                 $.each(dishitem, function(index, mydish) 
                 {
-                    alert ("binnen bij element" + mydish);
+                    alert ("binnen bij element met index:" + index + " en mydish:" + mydish);
                     var n = getjsonitem(mydish, "name", taal);
                     var d = getjsonitem(mydish, "description", taal);
                     var p = getjsonitem(mydish, "price", taal);
@@ -266,7 +266,7 @@ $(function()
                     var p8 = '</div> ' ;
                     $(pagetag).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
                     $(pagetag).append(mydish.name);
-
+                    alert ("die maakt: " + p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
                 });
             }
 
