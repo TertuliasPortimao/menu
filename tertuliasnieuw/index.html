@@ -65,7 +65,6 @@
     </section>
     
     <section id="lijst">
-        <h2>Extra</h2>
         <ul class="coursecluster"></ul>     
     </section>
         
@@ -149,26 +148,20 @@ $(function()
                         if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
                     });   
 
-                // Populate the button text with the data from the JSON file
-                    $.each(data.courses, function(index, courseitem) 
-                    {
-                        alert("courseitem:" + courseitem);
-                        var l = getjsonitem(courseitem, "starterstag", lang);
-                        if (l!=""){ $('.starterstag').append(l); }  
-                        var l = getjsonitem(courseitem, "mainmenutag", lang);
-                        if (l!=""){ $('.mainmenutag').append(l); }   
-                        var l = getjsonitem(courseitem, "snackstag", lang);
-                        if (l!=""){ $('.snackstag').append(l); } 
-                        var l = getjsonitem(courseitem, "drinkstag", lang);
-                        if (l!=""){ $('.drinkstag').append(l); } 
-                    });       
-                    
                 // Populate the menu lists with the data from the JSON file
                     $.each(data.gangen, function(index, gangitem) 
                     {
                         make_frame(gangitem, lang) ;                 
                     });   
                 
+                // Populate the button text with the data from the JSON file
+                    $.each(data.gangen, function(index, gangitem) 
+                    {
+                        make_gangennavbutton(gangitem, lang) ;                 
+                    });  
+                    
+
+
                 }); // einde verwerking json file
 
             }  // Einde functie loadmenu
@@ -178,6 +171,8 @@ $(function()
         // Mainline subroutines //
         // -------------------- //
        
+        
+
             function make_frame(item, lang) 
             {              
   
@@ -199,6 +194,9 @@ $(function()
                 var clustercontent = "";
                 clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
                 clustercontent = clustercontent + '<center>';
+                
+                clustercontent = clustercontent + '<ul class="menu-button-list"></ul>';  
+
                 clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
                 clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
                 clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
@@ -216,6 +214,28 @@ $(function()
                         make_element('#' + nnn + '-menu .menu-list', dishitem, lang) ;
                     });   
                 }
+
+
+            function make_gangennavbutton(item, lang) 
+            {              
+                var nn = "item.course";                  
+                if(typeof eval(nn) !== 'undefined')
+                { 
+                    var nnn = eval(nn);
+                    $('#lijst .coursecluster .menu-button-list').append(nnn); 
+                    alert('course:' + nnn);
+                }
+
+                
+                clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
+                clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
+                clustercontent = clustercontent + '<a href="#zzzzz-menu"  class="btn btn-primary zzzzztag">*Zzzzz*</a>';
+            }
+
+
+
+
+
 
 
 
