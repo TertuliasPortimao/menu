@@ -3,7 +3,6 @@
 <html lang="en">
 
 
-
 <!-- ------------------------------->
 <!-- ----------- Head -------------->
 <!-- ------------------------------->
@@ -84,6 +83,7 @@
         
 $(function() 
 {
+
         // ---------------- //
         // Kickoff Mainline //
         // ---------------- //
@@ -107,6 +107,39 @@ $(function()
             // ------------------------------------------------------------ //
             function loadMenu(lang) 
             {
+
+
+
+                function readTextFile(file, callback) {
+                    var rawFile = new XMLHttpRequest();
+                    rawFile.overrideMimeType("application/json");
+                    rawFile.open("GET", file, true);
+                    rawFile.onreadystatechange = function() 
+                    {
+                        if (rawFile.readyState === 4 && rawFile.status == "200") {
+                            callback(rawFile.responseText);
+                            }
+                    }
+                    rawFile.send(null);
+                }
+
+                // readTextFile("/Users/Documents/workspace/test.json", function(text)
+                readTextFile("http://webkamer.nl/test/Tertulias/menu.json", function(text)
+                {
+                    var data = JSON.parse(text);
+                    console.log(data);
+                }
+            );
+
+
+
+
+
+
+
+
+
+
                 $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
                 {
                 // Clear the variable content             
@@ -171,8 +204,6 @@ $(function()
         // Mainline subroutines //
         // -------------------- //
        
-        
-
             function make_frame(item, lang) 
             {              
   
@@ -229,12 +260,6 @@ $(function()
                     }
                 }
             }
-
-
-
-
-
-
 
 
             function make_element(pagetag, dishitem, taal) 
