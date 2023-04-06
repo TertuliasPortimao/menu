@@ -222,6 +222,9 @@ $(function()
                     {   var nll = '*' + nn + '*';}   
                 }
 
+                var nlx = getjsonitem(item, "coursetag", lang);
+                nll = nll + '/' + nlx; 
+                
                 var clustercontent = "";
                 clustercontent = clustercontent + '<section id="' + nnn + '-menu">';
                 clustercontent = clustercontent + '<center>';
