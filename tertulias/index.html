@@ -107,38 +107,6 @@ $(function()
             // ------------------------------------------------------------ //
             function loadMenu(lang) 
             {
-
-/*
-
-                function readTextFile(file, callback) {
-                    var rawFile = new XMLHttpRequest();
-                    rawFile.overrideMimeType("application/json");
-                    rawFile.open("GET", file, true);
-                    rawFile.onreadystatechange = function() 
-                    {
-                        if (rawFile.readyState === 4 && rawFile.status == "200") {
-                            callback(rawFile.responseText);
-                            }
-                    }
-                    rawFile.send(null);
-                }
-                // readTextFile("/Users/Documents/workspace/test.json", function(text)
-                readTextFile("https://webkamer.nl/activefiles/corsextract.php", function(text)
-                {
-                    var data = JSON.parse(text);
-                    console.log(data);
-                }
-            );
-
-*/
-
-
-
-
-
-
-
-
                 // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
                 $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
                 {
@@ -238,23 +206,6 @@ $(function()
 
             function make_gangennavbutton(item, lang) 
             {        
-                /*  
-                    var course = "item.course";  
-                    if(typeof eval(course) !== 'undefined')
-                    { 
-                        var showbutton = "item.button";  
-                        if(typeof eval(showbutton) !== 'undefined')
-                        {var mustshowbutton = eval(showbutton);
-                            if (mustshowbutton!=='n')
-                            var mustshowbutton = eval(showbutton);
-                            if (mustshowbutton)
-                        var coursename = eval(course);
-                        var coursetag = getjsonitem(item, "coursetag", lang);
-                        var menuline = '<a href="#' + coursename + '-menu"' + 'class="btn btn-primary ' + coursename + 'stag">' + coursetag + '</a>';
-                        $('#lijst .menu-button-list').append(menuline); 
-                        }
-                    }  
-                */
                 if(typeof eval("item.course") !== 'undefined')
                 { 
                     if ( (eval("item.jumpto_via_button") == 'undefined') || (eval("item.jumpto_via_button") !== 'n') )
@@ -276,6 +227,8 @@ $(function()
                     var i = getjsonitem(dishitem, "image", taal);
             //      var l = getjsonitem(item, "image_location", taal);
                     var l = "./menu/images/";
+
+                 var l = 'https://webkamer.nl/activefiles/corsextract.php?type=img&';
 
                     var p1 = '<div class="food-menu-item" align=center>' ;
                     var p2 = ''; 
