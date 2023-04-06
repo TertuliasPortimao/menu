@@ -215,14 +215,26 @@ $(function()
 
             function make_gangennavbutton(item, lang) 
             {              
-                var nn = "item.course";                  
+                var nnn = getjsonitem(item, "course", lang);
+                if(nnn !== '')
+                { 
+                    var menuline = '<a href="#' + nnn + '-menu"' + 'class="btn btn-primary ' + nnn + 'stag">' + nnn + '</a>';
+                    $('#lijst .menu-button-list').append(menuline); 
+                }
+
+
+
+
+/*
+                var nn = "item.course";  
+
                 if(typeof eval(nn) !== 'undefined')
                 { 
                     var nnn = eval(nn);
                     var menuline = '<a href="#' + nnn + '-menu"' + 'class="btn btn-primary ' + nnn + 'stag">' + nnn + '</a>';
                     $('#lijst .menu-button-list').append(menuline); 
                 }
-
+*/
                 
                 //clustercontent = clustercontent + '<a href="#xxxxx-menu" class="btn btn-primary xxxxxstag">*Xxxxxs*</a>';
                 //clustercontent = clustercontent + '<a href="#yyyyy-menu"   class="btn btn-primary yyyyymenutag">*Yyyyy*</a>';
