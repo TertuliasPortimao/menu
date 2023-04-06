@@ -29,223 +29,11 @@
 ]
 
    
-
-
-   
   ,
 
   "gangen": 
  
   [
-
-      {
-          "course": "starter",
-          "coursetag_en": "Vietnamese starters",
-          "coursetag_pt": "Iniciante vietnamitas",
-
-          "dish": 
-          
-          [
-    
-            {
-                "name": "Phống tôm",
-                "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
-                "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
-                "price": "€ 2,00",
-                "image_location": "./",
-                "image": "phongtom.JPG",
-                "group": "Vietnamese"
-                }
-                ,
-                
-                {
-                "name": "Dim sum",
-                "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
-                "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
-                "price": "€ 4,50",
-                "image_location": "./",
-                "image": "dimsum.png",
-                "group": "Vietnamese"
-                }
-                ,
-                {
-                "name": "Gỏi cuốn tôm",
-                "description_en": "Fresh vermicelli, boiled chicken, peeled boiled shrimps and raw vegetables. ",
-                "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
-                "price": "€ 3,50",
-                "image_location": "./",
-                "image": "goicuontom.png",
-                "group": "Vietnamese"
-                }
-                ,
-                
-                {
-                "name": "Gỏi cuốn chay Ⓥ",
-                "description_en": "Vietnamese salad rolls with salad, sprouts, herbs, and corlander. ",
-                "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
-                "price": "€ 3,00",
-                "image_location": "./",
-                "image": "goicuonchay.png",
-                "group": "Vietnamese"
-                }
-                ,
-                
-                {
-                "name": "Tôm chiên xù",
-                "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
-                "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
-                "price": "€ 4,95",
-                "image_location": "./",
-                "image": "tomchienxu.JPG",
-                "group": "Vietnamese"
-                }
-                ,
-                
-                {
-                "name": "Nem cuốn",
-                "description_en": "Vietnamese spring rolls <BR> with pork, shrimps <BR> and mixed vegetables. ",
-                "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
-                "price": "€ 4,50",
-                "image_location": "./",
-                "image": "nemcuon.JPG",
-                "group": "Vietnamese"
-                }
-                ,
-                
-                {
-                "name": "Nem cuốn chay Ⓥ",
-                "description_en": "Vegetarian spring rolls with noodles, vegetables, and tofu. ",
-                "description_pt": "Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
-                "price": "€ 4,95",
-                "image_location": "./",
-                "image": "nemcuonchay.png",
-                "group": "Vietnamese"
-                }
-
-          ]
-  
-      }
-
-      ,
-      
-      
-    
-      {
-          "course": "vietnamese_main",
-          "coursetag_en": "Vietnamese main courses",
-          "coursetag_pt": "Principal vietnamitas",
-
-          "dish": 
-          
-          [
-    
-            {
-                "name": "Phở bò",
-                "description_en": "Beef rice noodle special soup. ",
-                "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
-                "price": "€ 10,30",
-                "image_location": "./",
-                "image": "phobo.PNG",
-                "group": "Vietnamese"
-              }
-                ,
-              {
-                  "name": "Phở gà",
-                  "description_en": "Chicken rice noodle special soup. ",
-                  "description_pt": "Sopa especial com massa de arroz e frango. ",
-                  "price": "€ 10,30",
-                  "image_location": "./",
-                  "image": "phoga.PNG",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "Phở chay Ⓥ",
-                  "description_en": "Noodles, mushrooms, tofu, vegetables. ",
-                  "description_pt": "Special noodles fritos com macarrão e vegetais e cogumelos. ",
-                  "price": "€ 11,00",
-                  "image_location": "./",
-                  "image": "phochay.PNG",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "Bún chả Hà Nội",
-                  "description_en": "Bun cha is served with grilled fatty pork over a dish of white rice noodles and herbs with a side of dipping sauce. ",
-                  "description_pt": "Bun cha é servido com carne de porco gordurosa grelhada obre um prato de macarrão de arroz branco e ervas com um acompanhamento de molho. ",
-                  "price": "€ 11,00",
-                  "image_location": "./",
-                  "image": "bunchahanoi.PNG",
-                  "group": "Vietnamese"
-              }
-                  ,
-              {
-                  "name": "COM SUÖN CHUA NGOT",
-                  "description_en": "Rice, pork ris, and a special sauce. ",
-                  "description_pt": "Arroz, costelas de porco e um molho especial. ",
-                  "price": "€ 10,50",
-                  "image_location": "./",
-                  "image": "comsuonchuangot.png",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "COM GÀ CHUA NGOT",
-                  "description_en": "Rice, chicken, and a special sauce. ",
-                  "description_pt": "Arroz, frango e um molho especial. ",
-                  "price": "€ 10,50",
-                  "group": "Vietnamese"
-              }
-                  ,
-              {
-                  "name": "XOI CHIEN CHAY Ⓥ",
-                  "description_en": "Sticky rice with herbs. ",
-                  "description_pt": "Refeição vegetariana. ",
-                  "image_location": "./",
-                  "image": "xoichienchay.JPG",
-                  "price": "€ 5,00",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "XÔI CHIÊN RUÔC",
-                  "description_en": "Sticky rice with herbs, pork. ",
-                  "description_pt": "Arroz grudento com ervilha verde, porco. ",
-                  "price": "€ 7,00",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "BÒ SÔT VANG",
-                  "description_en": "Stewed Beef with red wine and herbs in claypot. ",
-                  "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
-                  "price": "€ 10,30",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "BÚN NEM CUÔN",
-                  "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
-                  "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
-                  "price": "€ 7,00",
-                  "group": "Vietnamese"
-              }
-              ,
-              {
-                  "name": "BÚN NEM CUÔN CHAY Ⓥ",
-                  "description_en": "Noodles, Salad, Vegetarian spring rolls with noodles, vegetables, and tofu. ",
-                  "description_pt": "Macarrão, Salada, Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
-                  "price": "€ 7,00",
-                  "group": "Vietnamese"
-              }
-
-          ]
-  
-      }
-      ,
-      
-      
-    
       {
           "course": "common_main",
           "coursetag_en": "Main course",
@@ -406,51 +194,6 @@
 
       
       {
-          "course": "vietnamese_snacks",
-          "coursetag_en": "Vietnamese snacks",
-          "coursetag_pt": "Snacks vietnamitas",
- 
-          "dish": 
-          
-          [
-       
-            {
-                "name": "BANH MŸ THIT NUÖNG",
-                "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
-                "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
-                "price": "€ 4,50",
-                "group": "Vietnamese"
-                }
-                ,  
-                {
-                "name": "MŸ XÃO RAU Ⓥ",
-                "description_en": "Fried special noodles with vegetables and mushrooms. ",
-                "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
-                "price": "€ 3,90",
-                "group": "Vietnamese"
-                }
-                ,  
-                {
-                "name": "MŸ XÃO TÔM",
-                "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
-                "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
-                "price": "€ 7,50",
-                "group": "Vietnamese"
-                },  
-                {
-                "name": "MŸ XÃO GÀ",
-                "description_en": "Special fried noodles with vegetables, mushrooms and chicken. ",
-                "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
-                "price": "€ 5,50",
-                "group": "Vietnamese"
-                }
-    
-          ]
-      }
-      ,
-
-      
-      {
           "course": "common_snacks",
           "coursetag": "Snacks",
  
@@ -564,7 +307,258 @@
     
           ]
       }
+,
+      {
+        "course": "vietnamese_starter",
+        "coursetag_en": "Vietnamese starters",
+        "coursetag_pt": "Iniciante vietnamitas",
 
+        "dish": 
+        
+        [
+  
+          {
+              "name": "Phống tôm",
+              "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
+              "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
+              "price": "€ 2,00",
+              "image_location": "./",
+              "image": "phongtom.JPG",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Dim sum",
+              "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
+              "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
+              "price": "€ 4,50",
+              "image_location": "./",
+              "image": "dimsum.png",
+              "group": "Vietnamese"
+              }
+              ,
+              {
+              "name": "Gỏi cuốn tôm",
+              "description_en": "Fresh vermicelli, boiled chicken, peeled boiled shrimps and raw vegetables. ",
+              "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+              "price": "€ 3,50",
+              "image_location": "./",
+              "image": "goicuontom.png",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Gỏi cuốn chay Ⓥ",
+              "description_en": "Vietnamese salad rolls with salad, sprouts, herbs, and corlander. ",
+              "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+              "price": "€ 3,00",
+              "image_location": "./",
+              "image": "goicuonchay.png",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Tôm chiên xù",
+              "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+              "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+              "price": "€ 4,95",
+              "image_location": "./",
+              "image": "tomchienxu.JPG",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Nem cuốn",
+              "description_en": "Vietnamese spring rolls <BR> with pork, shrimps <BR> and mixed vegetables. ",
+              "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+              "price": "€ 4,50",
+              "image_location": "./",
+              "image": "nemcuon.JPG",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Nem cuốn chay Ⓥ",
+              "description_en": "Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+              "description_pt": "Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+              "price": "€ 4,95",
+              "image_location": "./",
+              "image": "nemcuonchay.png",
+              "group": "Vietnamese"
+              }
+
+        ]
+
+    }
+
+    ,
+    
+    
+  
+    {
+        "course": "vietnamese_main",
+        "coursetag_en": "Vietnamese main courses",
+        "coursetag_pt": "Principal vietnamitas",
+
+        "dish": 
+        
+        [
+  
+          {
+              "name": "Phở bò",
+              "description_en": "Beef rice noodle special soup. ",
+              "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
+              "price": "€ 10,30",
+              "image_location": "./",
+              "image": "phobo.PNG",
+              "group": "Vietnamese"
+            }
+              ,
+            {
+                "name": "Phở gà",
+                "description_en": "Chicken rice noodle special soup. ",
+                "description_pt": "Sopa especial com massa de arroz e frango. ",
+                "price": "€ 10,30",
+                "image_location": "./",
+                "image": "phoga.PNG",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "Phở chay Ⓥ",
+                "description_en": "Noodles, mushrooms, tofu, vegetables. ",
+                "description_pt": "Special noodles fritos com macarrão e vegetais e cogumelos. ",
+                "price": "€ 11,00",
+                "image_location": "./",
+                "image": "phochay.PNG",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "Bún chả Hà Nội",
+                "description_en": "Bun cha is served with grilled fatty pork over a dish of white rice noodles and herbs with a side of dipping sauce. ",
+                "description_pt": "Bun cha é servido com carne de porco gordurosa grelhada obre um prato de macarrão de arroz branco e ervas com um acompanhamento de molho. ",
+                "price": "€ 11,00",
+                "image_location": "./",
+                "image": "bunchahanoi.PNG",
+                "group": "Vietnamese"
+            }
+                ,
+            {
+                "name": "COM SUÖN CHUA NGOT",
+                "description_en": "Rice, pork ris, and a special sauce. ",
+                "description_pt": "Arroz, costelas de porco e um molho especial. ",
+                "price": "€ 10,50",
+                "image_location": "./",
+                "image": "comsuonchuangot.png",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "COM GÀ CHUA NGOT",
+                "description_en": "Rice, chicken, and a special sauce. ",
+                "description_pt": "Arroz, frango e um molho especial. ",
+                "price": "€ 10,50",
+                "group": "Vietnamese"
+            }
+                ,
+            {
+                "name": "XOI CHIEN CHAY Ⓥ",
+                "description_en": "Sticky rice with herbs. ",
+                "description_pt": "Refeição vegetariana. ",
+                "image_location": "./",
+                "image": "xoichienchay.JPG",
+                "price": "€ 5,00",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "XÔI CHIÊN RUÔC",
+                "description_en": "Sticky rice with herbs, pork. ",
+                "description_pt": "Arroz grudento com ervilha verde, porco. ",
+                "price": "€ 7,00",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "BÒ SÔT VANG",
+                "description_en": "Stewed Beef with red wine and herbs in claypot. ",
+                "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
+                "price": "€ 10,30",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "BÚN NEM CUÔN",
+                "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
+                "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+                "price": "€ 7,00",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "BÚN NEM CUÔN CHAY Ⓥ",
+                "description_en": "Noodles, Salad, Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+                "description_pt": "Macarrão, Salada, Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+                "price": "€ 7,00",
+                "group": "Vietnamese"
+            }
+
+        ]
+
+    }
+    ,
+      
+
+      
+      {
+          "course": "vietnamese_snacks",
+          "coursetag_en": "Vietnamese snacks",
+          "coursetag_pt": "Snacks vietnamitas",
+ 
+          "dish": 
+          
+          [
+       
+            {
+                "name": "BANH MŸ THIT NUÖNG",
+                "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+                "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+                "price": "€ 4,50",
+                "group": "Vietnamese"
+                }
+                ,  
+                {
+                "name": "MŸ XÃO RAU Ⓥ",
+                "description_en": "Fried special noodles with vegetables and mushrooms. ",
+                "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+                "price": "€ 3,90",
+                "group": "Vietnamese"
+                }
+                ,  
+                {
+                "name": "MŸ XÃO TÔM",
+                "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
+                "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
+                "price": "€ 7,50",
+                "group": "Vietnamese"
+                },  
+                {
+                "name": "MŸ XÃO GÀ",
+                "description_en": "Special fried noodles with vegetables, mushrooms and chicken. ",
+                "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
+                "price": "€ 5,50",
+                "group": "Vietnamese"
+                }
+    
+          ]
+      }
+      
       ,
 
       {
