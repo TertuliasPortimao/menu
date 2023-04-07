@@ -44,8 +44,7 @@
         </div>
 
         <center>
-            <p class="mainmenubutton"></p>
-            <a href="#coursecluster" class="btn btn-primary">Menu</a>
+            <a href="#lijst" class="btn btn-primary">Menu</a>
        </center>
     </section>
     
@@ -221,13 +220,7 @@ $(function()
                     if ( (eval("item.jumpto_via_button") == 'undefined') || (eval("item.jumpto_via_button") !== 'n') )
                     {
                         var coursetag = getjsonitem(item, "coursetag", lang);
-                        var menuline = '<a href="#' + eval("item.course") + '-menu"' + 'class="btn btn-primary ' + eval("item.course") + 'stag">' + coursetag + '</a>';
-                        
-                        if ($('#lijst .menu-button-list').empty) 
-                            {var topmenuline = '<a href="#' + eval("item.course") + '-menu"' + 'class="btn btn-primary ' + eval("item.course") + 'stag">' + 'Menu' + '</a>';
-                            $('#showcase .mainmenubutton').append(topmenuline); 
-                        }
-                        
+                        var menuline = '<a href="#' + eval("item.course") + '-menu"' + 'class="btn btn-primary ' + eval("item.course") + 'stag">' + coursetag + '</a>';                        
                         $('#lijst .menu-button-list').append(menuline); 
                     }
                 }
