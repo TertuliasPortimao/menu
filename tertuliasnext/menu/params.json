@@ -4,10 +4,11 @@
     "menulocation3": "https://webkamer.nl/activefiles/corsextract.php?file=",
     "menulocation2": "./menu/",
     "menufile": "menu.json",
-    "imageslocation": "https://tertuliasportimao.github.io/menu/tertulias/menu/images/",
-    "menulocation": "https://tertuliasportimao.github.io/menu/tertulias/menu/"
+    "imageslocation4": "https://tertuliasportimao.github.io/menu/tertulias/menu/images/",
+    "menulocation4": "https://tertuliasportimao.github.io/menu/tertulias/menu/",
+    "imageslocation": "https://sjaakgr.github.io/freedatabox/images/",
+    "menulocation": "https://sjaakgr.github.io/freedatabox/data/"
 }
-
 
 
 
