@@ -1,10 +1,14 @@
 {
-    "imageslocation": "https://webkamer.nl/activefiles/corsextract.php?type=img&file=",
+    "imageslocation3": "https://webkamer.nl/activefiles/corsextract.php?type=img&file=",
     "imageslocation2": "./menu/images/",
-    "menulocation": "https://webkamer.nl/activefiles/corsextract.php?file=",
+    "menulocation3": "https://webkamer.nl/activefiles/corsextract.php?file=",
     "menulocation2": "./menu/",
-    "menufile": "menu.json"
+    "menufile": "menu.json",
+    "imageslocation": "https://tertuliasportimao.github.io/menu/tertulias/menu/images/",
+    "menulocation": "https://tertuliasportimao.github.io/menu/tertulias/menu/"
 }
+
+
 
 
 
