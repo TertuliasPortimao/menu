@@ -1,0 +1,806 @@
+{
+    "identification": [
+        {"menutitle": "Tertúlias Portimaõ"}
+        ,{"restaurantname": "Tertúlias"}
+        ,{"restauranttype_en": "Bubble tea<BR>"}
+        ,{"restauranttype_en": "Coffee<BR>"}
+        ,{"restauranttype_en": "Local and VietNam food"}
+        ,{"restauranttype_pt": "Bubble tea<BR>"}
+        ,{"restauranttype_pt": "Coffee<BR>"}
+        ,{"restauranttype_pt": "Local and VietNam food"}
+   ]
+   ,"about": [
+    {"about_en": "About us"}
+   ,{"about_pt": "Sobre nos"}
+   
+   ,{"description_header_en": "Tasty blend of Portuguese and Vietnamese quality food and atmosphere "}
+   ,{"description_header_pt": "Saborosa mistura de comida e atmosfera de qualidade Portuguesa e Vietnamita "}
+   
+   ,{"description_en": "Tertúlias is a cozy and inviting restaurant located in the picturesque town of Portimão. "}
+   ,{"description_en": "Our menu features a variety of delicious and authentic dishes from Vietnam and Portuguese, including specialties that are sure to please your palate. "}
+   ,{"description_en": "Alongside our traditional Vietnamese fare, we also offer a wide selection of bubble tea, fruit tea and coffee, as well as delicious Portuguese dishes. "}
+   ,{"description_en": "Our specialty dish of local is the famous Francesinha. <BR>Come experience our warm and friendly atmosphere enjoy a delicious meal at Tertúlias. "}
+   
+   ,{"description_pt": "O Tertúlias é um restaurante acolhedor e convidativo localizado na pitoresca vila de Portimão. "}
+   ,{"description_pt": "O nosso menu apresenta uma variedade de pratos deliciosos e autênticos do Vietname e de Portugal, incluindo especialidades que certamente agradarão ao seu paladar. "}
+   ,{"description_pt": "Juntamente com nossa tradicional culinária vietnamita, também oferecemos uma ampla seleção de chás de bolhas, chá de fruta e café, bem como deliciosos pratos portugueses. "}
+   ,{"description_pt": "Nosso prato especial de é a famosa Francesinha. Venha experimentar nosso ambiente caloroso e amigável desfrutar de um delicioso refeição nas Tertúlias. "}
+   
+]
+
+   
+  ,
+
+  "gangen": 
+ 
+  [
+      {
+          "course": "common_main",
+          "coursetag_en": "Main course",
+          "coursetag_pt": "Principal",
+
+          "dish": 
+          
+          [
+              {
+                  "name_pt": "SARDINHA",
+                  "name_en": "SARDINES",
+                  "price": "€ 9,20",
+                  "group": "local"
+              }
+              ,
+              {
+                  "name_pt": "ROBALO",
+                  "name_en": "SEABASS",
+                  "price": "€ 10,30",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "DOURADA",
+                  "name_en": "SEABREAM",
+                  "price": "€ 10,30",
+                  "image_location": "./",
+                  "image": "dourada.png",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "SALMAO",
+                  "name_en": "SALMON",
+                  "price": "€ 12,50",
+                  "image_location": "./",
+                  "image": "salmao.jpg",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "SALADA DE ATUM",
+                  "name_en": "TUNA SALAD",
+                  "price": "€ 7,50",
+                  "image_location": "./",
+                  "image": "saladatum.jpg",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "LULAS FRITAS",
+                  "name_en": "FRIED SQUID FISH",
+                  "price": "€ 10,80",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name": "FRANCESINHA",
+                  "price": "€ 10,80",
+                  "image_location": "./",
+                  "image": "franshinha.jpg",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "BIFE DE FRANGO",
+                  "name_en": "CHICKEN STEAK",
+                  "price": "€ 8,60",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "PLUMAS DE PORCO PRETO",
+                  "name_en": "BLACK PIG PLUMAS",
+                  "price": "€ 10,30",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "SECRETOS DE PORCO PRETO",
+                  "name_en": "BLACK PIG SECRETOS",
+                  "price": "€ 10,30",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "LAHARTINHOS PORCO PRETO",
+                  "name_en": "BLACK PIG LAGARTINHO",
+                  "price": "€ 11,30",
+                  "group": "Local"
+              }
+              ,
+              {
+                  "name_pt": "MAMINHA (VACA)",
+                  "name_en": "MAMINHA STEAK",
+                  "image_location": "./",
+                  "image": "maminha.jpg",
+                  "price": "€ 10,80",
+                  "group": "Local"
+              }
+                ,
+              {
+                  "name_pt": "BIFE DE VACA",
+                  "name_en": "GRILLED BEEF",
+                  "price": "€ 10,80",
+                  "group": "Local"
+              } ,
+              {
+                  "name_pt": "PICANHA",
+                  "name_en": "FILET STEAK",
+                  "price": "€ 12,50",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "BITOQUE DE VACA",
+                  "name_en": "BEEF STEAK",
+                  "price": "€ 8,90",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "BITOQUE DE FRANGO",
+                  "name_en": "CHICKEN STEAK",
+                  "price": "€ 8,60",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "HAMBURGUER NO PRATO",
+                  "name_en": "BURGER ON PLATE",
+                  "image_location": "./",
+                  "image": "hamburger.jpg",
+                  "price": "€ 7,20",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "OMELETE SIMPLES",
+                  "name_en": "PLAIN OMELETTE",
+                  "price": "€ 7,20",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "OMELETE MISTA",
+                  "name_en": "HAM AND CHEESE OMELETTE",
+                  "price": "€ 7,60",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "SALADA FRANGO",
+                  "name_en": "CHICKEN SALAD",
+                  "price": "€ 7,50",
+                  "group": "Local"
+              }
+
+          ]
+  
+      }
+
+      ,
+
+      
+      {
+          "course": "common_snacks",
+          "coursetag": "Snacks",
+ 
+          "dish": 
+          
+          [
+              {
+                  "name_pt": "BIFANA EM CARCAÇA",
+                  "name_en": "PORK SANDWCH - ROLL",
+                  "price": "€ 2,60",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "BIFANA EM PÃO",
+                  "name_en": "PORK SANDWCH - SLICED BREAD",
+                  "price": "€ 3,70",
+                  "group": "Local"
+                 
+              },
+              {
+                  "name_pt": "SANDES PRESUNTO",
+                  "name_en": "SMOKED HAM SANDWICH - ROLL",
+                  "price": "€ 2,90",
+                  "group": "Local"
+              },
+              {
+                  "name_pt": "SANDES PRESUNTO PÃO",
+                  "name_en": "SMOKED HAM SANDWICH - SLICED",
+                  "price": "€ 3,80",
+                  "group": "Local"   
+              },
+              {
+                  "name_pt": "HAMBURGUER SIMPLES",
+                  "name_en": "PLAIN BURGER",
+                  "description_en": "Bread, Hamburger, lettuce, Tomato. ",
+                  "description_pt": "Pão, Hamburguer, alface, Tomate. ",
+                  "price": "€ 5,40",
+                  "group": "Local"     
+              },
+              {
+                  "name_pt": "HAMBURGUER ESPECIAL",
+                  "name_en": "SPECIAL BURGER",
+                  "description_en": "Bread, hamburger, lettuce, Tomato, Bacon, Special sauce. ",
+                  "description_pt": "Pão, Hamburguer, Alface, Tomate, Bacon, Molho Especial. ",
+                  "price": "€ 6,40",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "EGG SANDWICH",
+                  "name_pt": "SANDES DE OVO",
+                  "description_en": "1 Egg Lettuce Tomato. ",
+                  "description_pt": "1 Ovo Alface Tomate. ",
+                  "price": "€ 3,50",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "EGG SANDWICH - Sliced Bread",
+                  "name_pt": "SANDES DE OVO EM PÃO",
+                  "price": "€ 4,50",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "HAM AND CHEESE TOAST - XL",
+                  "name_pt": "TOSTA MISTA - XL",
+                  "price": "€ 4,50",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "TOAST OF THE HOUSE - XL",
+                  "name_pt": "TOSTA DA CASA - XL",
+                  "image_location": "./",
+                  "image": "tostacasa.jpg",
+                  "description_en": "Cheese, Bacon, Tomato, Onion, Oregano. ",
+                  "description_pt": "Queijo, Bacon, Tomate, Cebola, Oregãos. ",
+                  "price": "€ 5,50",
+                  "group": "Local"     
+              }
+                ,
+              {
+                  "name_en": "TUNA TOAST - XL",
+                  "name_pt": "TOSTA DE ATUM - XL",
+                  "description_en": "Tomato, Tuna, Pasta. ",
+                  "description_pt": "Tomate, Pasta de Atum. ",
+                  "price": "€ 5,50",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "TUNA BAGUETTE - XL",
+                  "name_pt": "BAGUETE DE ATUM - XL",
+                  "description_en": "Lettuce, Tomato, Tuna Pasta. ",
+                  "description_pt": "Alface, Tomate, Pasta de Atum. ",
+                  "price": "€ 3,90",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "CHICKEN TOAST - XL",
+                  "name_pt": "TOSTA DE FRANGO - XL",
+                  "description_en": "Tomato, Chicken, Cocktail Sauce. ",
+                  "description_pt": "Tomate, Frango, Molho Cocktail. ",
+                  "price": "€ 5,20",
+                  "group": "Local"     
+              },
+              {
+                  "name_en": "CHICKEN BAGUETTE - XL",
+                  "name_pt": "BAGUETE DE FRANGO - XL",
+                  "description_en": "Lettuce, Tomato, Chicken, Cocktail Sauce. ",
+                  "description_pt": "Alface, Tomate, Frango, Molho Cocktail. ",
+                  "price": "€ 3,90",
+                  "group": "Local"     
+              }
+    
+          ]
+      }
+,
+      {
+        "course": "vietnamese_starter",
+        "coursetag_en": "Vietnamese starters",
+        "coursetag_pt": "Iniciante vietnamitas",
+
+        "dish": 
+        
+        [
+  
+          {
+              "name": "Phống tôm",
+              "description_en": "Tapioca flour is taken from <BR>the roots of the cassava plant with <BR>a little baking powder added. ",
+              "description_pt": "Amido de tapioca é retirado <BR>das raízesda planta demandioca <BR>com um pouco de fermento em póadicionado. ",
+              "price": "€ 2,00",
+              "image_location": "./",
+              "image": "phongtom.JPG",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Dim sum",
+              "description_en": "The crust is made from wheat flour, <BR>dumpling flour, tapioca flour, <BR>the fillling can be varied <BR>including meat, shrimps, <BR>vegetables, fruits, spices. ",
+              "description_pt": "A crosta é feita de farinha de trigo, <BR>farinha de bolinho, farinha de tapioca, <BR>o recheio pode ser variado <BR>incluindo carne, camarões, <BR>legumes, frutas, especiarias. ",
+              "price": "€ 4,50",
+              "image_location": "./",
+              "image": "dimsum.png",
+              "group": "Vietnamese"
+              }
+              ,
+              {
+              "name": "Gỏi cuốn tôm",
+              "description_en": "Fresh vermicelli, boiled chicken, peeled boiled shrimps and raw vegetables. ",
+              "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+              "price": "€ 3,50",
+              "image_location": "./",
+              "image": "goicuontom.png",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Gỏi cuốn chay Ⓥ",
+              "description_en": "Vietnamese salad rolls with salad, sprouts, herbs, and corlander. ",
+              "description_pt": "Rolinhos de salada vietnamita com salada, brotos, ervas e coriander. ",
+              "price": "€ 3,00",
+              "image_location": "./",
+              "image": "goicuonchay.png",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Tôm chiên xù",
+              "description_en": "Vietnamese-style deep-fried shrimp. <BR>The tail-on shrimp is lightly marinated with salt, bouillon powder and ground black pepper, then coated in tapioca starch. ",
+              "description_pt": "Camarão frito à moda vietnamita. O camarão rabo é levemente marinado com sal, caldo de carne em pó e pimenta-do-reino moída, depois coberto com amido de tapioca. ",
+              "price": "€ 4,95",
+              "image_location": "./",
+              "image": "tomchienxu.JPG",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Nem cuốn",
+              "description_en": "Vietnamese spring rolls <BR> with pork, shrimps <BR> and mixed vegetables. ",
+              "description_pt": "Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+              "price": "€ 4,50",
+              "image_location": "./",
+              "image": "nemcuon.JPG",
+              "group": "Vietnamese"
+              }
+              ,
+              
+              {
+              "name": "Nem cuốn chay Ⓥ",
+              "description_en": "Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+              "description_pt": "Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+              "price": "€ 4,95",
+              "image_location": "./",
+              "image": "nemcuonchay.png",
+              "group": "Vietnamese"
+              }
+
+        ]
+
+    }
+
+    ,
+    
+    
+  
+    {
+        "course": "vietnamese_main",
+        "coursetag_en": "Vietnamese main courses",
+        "coursetag_pt": "Principal vietnamitas",
+
+        "dish": 
+        
+        [
+  
+          {
+              "name": "Phở bò",
+              "description_en": "Beef rice noodle special soup. ",
+              "description_pt": "Sopa especial com massa de arroz e carne de vaca. ",
+              "price": "€ 10,30",
+              "image_location": "./",
+              "image": "phobo.PNG",
+              "group": "Vietnamese"
+            }
+              ,
+            {
+                "name": "Phở gà",
+                "description_en": "Chicken rice noodle special soup. ",
+                "description_pt": "Sopa especial com massa de arroz e frango. ",
+                "price": "€ 10,30",
+                "image_location": "./",
+                "image": "phoga.PNG",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "Phở chay Ⓥ",
+                "description_en": "Noodles, mushrooms, tofu, vegetables. ",
+                "description_pt": "Special noodles fritos com macarrão e vegetais e cogumelos. ",
+                "price": "€ 11,00",
+                "image_location": "./",
+                "image": "phochay.PNG",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "Bún chả Hà Nội",
+                "description_en": "Bun cha is served with grilled fatty pork over a dish of white rice noodles and herbs with a side of dipping sauce. ",
+                "description_pt": "Bun cha é servido com carne de porco gordurosa grelhada obre um prato de macarrão de arroz branco e ervas com um acompanhamento de molho. ",
+                "price": "€ 11,00",
+                "image_location": "./",
+                "image": "bunchahanoi.PNG",
+                "group": "Vietnamese"
+            }
+                ,
+            {
+                "name": "COM SUÖN CHUA NGOT",
+                "description_en": "Rice, pork ris, and a special sauce. ",
+                "description_pt": "Arroz, costelas de porco e um molho especial. ",
+                "price": "€ 10,50",
+                "image_location": "./",
+                "image": "comsuonchuangot.png",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "COM GÀ CHUA NGOT",
+                "description_en": "Rice, chicken, and a special sauce. ",
+                "description_pt": "Arroz, frango e um molho especial. ",
+                "price": "€ 10,50",
+                "group": "Vietnamese"
+            }
+                ,
+            {
+                "name": "XOI CHIEN CHAY Ⓥ",
+                "description_en": "Sticky rice with herbs. ",
+                "description_pt": "Refeição vegetariana. ",
+                "image_location": "./",
+                "image": "xoichienchay.JPG",
+                "price": "€ 5,00",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "XÔI CHIÊN RUÔC",
+                "description_en": "Sticky rice with herbs, pork. ",
+                "description_pt": "Arroz grudento com ervilha verde, porco. ",
+                "price": "€ 7,00",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "BÒ SÔT VANG",
+                "description_en": "Stewed Beef with red wine and herbs in claypot. ",
+                "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
+                "price": "€ 10,30",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "BÚN NEM CUÔN",
+                "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
+                "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+                "price": "€ 7,00",
+                "group": "Vietnamese"
+            }
+            ,
+            {
+                "name": "BÚN NEM CUÔN CHAY Ⓥ",
+                "description_en": "Noodles, Salad, Vegetarian spring rolls with noodles, vegetables, and tofu. ",
+                "description_pt": "Macarrão, Salada, Rolinhos de primavera vegetarianos com macarrão, legumes e tofu. ",
+                "price": "€ 7,00",
+                "group": "Vietnamese"
+            }
+
+        ]
+
+    }
+    ,
+      
+
+      
+      {
+          "course": "vietnamese_snacks",
+          "coursetag_en": "Vietnamese snacks",
+          "coursetag_pt": "Snacks vietnamitas",
+ 
+          "dish": 
+          
+          [
+       
+            {
+                "name": "BANH MŸ THIT NUÖNG",
+                "description_en": "Baguette, Break grilled pork, carrot, cucumber and special sauce. ",
+                "description_pt": "Baquete, Grelhado porco, cenoura, pepino e molho especial. ",
+                "price": "€ 4,50",
+                "group": "Vietnamese"
+                }
+                ,  
+                {
+                "name": "MŸ XÃO RAU Ⓥ",
+                "description_en": "Fried special noodles with vegetables and mushrooms. ",
+                "description_pt": "Special noodles fritos com vegetais e cogumelos. ",
+                "price": "€ 3,90",
+                "group": "Vietnamese"
+                }
+                ,  
+                {
+                "name": "MŸ XÃO TÔM",
+                "description_en": "Special fried noodles with vegetables, mushrooms and shrimps. ",
+                "description_pt": "Special noodles fritos com vegetais, cogumelos e camarao. ",
+                "price": "€ 7,50",
+                "group": "Vietnamese"
+                },  
+                {
+                "name": "MŸ XÃO GÀ",
+                "description_en": "Special fried noodles with vegetables, mushrooms and chicken. ",
+                "description_pt": "Special noodles fritos com vegetais, cogumelos e frango. ",
+                "price": "€ 5,50",
+                "group": "Vietnamese"
+                }
+    
+          ]
+      }
+      
+      ,
+
+      {
+          "course": "regular_drinks",
+          "coursetag_en": "Drinks",
+          "coursetag_pt": "Bebidas",
+
+          "dish": 
+          
+          [
+   
+            {
+                "name": "Sangria",
+                "image_location": "./",
+                "image": "sangria.png",
+                "price": "€ 8,90"
+                }
+                ,  
+                {
+                "name": "Natural juices",
+                "price": "€ 2,40"
+                }
+          ]
+      
+      }   
+
+      ,
+      
+      {
+          "course": "wine",
+          "coursetag_en": "Wine",
+          "coursetag_pt": "Vinho",
+          "jumpto_via_button": "y",
+          "show_buttonline": "y",
+
+
+          "dish": 
+          
+          [
+    
+            {
+                "name": "Tintos",
+                "description": "Instinto forte (Alentejo) ",
+                "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+                },  
+                {
+                "description": "Pancel (Alentejo) ",
+                "price": "                 € 8,50 (75cl)"
+                },  
+                {
+                "description": "Vale dos pecados(Alentejo / reserva) ",
+                "price": "                 € 8,50 (75cl)"
+                },  
+                {
+                "description": "Paxa(Algarve) ",
+                "price": "                 € 11,50 (75cl)"
+                }
+                ,  
+                {
+                "name": "Brancos",
+                "description": "Instinto forte (Alentejo) ",
+                "price": "€ 3,25 (37,5cl) / € 7,60 (75cl)"
+                },  
+                {
+                "description": "Paxa(Algarve) ",
+                "price": "                 € 11,50 (75cl)"
+                },  
+                {
+                "name": "Verdes",
+                "description": "Pego da rainha (Ribatejo) ",
+                "price": "€ 3,25 (37,5cl) / € 5,20 (75cl)"
+                },  
+                {
+                "description": "A B Alvarinho (Amarante) ",
+                "price": "                  € 8,50 (75cl)"
+                },  
+                {
+                "description": "Terras do sado(Setubal / rose) ",
+                "price": "                  € 6,50 (75cl)"
+                },  
+                {
+                "description": "Plexus (Tejo / frisante) ",
+                "price": "                  € 7,60 (75cl)"
+                }
+      
+          ]
+
+      }
+
+      ,
+      
+      {
+          "course": "bubble_milk_tea",
+          "coursetag": "Bubble Milk Tea",
+          "jumpto_via_button": "y",
+          "show_buttonline": "Y",
+
+          "dish": 
+          
+          [
+    
+            {
+                "name": "Original Milk tea",
+                "description_en": "Tea with original Milk",
+                "description_pt": "Cha com leite original",
+                "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                "price_pt": "€ 3,55 (mer) / € 3,75 (large)",
+                "image_location": "./",
+                "image": "bubble.png"
+                },
+                {
+                "name": "Matcha Milk",
+                "description_en": "Matcha Milk with tapioca Pearls",
+                "description_pt": "Leite Macha Com pérola de tapioca",
+                "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+                },  
+                {
+                "name": "Taro Milk",
+                "description_en": "Taro Milk with tapioca Pearls",
+                "description_pt": "Leite Taro com pérola de tapioca",
+                "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+                },  
+                {
+                "name": "Coconut Milk",
+                "description_en": "Coconut Milk with tapioca Pearls",
+                "description_pt": "Leite Coco com pérola de tapioca",
+                "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+                },  
+                {
+                "name": "Original milk",
+                "description_en": "Original milk with tapioca Pearls",
+                "description_pt": "Leite Original com pérola de tapioca",
+                "price_en": "€ 3,55 (medium) / € 3,75 (large)",
+                "price_pt": "€ 3,55 (mer) / € 3,75 (large)"
+                }
+      
+          ]
+      }
+
+      ,
+      
+      {
+          "course": "bubble_fruit_tea",
+          "coursetag": "Bubble Fruit Tea",
+          "jumpto_via_button": "y",
+          "show_buttonline": "Y",
+
+          "dish": 
+          [
+    
+            {
+                "name_en": "Mango",
+                "name_pt": "Manga",
+                "description_en": "Mango Fruit tea",
+                "description_pt": "Chá de manga",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name_en": "Strawberry",
+                "name_pt": "Morango",
+                "description_en": "Strawberry Fruit tea",
+                "description_pt": "Chá de morango",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"            },  
+                {
+                "name_en": "Lychee",
+                "name_pt": "Lichia",
+                "description_en": "Lychee Fruit tea",
+                "description_pt": "Chá de lichia",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name_en": "Passion Fruit",
+                "name_pt": "Maracujá",
+                "description_en": "Passion Fruit tea",
+                "description_pt": "Chá de aracujá",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name": "Kiwi",
+                "description_en": "Kiwi Fruit tea",
+                "description_pt": "Chá de kiwi",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name_en": "Peach",
+                "name_pt": "Pêssego",
+                "description_en": "Peach Fruit tea",
+                "description_pt": "Chá de pêssego",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name_en": "Blueberry",
+                "name_pt": "Mirtilo",
+                "description_en": "Blueberry Fruit tea",
+                "description_pt": "Chá de mirtilo",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name_en": "Honeydew",
+                "name_pt": "Melado",
+                "description_en": "Honeydew Fruit tea",
+                "description_pt": "Chá de melado",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                },  
+                {
+                "name_en": "Green Apple",
+                "name_pt": "Maçã verde",
+                "description_en": "Green Apple Fruit tea",
+                "description_pt": "Chá de frutas maçã verde",
+                "price_en": "€ 3,25 (medium) / € 3,50 (large)",
+                "price_pt": "€ 3,25 (mer) / € 3,50 (large)"
+                }
+
+          ]
+
+      }
+
+      
+
+ ]
+
+}
+
+
+
+
+
+
+
+  
+
+
+  
+      

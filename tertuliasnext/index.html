@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- ------------------------------->
+<!-- ----------- Head -------------->
+<!-- ------------------------------->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="menutitle">*menutitle*</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./components/style.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+    
+
+<!-- -------------------------------------->
+<!-- ----------- Body --------------------->
+<!-- -------------------------------------->    
+<body>
+    
+
+<!--       ----------------------------- -->
+<!--       ----------- Paginakop ------- -->
+<!--       ----------------------------- -->    
+    <section class="showcase-area" id="showcase">
+        
+        <p style="text-align:right;">
+            <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-round-250.png" alt="English" class="flag" data-lang="en" width="20" height="auto">
+            <img src="https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png" alt="Português" class="flag" data-lang="pt" width="20" height="auto">
+        </p>
+
+        <div class="showcase-container">
+            <h1 class="main-title restaurantname" id="">*Organization*</h1>
+            <center>
+            <p class="restauranttype-list"></p>
+            </center>
+        </div>
+
+        <center>
+            <a href="#lijst" class="btn btn-primary">Menu</a>
+       </center>
+    </section>
+    
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                
+                <h2 class="about-list-header"></h2>
+
+                <BR>
+                    
+                <p class="about-list"></p>
+                    
+            </div>
+        </div>
+    </section>
+    
+    <section id="lijst">
+        <ul class="coursecluster"></ul>     
+    </section>
+        
+    <footer id="footer">
+        <h2><a class="restaurantname"></a> &copy; all rights reserved</h2>
+    </footer>
+
+
+
+
+
+<!--       ============================= -->
+<!--       =========== Javascript ====== -->
+<!--       ============================= -->
+
+<script>
+        
+$(function() 
+{
+
+        // ---------------- //
+        // Kickoff Mainline //
+        // ---------------- //
+
+            var il = 'a';
+            var ml = 'b';
+            var mf = 'c';
+
+            $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
+                {
+                    alert('images1:' + il);
+                    alert('menu1:' + ml);
+                    alert('menufile1:' + mf);
+                    il = params.imageslocation;
+                    ml = params.menulocation;
+                    mf = params.menufile;
+                    alert('images2:' + il);
+                    alert('menu2:' + ml);
+                    alert('menufile2:' + mf);
+                });
+
+
+            loadMenu('pt',ml,mf,il); // Load the English menu by default
+    
+          
+            $('.flag').click(function()     // Handle click events on the language selector flags
+                {
+                    var lang = $(this).data('lang');
+                    loadMenu(lang, ml,mf,il);
+                }
+            );
+    
+        // -------- //
+        // Mainline //
+        // -------- //
+
+            // ------------------------------------------------------------ //
+            // F: Load the menu from a JSON file for the specified language //
+            // ------------------------------------------------------------ //
+            function loadMenu(lang, ml, mf, il) 
+            {
+                alert('images3:' + il);
+                alert('menu3:' + ml);
+                alert('menufile3:' + mf);
+
+                // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
+                // $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
+                $.getJSON(ml + mf, function(data) // Process inhoud van json-file
+                {
+                // Clear the variable content             
+                // -- Restaurant info block            
+                $('.menutitle').empty();
+                    $('.restaurantname').empty();
+                    $('.restauranttype-list').empty();
+                // -- Restaurant about info block             
+                    $('#about .small').empty();
+                    $('#about .about-list-header').empty();
+                    $('#about .about-list').empty();
+                // -- The button text             
+                    $('.starterstag').empty();  
+                    $('.mainmenutag').empty();  
+                    $('.snackstag').empty();  
+                    $('.drinkstag').empty();  
+                // -- The menu lists                          
+                    $('#lijst .coursecluster').empty();
+                
+                // Populate the restaurant info with the data from the JSON file
+                    $.each(data.identification, function(index, identitem) 
+                    {
+                        var l = getjsonitem(identitem, "menutitle", lang);
+                        if (l!=""){ $('.menutitle').append(l); }    
+                        var l = getjsonitem(identitem, "restaurantname", lang);
+                        if (l!=""){ $('.restaurantname').append(l); }
+                        var l = getjsonitem(identitem, "restauranttype", lang);
+                        if (l!=""){ $('.restauranttype-list').append(l); } 
+                    });   
+
+                // Also populate the restaurant about info with the data from the JSON file
+                    $.each(data.about, function(index, aboutitem) 
+                    {
+                        var nn = "aboutitem.about_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .small').append(eval(nn)); }
+                        var nn = "aboutitem.description_header_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list-header').append(eval(nn)); }
+                        var nn = "aboutitem.description_" + lang;                  
+                        if(typeof eval(nn) !== 'undefined'){ $('#about .about-list').append(eval(nn)); } 
+                    });   
+
+                // Populate the menu lists with the data from the JSON file
+                    $.each(data.gangen, function(index, gangitem) 
+                    {
+                        make_frame(gangitem, lang, il) ;                 
+                    });   
+                
+                // Populate the button text with the data from the JSON file
+                    $.each(data.gangen, function(index, gangitem) 
+                    {
+                        make_gangennavbutton(gangitem, lang) ;                 
+                    });  
+                    
+
+
+                }); // einde verwerking json file
+
+            }  // Einde functie loadmenu
+
+    
+        // -------------------- //
+        // Mainline subroutines //
+        // -------------------- //
+       
+            function make_frame(item, lang, il) 
+            {              
+                alert('images4:' + il);
+                alert('menu4:' + ml);
+                alert('menufile4:' + mf);
+                if(typeof eval("item.course") !== 'undefined')
+                { 
+                    var coursekey = eval("item.course");
+                    var courselabel = getjsonitem(item, "coursetag", lang);
+
+                    var clustercontent              = '<section id="' + coursekey + '-menu">';
+                    clustercontent = clustercontent + '<center>';
+                
+                    if ( (eval("item.show_buttonline") == 'undefined') || (eval("item.show_buttonline") !== 'n') )
+                    {
+                        clustercontent = clustercontent + '<ul class="menu-button-list"></ul>';  
+                    }
+                    clustercontent = clustercontent + '</center>';
+                    clustercontent = clustercontent + '<h2><BR></h2>';
+                    clustercontent = clustercontent + '<h2 class="food-menu-heading ' + coursekey + 'tag">' + courselabel + '</h2>';
+                    clustercontent = clustercontent + '<div class="food-menu-item container">';
+                    clustercontent = clustercontent + '<ul class="menu-list"></ul>';  
+                    clustercontent = clustercontent + '</div>';
+                    clustercontent = clustercontent + '</section>';
+                    $('#lijst .coursecluster').append(clustercontent); 
+
+                    $.each(item.dish, function(index, dishitem) 
+                    {
+                        make_element('#' + coursekey + '-menu .menu-list', dishitem, lang, il) ;
+                    });  
+                    
+                }   
+            }
+
+
+            function make_gangennavbutton(item, lang) 
+            {        
+                if(typeof eval("item.course") !== 'undefined')
+                { 
+                    if ( (eval("item.jumpto_via_button") == 'undefined') || (eval("item.jumpto_via_button") !== 'n') )
+                    {
+                        var coursetag = getjsonitem(item, "coursetag", lang);
+                        var menuline = '<a href="#' + eval("item.course") + '-menu"' + 'class="btn btn-primary ' + eval("item.course") + 'stag">' + coursetag + '</a>';
+                        $('#lijst .menu-button-list').append(menuline); 
+                    }
+                }
+            }  
+            
+
+
+            function make_element(pagetag, dishitem, taal,il) 
+            {
+                    var n = getjsonitem(dishitem, "name", taal);
+                    var d = getjsonitem(dishitem, "description", taal);
+                    var p = getjsonitem(dishitem, "price", taal);
+                    var i = getjsonitem(dishitem, "image", taal);
+            //      var l = getjsonitem(item, "image_location", taal);
+                    
+                    //var l = "./menu/images/";
+                    //var l = 'https://webkamer.nl/activefiles/corsextract.php?type=img&file=';
+                    var l = il;
+
+                    var p1 = '<div class="food-menu-item" align=center>' ;
+                    var p2 = ''; 
+                    if (i!="")
+                        { var p2 = '  <div class="food-img" align=center> '
+                                 + '    <img  src="' + l + i + '" alt="' + n + '" /> '
+                                 + '  </div> ' ;}
+                    var p3 = '  <div class="food-description" align=center> ';
+                    var p4 = '';
+                    var p5 = '';
+                    var p6 = '';
+                    if (n!="")  {var p4 =  '    <h2 class="food-titile">' + n + '</h2> ';}
+                    if (d!="")  {var p5 =  '      <p> '+ d + '</p> ';}
+                    if (p!="")  {var p6 =  '      <p class="food-price">' + p + '</p> ';}
+                    var p7 = '  <BR></div> ' ;
+                    var p8 = '</div> ' ;
+                    $(pagetag).append(p2 + p1 + p3 + p4 + p5 + p6 + p7 + p8);
+            }
+
+
+            function getjsonitem(jsonpart, required_itemname, language) 
+            { 
+
+                var itemcontent = "";
+
+                var required_itemname_in_mylanguage = "jsonpart." + required_itemname + "_" + language;
+                var required_itemname_in_general_language = "jsonpart." + required_itemname;
+
+                if (typeof eval(required_itemname_in_mylanguage) !== 'undefined') 
+                {   var itemcontent = eval(required_itemname_in_mylanguage); } // pak de taalspecifieke  
+                else 
+                {   if (typeof eval(required_itemname_in_general_language) !== 'undefined') 
+                    {   var itemcontent = eval(required_itemname_in_general_language); } // Pak de algemene 
+                }
+                return itemcontent;
+            }
+
+});
+
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./components/app.js"></script>
+
+<!-- .................../ JS Code for smooth scrolling /...................... -->
+
+</body>
+
+</html>
+
