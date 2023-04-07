@@ -88,18 +88,21 @@ $(function()
         // Kickoff Mainline //
         // ---------------- //
 
-            var il = '';
-            var ml = '';
-            var mf = '';
-            
+            var il = 'a';
+            var ml = 'b';
+            var mf = 'c';
+
             $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
                 {
+                    alert('images1:' + il);
+                    alert('menu1:' + ml);
+                    alert('menufile1:' + mf);
                     il = params.imageslocation;
                     ml = params.menulocation;
                     mf = params.menufile;
-                    alert('images:' + il);
-                    alert('menu:' + ml);
-                    alert('menufile:' + mf);
+                    alert('images2:' + il);
+                    alert('menu2:' + ml);
+                    alert('menufile2:' + mf);
                 });
 
 
@@ -122,6 +125,10 @@ $(function()
             // ------------------------------------------------------------ //
             function loadMenu(lang, ml, mf, il) 
             {
+                alert('images3:' + il);
+                alert('menu3:' + ml);
+                alert('menufile3:' + mf);
+
                 // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
                 // $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
                 $.getJSON(ml + mf, function(data) // Process inhoud van json-file
@@ -190,6 +197,9 @@ $(function()
        
             function make_frame(item, lang, il) 
             {              
+                alert('images4:' + il);
+                alert('menu4:' + ml);
+                alert('menufile4:' + mf);
                 if(typeof eval("item.course") !== 'undefined')
                 { 
                     var coursekey = eval("item.course");
