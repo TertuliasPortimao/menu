@@ -46,6 +46,11 @@ body {
   transition: background 0.3s ease-in-out;
 }
 
+
+.flag {
+  cursor: pointer;
+}
+
 /* ............/navbar/............ *
 
 /* desktop mode............/// */
