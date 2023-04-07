@@ -81,6 +81,11 @@
 
 <script>
         
+const urlParams = new URLSearchParams(window.location.search);
+const query = urlParams.get('client');
+console.log(query); // Output: "javascript"
+
+
 $(function() 
 {
 
