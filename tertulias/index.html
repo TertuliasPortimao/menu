@@ -88,11 +88,15 @@ $(function()
         // Kickoff Mainline //
         // ---------------- //
 
+            var il = '';
+            var ml = '';
+            var mf = '';
+            
             $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
                 {
-                    var il = params.imageslocation;
-                    var ml = params.menulocation;
-                    var mf = params.menufile;
+                    il = params.imageslocation;
+                    ml = params.menulocation;
+                    mf = params.menufile;
                     alert('images:' + il);
                     alert('menu:' + ml);
                     alert('menufile:' + mf);
