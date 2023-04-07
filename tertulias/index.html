@@ -88,31 +88,22 @@ $(function()
         // Kickoff Mainline //
         // ---------------- //
 
-            var il = 'a';
-            var ml = 'b';
-            var mf = 'c';
-
             $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
                 {
-                    alert('images1:' + il);
-                    alert('menu1:' + ml);
-                    alert('menufile1:' + mf);
                     il = params.imageslocation;
                     ml = params.menulocation;
                     mf = params.menufile;
-                    alert('images2:' + il);
-                    alert('menu2:' + ml);
-                    alert('menufile2:' + mf);
+                    
                 });
 
 
-            loadMenu('pt',ml,mf,il); // Load the English menu by default
+            loadMenu('pt'); // Load the English menu by default
     
           
             $('.flag').click(function()     // Handle click events on the language selector flags
                 {
                     var lang = $(this).data('lang');
-                    loadMenu(lang, ml,mf,il);
+                    loadMenu(lang);
                 }
             );
     
@@ -123,15 +114,14 @@ $(function()
             // ------------------------------------------------------------ //
             // F: Load the menu from a JSON file for the specified language //
             // ------------------------------------------------------------ //
-            function loadMenu(lang, ml, mf, il) 
+            function loadMenu(lang) 
             {
-                alert('images3:' + il);
-                alert('menu3:' + ml);
-                alert('menufile3:' + mf);
+               // alert('images3:' + il);
+               // alert('menu3:' + ml);
+               // alert('menufile3:' + mf);
 
                 // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
-                // $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
-                $.getJSON(ml + mf, function(data) // Process inhoud van json-file
+                $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
                 {
                 // Clear the variable content             
                 // -- Restaurant info block            
@@ -175,7 +165,7 @@ $(function()
                 // Populate the menu lists with the data from the JSON file
                     $.each(data.gangen, function(index, gangitem) 
                     {
-                        make_frame(gangitem, lang, il) ;                 
+                        make_frame(gangitem, lang) ;                 
                     });   
                 
                 // Populate the button text with the data from the JSON file
@@ -195,11 +185,8 @@ $(function()
         // Mainline subroutines //
         // -------------------- //
        
-            function make_frame(item, lang, il) 
+            function make_frame(item, lang) 
             {              
-                alert('images4:' + il);
-                alert('menu4:' + ml);
-                alert('menufile4:' + mf);
                 if(typeof eval("item.course") !== 'undefined')
                 { 
                     var coursekey = eval("item.course");
@@ -223,7 +210,7 @@ $(function()
 
                     $.each(item.dish, function(index, dishitem) 
                     {
-                        make_element('#' + coursekey + '-menu .menu-list', dishitem, lang, il) ;
+                        make_element('#' + coursekey + '-menu .menu-list', dishitem, lang) ;
                     });  
                     
                 }   
@@ -245,7 +232,7 @@ $(function()
             
 
 
-            function make_element(pagetag, dishitem, taal,il) 
+            function make_element(pagetag, dishitem, taal) 
             {
                     var n = getjsonitem(dishitem, "name", taal);
                     var d = getjsonitem(dishitem, "description", taal);
@@ -254,9 +241,8 @@ $(function()
             //      var l = getjsonitem(item, "image_location", taal);
                     
                     //var l = "./menu/images/";
-                    //var l = 'https://webkamer.nl/activefiles/corsextract.php?type=img&file=';
-                    var l = il;
-
+                    var l = 'https://webkamer.nl/activefiles/corsextract.php?type=img&file=';
+                    
                     var p1 = '<div class="food-menu-item" align=center>' ;
                     var p2 = ''; 
                     if (i!="")
