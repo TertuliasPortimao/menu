@@ -83,13 +83,12 @@
         
 const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get('client');
-console.log(query); // Output: "javascript"
-alert('buiten' + query);
+console.log(client); // Output: "javascript"
 
 $(function() 
 {
 
-    alert('binnen' + query);
+    alert('binnen' + client);
         // ---------------- //
         // Kickoff Mainline //
         // ---------------- //
