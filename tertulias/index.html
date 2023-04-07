@@ -107,6 +107,16 @@ $(function()
             // ------------------------------------------------------------ //
             function loadMenu(lang) 
             {
+                $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
+                {
+                    alert('images:' + params.imageslocation);
+                    alert('menu:' + params.menulocation);
+                    alert('images2:' + params.imageslocation2);
+                    alert('menu2:' + params.menulocation2);
+                });
+
+                // params.imageslocation
+                // params.menulocation
                 // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
                 $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
                 {
