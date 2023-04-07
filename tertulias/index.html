@@ -90,21 +90,22 @@ $(function()
 
             $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
                 {
-                    alert('images:' + params.imageslocation);
-                    alert('menu:' + params.menulocation);
-                    alert('menufile:' + params.menufile);
-                    alert('images2:' + params.imageslocation2);
-                    alert('menu2:' + params.menulocation2);
+                    var il = params.imageslocation;
+                    var ml = params.menulocation;
+                    var mf = params.menufile;
+                    alert('images:' + il);
+                    alert('menu:' + ml);
+                    alert('menufile:' + mf);
                 });
 
 
-            loadMenu('pt',params.menulocation,params.menufile,params.imageslocation); // Load the English menu by default
+            loadMenu('pt',ml,mf,il); // Load the English menu by default
     
           
             $('.flag').click(function()     // Handle click events on the language selector flags
                 {
                     var lang = $(this).data('lang');
-                    loadMenu(lang);
+                    loadMenu(lang, ml,mf,il);
                 }
             );
     
@@ -115,7 +116,7 @@ $(function()
             // ------------------------------------------------------------ //
             // F: Load the menu from a JSON file for the specified language //
             // ------------------------------------------------------------ //
-            function loadMenu(lang, ml,mf,il) 
+            function loadMenu(lang, ml, mf, il) 
             {
                 // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
                 // $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
