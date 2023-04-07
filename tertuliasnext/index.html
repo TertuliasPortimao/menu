@@ -88,15 +88,13 @@ $(function()
         // Kickoff Mainline //
         // ---------------- //
 
-            $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
-                {   
-                    loadMenu('pt',params.menulocation,params.menufile,params.imageslocation); // Load the English menu by default
-                });    
+           
+            loadMenu('pt'); // Load the English menu by default   
           
             $('.flag').click(function()     // Handle click events on the language selector flags
                 {
                     var lang = $(this).data('lang');
-                    loadMenu(lang,params.menulocation,params.menufile,params.imageslocation);
+                    loadMenu(lang);
                 }
             );
     
@@ -107,11 +105,15 @@ $(function()
             // ------------------------------------------------------------ //
             // F: Load the menu from a JSON file for the specified language //
             // ------------------------------------------------------------ //
-            function loadMenu(lang, ml, mf, il) 
+            function loadMenu(lang) 
             {
+
+                $.getJSON('./menu/params' + '.json', function(params) // Process inhoud van installation parameters json-file
+                {  
+
                 // $.getJSON('./menu/menu' + '.json', function(data) // Process inhoud van json-file
                 // $.getJSON('https://webkamer.nl/activefiles/corsextract.php?file=menu.json', function(data) // Process inhoud van json-file
-                $.getJSON(ml + mf, function(data) // Process inhoud van json-file
+                $.getJSON(params.menulocation + params.menufile, function(data) // Process inhoud van json-file
                 {
                 // Clear the variable content             
                 // -- Restaurant info block            
@@ -155,7 +157,7 @@ $(function()
                 // Populate the menu lists with the data from the JSON file
                     $.each(data.gangen, function(index, gangitem) 
                     {
-                        make_frame(gangitem, lang, il) ;                 
+                        make_frame(gangitem, lang, params.imageslocation) ;                 
                     });   
                 
                 // Populate the button text with the data from the JSON file
@@ -167,6 +169,8 @@ $(function()
 
 
                 }); // einde verwerking json file
+
+            });  
 
             }  // Einde functie loadmenu
 
