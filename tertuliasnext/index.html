@@ -103,11 +103,9 @@ $(function()
                     alert('images2:' + il);
                     alert('menu2:' + ml);
                     alert('menufile2:' + mf);
-                });
+                    loadMenu('pt',ml,mf,il); // Load the English menu by default
 
-
-            loadMenu('pt',ml,mf,il); // Load the English menu by default
-    
+                });    
           
             $('.flag').click(function()     // Handle click events on the language selector flags
                 {
