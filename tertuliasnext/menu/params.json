@@ -1,7 +1,7 @@
 {
     "imageslocation": "https://webkamer.nl/activefiles/corsextract.php?type=img&file=",
     "imageslocation2": "./menu/images/",
-    "menulocation": "https://webkamer.nl/activefiles/corsextract.php?file=menu.json",
+    "menulocation": "https://webkamer.nl/activefiles/corsextract.php?file=",
     "menulocation2": "./menu/",
     "menufile": "menu.json"
 }
