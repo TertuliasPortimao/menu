@@ -45,6 +45,8 @@
               {
                   "name_pt": "SARDINHA",
                   "name_en": "SARDINES",
+                  "image_location": "./",
+                  "image": "sardinha.jpg",
                   "price": "€ 9,20",
                   "group": "local"
               }
@@ -52,6 +54,8 @@
               {
                   "name_pt": "ROBALO",
                   "name_en": "SEABASS",
+                  "image_location": "./",
+                  "image": "robalo.jpg",
                   "price": "€ 10,30",
                   "group": "Local"
               }
@@ -86,6 +90,8 @@
               {
                   "name_pt": "LULAS FRITAS",
                   "name_en": "FRIED SQUID FISH",
+                  "image_location": "./",
+                  "image": "lulasfritas.jpg",
                   "price": "€ 10,80",
                   "group": "Local"
               }
@@ -101,6 +107,8 @@
               {
                   "name_pt": "BIFE DE FRANGO",
                   "name_en": "CHICKEN STEAK",
+                  "image_location": "./",
+                  "image": "bifedefrango.jpg",
                   "price": "€ 8,60",
                   "group": "Local"
               }
@@ -182,6 +190,8 @@
               {
                   "name_pt": "SALADA FRANGO",
                   "name_en": "CHICKEN SALAD",
+                  "image_location": "./",
+                  "image": "saladafrango.jpg",
                   "price": "€ 7,50",
                   "group": "Local"
               }
@@ -489,6 +499,8 @@
                 "name": "BÒ SÔT VANG",
                 "description_en": "Stewed Beef with red wine and herbs in claypot. ",
                 "description_pt": "Carne de vaca cozinhada com vinho tinto e ervas em poto de barro. ",
+                "image_location": "./",
+                "image": "bosotvang.jpg",
                 "price": "€ 10,30",
                 "group": "Vietnamese"
             }
@@ -497,6 +509,8 @@
                 "name": "BÚN NEM CUÔN",
                 "description_en": "Noodles, Salad, Vietnamese spring rolls with pork, shrimps, mixed vegetables. ",
                 "description_pt": "Macarrão, Salada, Rolinhos de primavera vietnamitas com carne de porco, camarões, legumes mistos. ",
+                "image_location": "./",
+                "image": "bunnemcuon.jpg",
                 "price": "€ 7,00",
                 "group": "Vietnamese"
             }
